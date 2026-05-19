@@ -29,7 +29,7 @@ Under the following terms:
 > *<page-title>*, by Jack D. Menendez, from the A=1 Discrete Causal
 > Lattice series. Licensed under
 > [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
-> Original at <https://geometry-induced-physics.org>.
+> Original at <https://geometryinducedphysics.org>.
 
 ## What this license does **not** cover
 

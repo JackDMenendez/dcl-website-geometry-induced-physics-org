@@ -10,7 +10,7 @@ website:
   description: >-
     News, publications, and research artefacts for the
     A=1 Discrete Causal Lattice series.
-  site-url: "https://geometry-induced-physics.org"
+  site-url: "https://geometryinducedphysics.org"
   repo-url: "https://github.com/JackDMenendez/dcl-website-geometry-induced-physics-org"
   repo-actions: [edit, issue]
   navbar:

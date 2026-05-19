@@ -6,7 +6,7 @@ and enabling HTTPS. Credentials and registrar account details are
 
 ## Working domain
 
-`geometry-induced-physics.org` *(confirm at runbook execution time —
+`geometryinducedphysics.org` *(confirm at runbook execution time —
 inferred from the repository name `dcl-website-geometry-induced-physics-org`)*.
 
 ## Pre-cutover checklist
@@ -22,7 +22,7 @@ inferred from the repository name `dcl-website-geometry-induced-physics-org`)*.
 
 ## DNS records for GitHub Pages with a custom apex domain
 
-For an **apex domain** (`geometry-induced-physics.org`), point `A`
+For an **apex domain** (`geometryinducedphysics.org`), point `A`
 records at GitHub Pages' published IPs. The canonical list is at
 <https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain>;
 confirm against that page at cutover time. As of the last check the
@@ -51,7 +51,7 @@ Once DNS is set, add a `CNAME` file at the repo root with the apex
 domain on a single line:
 
 ```
-geometry-induced-physics.org
+geometryinducedphysics.org
 ```
 
 Commit; the GitHub Pages deploy will carry this into `_site/` and
@@ -69,9 +69,9 @@ After DNS propagates (allow up to 24 hours, usually faster):
 
 ## Post-cutover verification
 
-- [ ] `https://geometry-induced-physics.org` loads the rendered
+- [ ] `https://geometryinducedphysics.org` loads the rendered
       site.
-- [ ] `https://www.geometry-induced-physics.org` redirects to the
+- [ ] `https://www.geometryinducedphysics.org` redirects to the
       apex.
 - [ ] `http://...` redirects to `https://...` for both.
 - [ ] Certificate is valid (no browser warning) and is issued by

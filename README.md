@@ -3,7 +3,7 @@
 Source for the public website of the **A=1 Discrete Causal Lattice
 (DCL) series**.
 
-- **Production URL (planned):** <https://geometry-induced-physics.org>
+- **Production URL (planned):** <https://geometryinducedphysics.org>
 - **Framework:** [Quarto](https://quarto.org/) (markdown-in-git, KaTeX
   math, built-in publication and blog listings).
 - **Hosting:** GitHub Pages, built and deployed by GitHub Actions on
@@ -55,7 +55,7 @@ Pages in repository settings:
 1. **Settings → Pages → Build and deployment → Source:** *Deploy
    from a branch*.
 2. **Branch:** `gh-pages`, folder `/ (root)`.
-3. **Custom domain:** `geometry-induced-physics.org` (confirm and
+3. **Custom domain:** `geometryinducedphysics.org` (confirm and
    add the `CNAME` file when DNS is ready — see
    `notes/dns_and_https_runbook.md`).
 4. **Enforce HTTPS:** enable once the certificate provisioning

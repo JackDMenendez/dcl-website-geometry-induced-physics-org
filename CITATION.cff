@@ -7,7 +7,7 @@ type: software
 authors:
   - family-names: Menendez
     given-names: Jack D.
-url: "https://geometry-induced-physics.org"
+url: "https://geometryinducedphysics.org"
 repository-code: "https://github.com/JackDMenendez/dcl-website-geometry-induced-physics-org"
 abstract: >-
   Source for the public website of the A=1 Discrete Causal Lattice

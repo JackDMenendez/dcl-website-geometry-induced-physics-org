@@ -33,7 +33,7 @@ delivered as its own peer-reviewable paper:
 
 ## A note on "induce"
 
-The working domain — *geometry-induced-physics.org* — is deliberate.
+The working domain — *geometryinducedphysics.org* — is deliberate.
 "Induce" is meant in the technical sense: physical structure is
 induced, in the mathematical-induction sense, by a substrate-level
 rule. Not a metaphor.
