@@ -17,8 +17,10 @@ inferred from the repository name `dcl-website-geometry-induced-physics-org`)*.
       any DNS records pointing there, and any analytics/CDN
       integrations that need to be removed before cutover.
 - [ ] First successful GitHub Actions deploy of this repository
-      (verifies the `gh-pages` branch exists and the rendered site
-      is publishable).
+      (the `Publish` workflow renders Quarto and deploys via
+      `actions/deploy-pages@v4`; Pages **Source** in repo
+      settings must be set to *GitHub Actions* before the first
+      run can succeed).
 
 ## DNS records for GitHub Pages with a custom apex domain
 

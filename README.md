@@ -47,18 +47,22 @@ _quarto.yml            Site config: navbar, theme, math, etc.
 
 ## Deploy
 
-The deploy pipeline is `.github/workflows/publish.yml` — a single
-job that installs Quarto, renders the site, and publishes to the
-`gh-pages` branch. After the first successful run, enable GitHub
-Pages in repository settings:
+The deploy pipeline is `.github/workflows/publish.yml`. It has two
+jobs: a `build` job that installs Quarto, renders the site to
+`_site/`, and uploads it as a Pages artifact; and a `deploy` job
+that publishes that artifact via `actions/deploy-pages@v4`. No
+`gh-pages` branch is needed — GitHub's first-party Pages
+deployment serves the artifact directly.
 
-1. **Settings → Pages → Build and deployment → Source:** *Deploy
-   from a branch*.
-2. **Branch:** `gh-pages`, folder `/ (root)`.
-3. **Custom domain:** `geometryinducedphysics.org` (confirm and
+Before the first deploy, enable GitHub Pages in repository
+settings:
+
+1. **Settings → Pages → Build and deployment → Source:** *GitHub
+   Actions*.
+2. **Custom domain:** `geometryinducedphysics.org` (confirm and
    add the `CNAME` file when DNS is ready — see
    `notes/dns_and_https_runbook.md`).
-4. **Enforce HTTPS:** enable once the certificate provisioning
+3. **Enforce HTTPS:** enable once the certificate provisioning
    completes.
 
 ## Licensing
