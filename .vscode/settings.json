@@ -1,0 +1,26 @@
+{
+    "python.defaultInterpreterPath": "C:/dev/dcl-website-geometry-induced-physics-org/.venv-ucrt64/bin/python.exe",
+    "terminal.integrated.defaultProfile.windows": "UCRT64",
+    "terminal.integrated.profiles.windows": {
+        "UCRT64": {
+            "path": "C:\\msys64\\usr\\bin\\bash.exe",
+            "args": ["--login", "-i"],
+            "env": {
+                "MSYSTEM": "UCRT64",
+                "CHERE_INVOKING": "1",
+                "MSYS2_PATH_TYPE": "inherit"
+            }
+        },
+        "MINGW64": {
+            "path": "C:\\msys64\\usr\\bin\\bash.exe",
+            "args": ["--login", "-i"],
+            "env": {
+                "MSYSTEM": "MINGW64",
+                "CHERE_INVOKING": "1",
+                "MSYS2_PATH_TYPE": "inherit"
+            }
+        }
+    },
+    
+    "files.eol": "lf"
+}

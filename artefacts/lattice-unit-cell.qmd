@@ -1,0 +1,70 @@
+---
+title: "Bipartite octahedral lattice — unit cell"
+description: >-
+  Interactive 3D viewer for the unit cell of the A=1 substrate: the
+  bipartite octahedral lattice on which the entire series is built.
+categories: [3D model, substrate, Paper I]
+format:
+  html:
+    include-in-header:
+      - text: |
+          <script type="module" src="https://unpkg.com/@google/model-viewer@^4.0.0/dist/model-viewer.min.js"></script>
+---
+
+This is the **bipartite octahedral lattice unit cell** — the
+substrate on which the A=1 Discrete Causal Lattice programme is
+built. Drag to rotate; scroll to zoom; double-click for default
+view.
+
+```{=html}
+<model-viewer
+  src="lattice-unit-cell.glb"
+  poster="lattice-unit-cell-poster.png"
+  alt="Bipartite octahedral lattice unit cell"
+  shadow-intensity="1"
+  camera-controls
+  auto-rotate
+  ar
+  style="width: 100%; height: 480px; background-color: #f8f9fa;">
+  <div slot="poster" style="display:flex; align-items:center; justify-content:center; height:100%;">
+    <p style="text-align:center; padding:1rem; color:#666;">
+      Loading the lattice unit cell… if the model does not appear,
+      your browser may not support WebGL.
+    </p>
+  </div>
+</model-viewer>
+```
+
+::: {.callout-note}
+The GLB file is not yet bundled with this scaffold. Export of the
+unit-cell mesh from `dcl-core`'s visualisation utilities is tracked
+in [`notes/glb_export_pipeline.md`](https://github.com/JackDMenendez/dcl-website-geometry-induced-physics-org/blob/main/notes/glb_export_pipeline.md);
+the model will appear here once that pipeline lands. Until then the
+viewer falls back to the poster image.
+:::
+
+## Provenance
+
+- **Paper of record:** [Paper I — *Geometry First*](../papers/index.qmd#paper-i---geometry-first).
+- **Source code:** `dcl-core`'s `core3d` visualisation utilities
+  (export path to be documented).
+- **Mathematical reference:** Section 2 (lattice definition) of
+  Paper I; the bipartite structure (two interpenetrating cubic
+  sub-lattices, octahedral nearest-neighbour topology) is the
+  ontological substrate on which the tick rule operates.
+
+## Why the bipartite structure matters
+
+The substrate is *bipartite* — two interpenetrating sub-lattices —
+because the conservation axiom relates them: events on one
+sub-lattice are caused by events on the other, and the tick rule
+alternates. The octahedral nearest-neighbour topology fixes the
+discrete symmetry group $O_h$ whose averaging recovers Lorentz
+invariance in the continuum limit.
+
+## Accessibility
+
+A text description of the model is in the `alt` attribute above; a
+poster image stands in until WebGL initialises. If you need a
+high-resolution still or a video walk-through, see the [contact
+page](../contact.qmd).

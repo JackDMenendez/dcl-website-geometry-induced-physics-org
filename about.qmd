@@ -1,0 +1,46 @@
+---
+title: "About the programme"
+---
+
+The A=1 Discrete Causal Lattice (DCL) programme is a research effort
+that proposes a *substrate-first* answer to longstanding questions
+in foundational physics: what if spacetime, the Standard Model gauge
+group, and gravity are all consequences of a single conservation law
+imposed on a discrete bipartite octahedral lattice?
+
+This page expands on the framework's claims, methodology, and
+relationship to existing literature. **Draft in progress** — initial
+content lands alongside the first news posts; until then, the
+[papers page](papers/index.qmd) is the authoritative entry-point.
+
+## Methodological arc
+
+The series develops a three-step methodological argument, each step
+delivered as its own peer-reviewable paper:
+
+- **Geometry first** (*Paper I — Geometry First*). The substrate is
+  the discrete causal lattice; macroscopic symmetries (Lorentz,
+  diffeomorphism) emerge as O$_h$-averaged consequences of the
+  lattice's tick rule.
+- **Geometry forces physics** (*Paper II — Geometry Forces Physics*).
+  The Standard Model gauge group $SU(3) \times SU(2) \times U(1)$ is
+  not assumed; it is *derived* from a single conservation axiom on
+  the lattice.
+- **Geometry axiomatizes physics** (capstone, in progress). The
+  methodological arc closes into a Hilbert-Sixth-shaped
+  axiomatization: a finite axiom set whose theorems recover the
+  PASS rows of every upstream paper.
+
+## A note on "induce"
+
+The working domain — *geometry-induced-physics.org* — is deliberate.
+"Induce" is meant in the technical sense: physical structure is
+induced, in the mathematical-induction sense, by a substrate-level
+rule. Not a metaphor.
+
+## Auditability
+
+Every claim in the series carries an *audit-row impact*: PASS,
+PART, STUB, or FAIL. Audit tables travel with each paper. The
+website surfaces the latest audit state without replacing the
+canonical tables in the paper repositories.

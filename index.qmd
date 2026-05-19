@@ -1,0 +1,49 @@
+---
+title: "A=1 Discrete Causal Lattice"
+subtitle: "Geometry first. Geometry forces physics. Geometry axiomatizes physics."
+page-layout: full
+listing:
+  - id: latest-news
+    contents: news/posts
+    type: default
+    fields: [date, title, description]
+    sort: "date desc"
+    max-items: 5
+    feed: false
+---
+
+The **A=1 Discrete Causal Lattice (DCL)** programme takes a single
+conservation law on a bipartite octahedral lattice and uses it to
+recover, in order, Lorentz invariance, the Standard Model gauge
+group, gravity from clock-density, and a quantum analogue of the
+Roche limit. Successive papers in the series advance a single
+methodological arc:
+
+1. **Geometry first** (Paper I) — the substrate is a discrete causal
+   lattice, and the rest follows.
+2. **Geometry forces physics** (Paper II) — the Standard Model gauge
+   group is derived from a single conservation axiom.
+3. **Geometry axiomatizes physics** (capstone, in progress) — the
+   methodological arc is closed into a Hilbert-Sixth-shaped
+   axiomatization.
+
+This site is the public surface for the series. It tracks news,
+hosts research artefacts that don't fit a paper-figure shape (3D
+models, animations, interactive visualisations), and gives an
+entry-point for readers, collaborators, and endorsers.
+
+## Where to start
+
+- **[Papers](papers/index.qmd)** — the canonical series, with Zenodo
+  DOIs, arXiv links, and repository links.
+- **[Research artefacts](artefacts/index.qmd)** — 3D models,
+  visualisations, interactive demos.
+- **[News](news/index.qmd)** — releases, deposits, talks, milestones.
+- **[Essays](essays/index.qmd)** — short-form methodological writing.
+
+## Latest news
+
+::: {#latest-news}
+:::
+
+[See all news →](news/index.qmd)

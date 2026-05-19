@@ -1,0 +1,22 @@
+---
+title: "Research artefacts"
+listing:
+  contents:
+    - "*.qmd"
+    - "!index.qmd"
+  type: grid
+  sort: "title"
+  categories: true
+  fields: [title, description, categories]
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+---
+
+Interactive and visual artefacts from the A=1 Discrete Causal Lattice
+series — 3D models of the lattice substrate, animations of Arnold-
+tongue lock-in / unlock dynamics, and standalone visualisations that
+don't fit cleanly inside a paper figure.
+
+Each artefact lists its provenance (which paper or experiment script
+produced it) and provides a viewer or download link.

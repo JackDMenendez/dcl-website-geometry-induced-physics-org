@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "A=1 Discrete Causal Lattice — public website"
+message: >-
+  If you cite this website (rather than an individual paper or
+  artefact deposited on Zenodo), please cite it as below.
+type: software
+authors:
+  - family-names: Menendez
+    given-names: Jack D.
+url: "https://geometry-induced-physics.org"
+repository-code: "https://github.com/JackDMenendez/dcl-website-geometry-induced-physics-org"
+abstract: >-
+  Source for the public website of the A=1 Discrete Causal Lattice
+  series — news, paper index, research artefacts, collaborator
+  roster, and funding attribution.
+keywords:
+  - discrete causal lattice
+  - foundations of physics
+  - lattice substrate
+  - Hilbert's sixth problem
+license: MIT
+license-url: "https://github.com/JackDMenendez/dcl-website-geometry-induced-physics-org/blob/main/LICENSE-CODE"

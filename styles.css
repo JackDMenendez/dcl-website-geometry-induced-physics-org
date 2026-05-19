@@ -1,0 +1,24 @@
+/* A=1 DCL site — scaffold styles. Visual polish lands in Phase 5. */
+
+:root {
+  --dcl-accent: #2c5aa0;
+}
+
+.navbar-brand {
+  font-weight: 600;
+}
+
+main blockquote {
+  border-left: 4px solid var(--dcl-accent);
+  padding-left: 1rem;
+  color: #444;
+}
+
+.callout {
+  margin-block: 1.25rem;
+}
+
+model-viewer {
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+}

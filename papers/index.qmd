@@ -1,0 +1,79 @@
+---
+title: "Papers"
+page-layout: full
+---
+
+Every paper in the A=1 Discrete Causal Lattice series. Each entry
+points to the canonical Zenodo deposit (where applicable), the
+working repository, and the current version.
+
+## Published
+
+### Paper I — *Geometry First*
+
+The substrate-priority paper. Establishes the discrete bipartite
+octahedral lattice as the ontological substrate and recovers Lorentz
+invariance as an O$_h$-averaged consequence of the tick rule.
+
+- **Version:** v1.0
+- **DOI:** [10.5281/zenodo.20078529](https://doi.org/10.5281/zenodo.20078529)
+- **Repository:** [`dcl`](https://github.com/JackDMenendez/dcl)
+
+### Paper II — *Geometry Forces Physics*
+
+Derives the Standard Model gauge group $SU(3) \times SU(2) \times U(1)$
+from a single conservation axiom on the lattice. Leaves the
+gauge-coupling prefactor $c$ open; closure is the centerpiece of the
+planned discrete-probability paper.
+
+- **Version:** v1.0
+- **DOI:** [10.5281/zenodo.20240736](https://doi.org/10.5281/zenodo.20240736)
+- **Repository:** [`dcl-sm-derivation`](https://github.com/JackDMenendez/dcl-paper-02-sm-derivation)
+
+## In progress
+
+### Paper III — *Tidal Ionization and the Quantum Roche Limit*
+
+A third ionization channel (gradient detuning) alongside the
+standard thermal (Saha) and pressure (Pauli) channels. Predicts an
+atomic ISCO with two observational signatures (21 cm HI inner-edge
+morphology near compact objects, Fe K$\alpha$ line-profile inner
+edge in accretion disks).
+
+- **Version:** v0.1 (draft)
+- **Repository:** [`dcl-paper-03-tidal-ionization`](https://github.com/JackDMenendez/dcl-paper-03-tidal-ionization)
+
+### `dcl-generator-zoo` — Catalogue of the 71-dim per-site automorphism algebra
+
+A standalone catalogue paper / artefact for the lattice's automorphism
+algebra; consumed by Paper II's gauge derivation and the planned
+proton-internals paper.
+
+- **Version:** v0.1 (draft)
+- **Repository:** [`dcl-generator-zoo`](https://github.com/JackDMenendez/dcl-generator-zoo)
+
+### `dcl-core` — Python engine
+
+The simulation engine that underlies the experiment scripts in the
+paper repositories. `dcl_core.core` + `dcl_core.core3d`.
+
+- **Version:** v0.1.0-dev
+- **Repository:** [`dcl-core`](https://github.com/JackDMenendez/dcl-core)
+
+## Planned
+
+The following subprojects are in the framework's forward-looking
+design but not yet drafted:
+
+- **Discrete-probability paper** — empirical companion to
+  `dcl_core.core3d` v1.0; the centerpiece showcase closes Paper II's
+  open gauge-coupling prefactor.
+- **`dcl-formalism` package + paper** — a sympy-extending formalism
+  package (axioms / theorems / continuum-limit primitives) and
+  companion paper. Designed to support the Hilbert-Sixth capstone.
+- **Hilbert-Sixth axiomatization** — *Geometry Axiomatizes Physics*.
+  The methodological capstone tying Papers I → II → III →
+  discrete-probability → `dcl-formalism` into a single axiomatic
+  treatment.
+- **Proton internals** — a future paper that consumes Paper II's
+  SU(3) machinery and the generator-zoo catalogue.

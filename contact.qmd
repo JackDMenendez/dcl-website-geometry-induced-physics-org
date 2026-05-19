@@ -1,0 +1,33 @@
+---
+title: "Contact"
+---
+
+The A=1 Discrete Causal Lattice programme welcomes correspondence on
+review, endorsement, collaboration, and constructive critique.
+
+## Primary contact
+
+- **GitHub:** [@JackDMenendez](https://github.com/JackDMenendez)
+- **Email:** *(add public-facing email here once decided)*
+- **ORCID:** *(add ORCID iD here once registered for the series)*
+
+## What to expect when you reach out
+
+- **Reviewers / endorsers.** If you are willing to provide an arXiv
+  endorsement or pre-submission review for a paper in the series,
+  the most useful first message is the paper version you are
+  willing to look at (Paper I, Paper II, Paper III, or the
+  in-progress capstone) and any time-boxing on your availability.
+- **Collaborators.** Open issues at the series project board, or
+  the relevant paper repository, are the best public conversation
+  surface. For initial scoping, email or GitHub is fine.
+- **Press / general inquiry.** Email; allow several weeks for a
+  considered response.
+
+## Project board and repositories
+
+- **Series project board:**
+  <https://github.com/users/JackDMenendez/projects/6/views/1?layout_template=table>
+- **Project-tracking repository:**
+  <https://github.com/JackDMenendez/discrete-causal-lattice-project>
+- **Paper repositories:** see the [papers page](papers/index.qmd).

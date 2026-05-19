@@ -1,0 +1,23 @@
+# Quarto
+/.quarto/
+/_site/
+/_freeze/
+*.html
+*.pdf
+
+# Allow source HTML for templates / partials if ever added
+!_extensions/**/*.html
+
+# Python venv
+.venv*/
+__pycache__/
+*.pyc
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# Tooling
+.idea/
+node_modules/

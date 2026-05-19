@@ -1,0 +1,60 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "!notes/"
+
+website:
+  title: "A=1 Discrete Causal Lattice"
+  description: >-
+    News, publications, and research artefacts for the
+    A=1 Discrete Causal Lattice series.
+  site-url: "https://geometry-induced-physics.org"
+  repo-url: "https://github.com/JackDMenendez/dcl-website-geometry-induced-physics-org"
+  repo-actions: [edit, issue]
+  navbar:
+    background: primary
+    search: true
+    left:
+      - href: index.qmd
+        text: Home
+      - href: news/index.qmd
+        text: News
+      - href: papers/index.qmd
+        text: Papers
+      - href: artefacts/index.qmd
+        text: Research artefacts
+      - href: essays/index.qmd
+        text: Essays
+      - href: collaborators.qmd
+        text: Collaborators
+      - href: funding.qmd
+        text: Funding
+      - href: about.qmd
+        text: About
+      - href: contact.qmd
+        text: Contact
+  page-footer:
+    left: |
+      © Jack D. Menendez. Site code: [MIT](LICENSE-CODE); prose: [CC BY 4.0](LICENSE-PROSE.md).
+    center: |
+      [Source on GitHub](https://github.com/JackDMenendez/dcl-website-geometry-induced-physics-org)
+    right: |
+      Built with [Quarto](https://quarto.org/).
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    toc: true
+    toc-location: right
+    code-copy: true
+    smooth-scroll: true
+    html-math-method: katex
+    anchor-sections: true
+    link-external-newwindow: true
+
+freeze: auto

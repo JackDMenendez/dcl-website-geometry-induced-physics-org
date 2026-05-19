@@ -1,0 +1,26 @@
+---
+title: "Funding partners"
+---
+
+The A=1 Discrete Causal Lattice programme is supported by the
+individuals and organisations listed below. Each entry appears here
+only with the partner's explicit consent and in the form they have
+approved.
+
+## Current funding partners
+
+<!-- Add entries below as partners agree to public attribution. -->
+
+*No public funding partners listed yet.*
+
+## Acknowledgements
+
+The series is, at the time of writing, self-funded. Domain
+registration, compute, and storage costs are borne directly by the
+principal investigator. Partner contributions will be acknowledged
+here as the programme grows.
+
+## How to support the programme
+
+If you are interested in supporting this research, see the [contact
+page](contact.qmd) for the appropriate point of contact.
