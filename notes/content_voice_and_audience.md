@@ -40,15 +40,30 @@ paper-shaped straitjacket.
 
 ## What goes where
 
-- **News post:** something a reader could verify against the
-  published record — a paper release, a Zenodo deposit, a talk
-  date, an audit-row flip, an outreach milestone (an endorsement
-  secured, a community cross-listing approved).
-- **Essay:** a framing or methodological argument that needs more
-  than a news post but less than a paper. Examples: response to a
-  reviewer concern that reshaped a paper's scope; retrospective on
-  a framework decision; survey-style piece that maps the series
-  onto adjacent literature.
+- **News post:** short, paper-drop-shaped. An announcement of
+  something a reader can verify against the published record — a
+  paper release, a Zenodo deposit, a talk date, an audit-row flip,
+  an outreach milestone (endorsement secured, community
+  cross-listing approved). May lift relevant chunks from a paper's
+  README or release notes. Typical length: 150–400 words.
+- **Essay:** mini-paper-shaped. A discovery write-up, methods
+  exposition, or framing argument that needs more than a news post
+  but less than a peer-reviewed paper. Examples:
+    - How birefringence emerged in the lattice during the
+      derivation of the Dirac equation (a discovery captured
+      partway through the math).
+    - How photon emission is set up in a specific experiment
+      (a methods exposition tied to an `exp_NN` script).
+    - Response-to-reviewer essays that reshape a paper's scope.
+    - Retrospectives on framework decisions; survey pieces that
+      map the series onto adjacent literature.
+
+  Essays often include figures (lattice diagrams, derivation
+  steps, experiment screenshots). Per the staging convention in
+  [`drafts/README.md`](../drafts/README.md), essays with images
+  use the post-directory layout: each essay is a directory
+  containing `index.qmd` plus co-located image files. Typical
+  length: 1000–3000 words.
 - **Paper card (on the papers page):** the *canonical* abstract
   and current status. Updated when the paper version changes.
 - **Research artifact:** an interactive object (3D model,
