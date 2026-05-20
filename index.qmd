@@ -12,6 +12,8 @@ listing:
     feed: false
 ---
 
+![Harmonic fingerprint of the A=1 substrate — high-resolution $\omega$-scan revealing Arnold-tongue lock-in points along the Farey structure (from Paper~I, `exp_harmonic`).](assets/harmonic-fingerprint.png){fig-alt="Spectral heatmap on a dark background showing diagonal Arnold-tongue resonance lines with three labelled lock-in points at 2:1, 3:1, and 4:1 frequency ratios."}
+
 The **A=1 Discrete Causal Lattice (DCL)** programme takes a single
 conservation law on a bipartite octahedral lattice and uses it to
 recover, in order, Lorentz invariance, the Standard Model gauge
