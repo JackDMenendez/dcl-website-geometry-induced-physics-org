@@ -1,8 +1,8 @@
 ---
-title: "About the programme"
+title: "About the program"
 ---
 
-The A=1 Discrete Causal Lattice (DCL) programme is a research effort
+The A=1 Discrete Causal Lattice (DCL) program is a research effort
 that proposes a *substrate-first* answer to longstanding questions
 in foundational physics: what if spacetime, the Standard Model gauge
 group, and gravity are all consequences of a single conservation law

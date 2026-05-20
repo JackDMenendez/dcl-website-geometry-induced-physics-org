@@ -14,7 +14,7 @@ paper-shaped straitjacket.
    next?* The home page and papers page serve this audience first.
 
 2. **Prospective collaborators / endorsers.** They want: *is this
-   a serious programme, is there a clear methodological arc, do
+   a serious program, is there a clear methodological arc, do
    the open questions look workable, how do I reach in?* The
    about page, essays, and contact page serve this audience.
 
@@ -51,9 +51,9 @@ paper-shaped straitjacket.
   onto adjacent literature.
 - **Paper card (on the papers page):** the *canonical* abstract
   and current status. Updated when the paper version changes.
-- **Research artefact:** an interactive object (3D model,
+- **Research artifact:** an interactive object (3D model,
   animation, viz) with provenance. Not a post; a permanent page
-  in `artefacts/` that can be cited.
+  in `artifacts/` that can be cited.
 
 ## Things to keep off the site
 

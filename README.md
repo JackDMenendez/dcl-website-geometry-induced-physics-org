@@ -24,7 +24,7 @@ quarto render           # one-shot build into _site/
 
 ```
 index.qmd              Home (hero + latest news teaser)
-about.qmd              About the programme (placeholder)
+about.qmd              About the program (placeholder)
 collaborators.qmd      Public collaborator roster
 funding.qmd            Public funding-partner attribution
 contact.qmd            How to reach in (review, endorsement, collab)
@@ -33,7 +33,7 @@ news/                  Project news (chronological listing)
   posts/
 papers/                Series papers with DOIs and repo links
   index.qmd
-artefacts/             3D models, animations, interactive viz
+artifacts/             3D models, animations, interactive viz
   index.qmd
   lattice-unit-cell.qmd
 essays/                Methodological essays and reviews

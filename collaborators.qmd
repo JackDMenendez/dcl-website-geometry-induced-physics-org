@@ -2,7 +2,7 @@
 title: "Collaborators"
 ---
 
-The A=1 Discrete Causal Lattice programme is led by Jack D. Menendez.
+The A=1 Discrete Causal Lattice program is led by Jack D. Menendez.
 This page lists current collaborators, contributors, and reviewers
 who have agreed to public attribution.
 
@@ -17,7 +17,7 @@ who have agreed to public attribution.
 <!-- Add entries below as collaborators agree to public attribution. -->
 
 *No public collaborators listed yet.* If you have been working with
-the programme and would like to be listed here, see the [contact
+the program and would like to be listed here, see the [contact
 page](contact.qmd).
 
 ## Reviewers and endorsers

@@ -2,7 +2,7 @@ cff-version: 1.2.0
 title: "A=1 Discrete Causal Lattice — public website"
 message: >-
   If you cite this website (rather than an individual paper or
-  artefact deposited on Zenodo), please cite it as below.
+  artifact deposited on Zenodo), please cite it as below.
 type: software
 authors:
   - family-names: Menendez
@@ -11,7 +11,7 @@ url: "https://geometryinducedphysics.org"
 repository-code: "https://github.com/JackDMenendez/dcl-website-geometry-induced-physics-org"
 abstract: >-
   Source for the public website of the A=1 Discrete Causal Lattice
-  series — news, paper index, research artefacts, collaborator
+  series — news, paper index, research artifacts, collaborator
   roster, and funding attribution.
 keywords:
   - discrete causal lattice

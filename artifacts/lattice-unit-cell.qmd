@@ -12,7 +12,7 @@ format:
 ---
 
 This is the **bipartite octahedral lattice unit cell** — the
-substrate on which the A=1 Discrete Causal Lattice programme is
+substrate on which the A=1 Discrete Causal Lattice program is
 built. Drag to rotate; scroll to zoom; double-click for default
 view.
 
@@ -37,7 +37,7 @@ view.
 
 ::: {.callout-note}
 The GLB file is not yet bundled with this scaffold. Export of the
-unit-cell mesh from `dcl-core`'s visualisation utilities is tracked
+unit-cell mesh from `dcl-core`'s visualization utilities is tracked
 in [`notes/glb_export_pipeline.md`](https://github.com/JackDMenendez/dcl-website-geometry-induced-physics-org/blob/main/notes/glb_export_pipeline.md);
 the model will appear here once that pipeline lands. Until then the
 viewer falls back to the poster image.
@@ -46,7 +46,7 @@ viewer falls back to the poster image.
 ## Provenance
 
 - **Paper of record:** [Paper I — *Geometry First*](../papers/index.qmd#paper-i---geometry-first).
-- **Source code:** `dcl-core`'s `core3d` visualisation utilities
+- **Source code:** `dcl-core`'s `core3d` visualization utilities
   (export path to be documented).
 - **Mathematical reference:** Section 2 (lattice definition) of
   Paper I; the bipartite structure (two interpenetrating cubic

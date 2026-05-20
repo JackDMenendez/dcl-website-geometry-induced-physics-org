@@ -12,9 +12,9 @@ listing:
     feed: false
 ---
 
-![Bipartite octahedral lattice — the A=1 substrate. RGB and CMY basis directions $V_1, V_2, V_3$ encode even / odd ticks; $A=1$ implies $|\psi_R|^2 + |\psi_L|^2 = 1$ (from Paper~I).](assets/bipartite-lattice.png){fig-alt="Diagram of the A=1 architecture: a central nucleus node t_n0 with six labelled neighbours t_n1..t_n6 in RGB (red, green, blue) and CMY (cyan, magenta, yellow), reached by basis vectors V1, V2, V3 (and their negatives). A legend table on the right gives the (x,y,z) coordinates and spin role for each basis."}
+![Bipartite octahedral lattice — the A=1 substrate. RGB and CMY basis directions $V_1, V_2, V_3$ encode even / odd ticks; $A=1$ implies $|\psi_R|^2 + |\psi_L|^2 = 1$ (from Paper~I).](assets/bipartite-lattice.png){fig-alt="Diagram of the A=1 architecture: a central nucleus node t_n0 with six labeled neighbours t_n1..t_n6 in RGB (red, green, blue) and CMY (cyan, magenta, yellow), reached by basis vectors V1, V2, V3 (and their negatives). A legend table on the right gives the (x,y,z) coordinates and spin role for each basis."}
 
-The **A=1 Discrete Causal Lattice (DCL)** programme takes a single
+The **A=1 Discrete Causal Lattice (DCL)** program takes a single
 conservation law on a bipartite octahedral lattice and uses it to
 recover, in order, Lorentz invariance, the Standard Model gauge
 group, gravity from clock-density, and a quantum analogue of the
@@ -30,16 +30,16 @@ methodological arc:
    axiomatization.
 
 This site is the public surface for the series. It tracks news,
-hosts research artefacts that don't fit a paper-figure shape (3D
-models, animations, interactive visualisations), and gives an
+hosts research artifacts that don't fit a paper-figure shape (3D
+models, animations, interactive visualizations), and gives an
 entry-point for readers, collaborators, and endorsers.
 
 ## Where to start
 
 - **[Papers](papers/index.qmd)** — the canonical series, with Zenodo
   DOIs, arXiv links, and repository links.
-- **[Research artefacts](artefacts/index.qmd)** — 3D models,
-  visualisations, interactive demos.
+- **[Research artifacts](artifacts/index.qmd)** — 3D models,
+  visualizations, interactive demos.
 - **[News](news/index.qmd)** — releases, deposits, talks, milestones.
 - **[Essays](essays/index.qmd)** — short-form methodological writing.
 

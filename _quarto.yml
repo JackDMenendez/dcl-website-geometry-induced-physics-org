@@ -10,7 +10,7 @@ project:
 website:
   title: "A=1 Discrete Causal Lattice"
   description: >-
-    News, publications, and research artefacts for the
+    News, publications, and research artifacts for the
     A=1 Discrete Causal Lattice series.
   site-url: "https://geometryinducedphysics.org"
   repo-url: "https://github.com/JackDMenendez/dcl-website-geometry-induced-physics-org"
@@ -25,8 +25,8 @@ website:
         text: News
       - href: papers/index.qmd
         text: Papers
-      - href: artefacts/index.qmd
-        text: Research artefacts
+      - href: artifacts/index.qmd
+        text: Research artifacts
       - href: essays/index.qmd
         text: Essays
       - href: collaborators.qmd

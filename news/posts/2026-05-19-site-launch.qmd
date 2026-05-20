@@ -2,8 +2,8 @@
 title: "Site launched"
 description: >-
   The public site for the A=1 Discrete Causal Lattice series is now
-  online — a single entry-point for papers, research artefacts, and
-  programme news.
+  online — a single entry-point for papers, research artifacts, and
+  program news.
 author: "Jack D. Menendez"
 date: "2026-05-19"
 categories: [meta, site]
@@ -18,12 +18,12 @@ At launch, the site is intentionally lean:
   series with its current state — published-and-DOI'd, drafted, or
   planned — and links out to the canonical Zenodo and GitHub
   surfaces.
-- The [research artefacts page](../../artefacts/index.qmd) hosts the
+- The [research artifacts page](../../artifacts/index.qmd) hosts the
   first interactive object: a 3D model of the bipartite octahedral
   lattice unit cell.
 - The [collaborators](../../collaborators.qmd) and
   [funding](../../funding.qmd) pages exist as attribution surfaces
-  that grow as the programme grows.
+  that grow as the program grows.
 
 Future news posts will track concrete milestones: paper releases,
 Zenodo deposits, talks, audit-row flips, and framework-level
