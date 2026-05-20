@@ -12,7 +12,7 @@ listing:
     feed: false
 ---
 
-![Harmonic fingerprint of the A=1 substrate — high-resolution $\omega$-scan revealing Arnold-tongue lock-in points along the Farey structure (from Paper~I, `exp_harmonic`).](assets/harmonic-fingerprint.png){fig-alt="Spectral heatmap on a dark background showing diagonal Arnold-tongue resonance lines with three labelled lock-in points at 2:1, 3:1, and 4:1 frequency ratios."}
+![Bipartite octahedral lattice — the A=1 substrate. RGB and CMY basis directions $V_1, V_2, V_3$ encode even / odd ticks; $A=1$ implies $|\psi_R|^2 + |\psi_L|^2 = 1$ (from Paper~I).](assets/bipartite-lattice.png){fig-alt="Diagram of the A=1 architecture: a central nucleus node t_n0 with six labelled neighbours t_n1..t_n6 in RGB (red, green, blue) and CMY (cyan, magenta, yellow), reached by basis vectors V1, V2, V3 (and their negatives). A legend table on the right gives the (x,y,z) coordinates and spin role for each basis."}
 
 The **A=1 Discrete Causal Lattice (DCL)** programme takes a single
 conservation law on a bipartite octahedral lattice and uses it to
