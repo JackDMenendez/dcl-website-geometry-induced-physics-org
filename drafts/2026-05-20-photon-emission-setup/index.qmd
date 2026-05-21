@@ -1,0 +1,131 @@
+---
+title: "How photon emission is set up on the A=1 lattice"
+description: >-
+  Methods exposition for the photon-emission experiment: what we
+  measure, how the lattice is configured to emit a photon, how to
+  reproduce the run.
+author: "Jack D. Menendez"
+date: "2026-05-20"
+draft: true
+categories: [essay, methods, photons, experiment]
+---
+
+<!--
+Drafting notes (delete before publishing):
+
+- Stage: drafts/ directory. Excluded from the live site.
+- When ready, move this directory to essays/posts/ and set
+  `draft: false`.
+- This essay is methods-shaped (not discovery-shaped). The
+  structure below mirrors a small experimental paper's M&M
+  section: what the observable is, how the lattice is configured
+  to produce it, what the runtime evidence looks like, how a
+  reader reproduces it.
+- Identify the actual exp_NN script before publishing.  Likely
+  candidates (verify by reading the script docstrings):
+    - exp_03_lanterns (lantern / radiation patterns)
+    - exp_harmonic / exp_harmonic_hires (harmonic spectrum)
+    - any exp_NN in the repo whose docstring mentions photon
+      emission / radiation explicitly
+  Drop the figure (e.g. exp_03_lanterns.png from
+  c:/dev/dcl/figures/) into this directory and rename to a
+  fig-*.png convention.
+-->
+
+## What we measure
+
+> *TODO:* define the observable in one paragraph.  What counts as
+> "a photon" on the lattice — a localised excitation that
+> propagates at the photon ($\omega=0$) cone with no mass-shell
+> displacement?  What do we record (escape time, energy spectrum,
+> spatial distribution)?  Be specific enough that a reader can
+> identify the observable in the script output without ambiguity.
+
+## The experiment in one paragraph
+
+> *TODO:* which `exp_NN` script in which repo realises this.  What
+> does it scan (a frequency parameter, a coupling, an initial
+> condition)?  What does it hold fixed?  Cite the exact script
+> path, e.g. [`external/dcl/experiments/exp_03_lanterns.py`](https://github.com/JackDMenendez/dcl/blob/main/experiments/exp_03_lanterns.py).
+
+## The setup
+
+### Initial conditions
+
+> *TODO:* the lattice configuration.  Grid size, boundary
+> conditions, basis (RGB vs CMY sublattice), and the source term
+> that seeds the emission.  Include the actual config block if
+> short:
+
+```python
+# Replace with the real config; example shape only.
+config = {
+    "grid":           (51, 51, 51),
+    "tick_rule":      "A1_bipartite",
+    "source":         {"type": "localised", "centre": (25, 25, 25)},
+    "omega":          0.0,        # photon: massless on the optical axis
+    "n_ticks":        14,
+    "diagnostics":    ["spectral_power", "screen_image"],
+}
+```
+
+### What varies
+
+> *TODO:* the parameter scan or initial-condition set.  If the
+> essay is a methods exposition for a single representative run,
+> just describe that run.  If it's a scan, list the axes
+> (e.g. $\omega \in [0, \pi/4]$ in steps of $\pi/64$) and the
+> total runtime.
+
+### What we record
+
+> *TODO:* the columns of the output table / the keys of the
+> output dict.  Reference the script's `save_diagnostics(...)` or
+> equivalent.
+
+## What we see
+
+> *TODO:* the result.  Drop the figure here.
+
+<!-- Example image reference (replace once figure is added):
+
+![Spectral power on the screen at tick 14: the lantern pattern of a single emitted photon, viewed in projection onto the invariant plane.](fig-lantern-pattern.png){fig-alt="Heatmap of spectral power on a 2D projection screen at lattice tick 14. A bright central region radiates outward with hexagonal symmetry; faint secondary lobes mark Arnold-tongue side-bands."}
+
+-->
+
+> *TODO:* the prose reading.  What does the picture *show* — the
+> central lobe is the on-cone photon; the side-bands are the
+> off-cone Arnold-tongue contributions; etc.  One paragraph
+> minimum, two if the picture has structure worth pointing at.
+
+## What this tests
+
+> *TODO:* which audit row in Paper~I (or downstream) does this
+> realise?  PASS / PART / STUB / FAIL — what does this run say
+> about that row?  This is the load-bearing connection to the
+> framework's scorecard and should not be skipped.
+
+## Reproducing it
+
+> *TODO:* the literal commands.  Repo, pinned commit / tag,
+> environment, the exact invocation:
+
+```sh
+git clone https://github.com/JackDMenendez/dcl
+cd dcl
+git checkout <pinned-tag>
+python -m venv .venv && source .venv/bin/activate  # or activate.bat on Windows
+pip install -e .
+python experiments/exp_03_lanterns.py --omega 0.0 --n-ticks 14
+```
+
+> *TODO:* expected runtime, output location (which file under
+> `figures/` or `data/`), and any GPU / memory requirements.
+
+## References
+
+- Paper~I — *Geometry First* (the observational target this
+  experiment supports).  doi:[10.5281/zenodo.20078529](https://doi.org/10.5281/zenodo.20078529)
+- Script: `external/dcl/experiments/<exp_NN>.py` *(fill in)*.
+- `dcl-core` dependency at pinned version *(fill in)*.
+- Related working note in `external/dcl/notes/` *(fill in)*.

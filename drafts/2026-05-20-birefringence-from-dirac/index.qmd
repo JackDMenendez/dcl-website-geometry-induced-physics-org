@@ -1,0 +1,106 @@
+---
+title: "Birefringence in the A=1 lattice — a finding from the Dirac derivation"
+description: >-
+  How directional dependence in the lattice's propagation showed up
+  as a side effect of deriving the Dirac equation, and what it
+  implies for what we can predict and measure.
+author: "Jack D. Menendez"
+date: "2026-05-20"
+draft: true
+categories: [essay, Paper I, Dirac, birefringence, anisotropy]
+---
+
+<!--
+Drafting notes (delete before publishing):
+
+- Stage: drafts/ directory. Excluded from the live site.
+- When ready, move the directory to essays/posts/ (preserve the
+  date-prefixed slug) and set `draft: false` (or remove the field).
+- Co-locate figures in this directory; reference them by bare
+  filename (e.g. ![caption](fig-foo.png){fig-alt="..."}).
+- Suggested figures (candidates from c:/dev/dcl/figures/):
+    - induced_action_ellipsoid.png (the dual-anisotropy figure)
+    - frame_matrix_ellipsoid.png (frame matrix as quadratic form)
+    - dirac_cones_overlay.png (Arnold tongue / Dirac crossings)
+  Copy whichever fits into this directory and rename to a
+  fig-*.png convention.
+-->
+
+## The result in one paragraph
+
+> *TODO:* state the finding in one paragraph. What does
+> birefringence look like *on the bipartite octahedral lattice*?
+> Specifically: which physical quantity has direction-dependent
+> propagation, what sets the anisotropy axis, and how strong is
+> the effect at the lattice scale. Make this the load-bearing
+> sentence — everything below should support it.
+
+## How it came up
+
+> *TODO:* which step of the Dirac derivation surfaced it.  The
+> birefringence did not appear because we set out to find it; it
+> emerged as a side-condition of demanding that the discrete
+> propagator reduce to the Dirac operator in the continuum limit.
+> Name the section in Paper~I, the equation number, and the
+> moment in the derivation where the anisotropy became
+> unavoidable.
+
+## What it looks like
+
+### The math
+
+> *TODO:* the form of the induced anisotropy.  This is the place
+> to put the actual quadratic form / dispersion relation /
+> eigenstructure that captures the effect.  Lead with the
+> coordinate-free statement (e.g. "the kinematic and gauge
+> sectors share the same optical axis $V_1+V_2+V_3$ but with
+> eigenvalues $\{4,4,1\}$ vs. $\{4,4,16\}$"), then unpack.
+
+### The picture
+
+> *TODO:* a figure showing the anisotropy.  The
+> `induced_action_ellipsoid` figure from Paper~I shows the
+> kinematic / gauge ellipsoid split directly and is a natural
+> candidate to reuse here.  Drop a copy into this directory and
+> reference it below.
+
+<!-- Example image reference (replace with real figure once added):
+
+![Dual anisotropy of the kinematic and gauge sectors: prolate ellipsoid (M, eigenvalues {4,4,1}) vs. oblate ellipsoid (Q, eigenvalues {4,4,16}), sharing the optical axis $V_1+V_2+V_3$.](fig-dual-anisotropy.png){fig-alt="Two 3D ellipsoid plots side by side. Left: prolate ellipsoid (long axis along the diagonal $V_1+V_2+V_3 = (1,1,-1)$) coloured with a red-to-blue scale showing dispersion. Right: oblate ellipsoid (short axis along the same diagonal) showing the gauge-sector quadratic form."}
+
+-->
+
+## Why it matters
+
+> *TODO:* connect back to the framework's load-bearing claims.
+>
+> - Which audit row in Paper~I does this support / refine?  Cite
+>   the row.
+> - Does the anisotropy survive O$_h$-averaging in the continuum
+>   limit (the test of whether it's a discreteness artefact or a
+>   real prediction)?  Note the answer either way.
+> - What downstream subprojects inherit it?  Paper~II (gauge
+>   derivation) and the discrete-probability paper both consume
+>   the dual-anisotropy structure — name the consumers.
+
+## Open / next
+
+> *TODO:* what's unresolved and what would falsify the claim.
+>
+> - Is the magnitude of the anisotropy fixed by the substrate
+>   alone, or does it pick up corrections from the conservation
+>   axiom?
+> - What observational signature, if any, would distinguish
+>   lattice-induced birefringence from continuum birefringence
+>   in a real material?
+> - Is there an `exp_NN` script that lets a reader reproduce the
+>   anisotropy diagnostic numerically?  Link it.
+
+## References
+
+- Paper~I — *Geometry First*, §<section>, equation <eqn>.
+  doi:[10.5281/zenodo.20078529](https://doi.org/10.5281/zenodo.20078529)
+- Working notes in
+  [`external/dcl/notes/<note>.md`](https://github.com/JackDMenendez/dcl/tree/main/notes)
+  *(fill in the specific note that captures the derivation
+  step)*.
