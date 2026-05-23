@@ -1,0 +1,86 @@
+---
+title: "dcl_core v0.1.0 deposited"
+description: >-
+  The simulation engine underlying the A=1 Discrete Causal Lattice
+  series has its first citable release. Two engines under one import:
+  a verbatim port of Paper I's continuous-amplitude formulation, and
+  a new integer-token reimplementation that enforces A=1 by integer
+  arithmetic — no float renormalisation in the core invariant.
+author: "Jack D. Menendez"
+date: "2026-05-22"
+categories: [release, software]
+---
+
+`dcl_core` v0.1.0 is now on Zenodo with DOI
+[10.5281/zenodo.20350952](https://doi.org/10.5281/zenodo.20350952).
+This is the first citable release of the simulation engine that the
+series' downstream papers will pin to for reproducibility.
+
+The package ships **two engines under a single import**, intentionally
+side-by-side:
+
+- `dcl_core.core` — a verbatim port of the continuous-amplitude
+  Dirac-spinor implementation from
+  [Paper I](https://doi.org/10.5281/zenodo.20078529). Sessions carry
+  complex `psi_R` / `psi_L` amplitudes, evolve under a bipartite tick
+  rule, and enforce A=1 through a post-hop float-tolerance
+  renormalisation. This engine is the continuous-baseline reference.
+- `dcl_core.core3d` — the integer-token reimplementation. A session
+  is a fixed budget of `n_units` indistinguishable probability tokens
+  distributed across the lattice as `int64` fields, with continuous
+  phases carried alongside. The analytical Dirac hop produces
+  fractional new amplitudes; a Bresenham-style residual converts
+  those to integer counts via a floor-plus-global-rebalance step
+  that preserves the total *exactly*. A=1 holds as a bitwise integer
+  identity at every tick, not a float-tolerance constraint.
+
+The two engines coexist because the next paper in the series compares
+them. **Paper III** will run a direct discrete-versus-continuous
+probability study, with minimum-momentum-uncertainty experiments and
+Arnold-tongue frequency-locking scans as the primary observables.
+Having both formulations behind one `import` line, running on the
+same lattice geometry, is what makes that comparison clean. The
+notes in [`notes/bresenham_residual_design.md`](https://github.com/JackDMenendez/dcl-core/blob/v0.1.0/notes/bresenham_residual_design.md)
+spell out one of the parked questions for that study: whether the
+residual's carry should be real (the v0.1.0 default) or complex —
+the latter would tie the carry to the 51 unaccounted-for generators
+in [Paper II](https://doi.org/10.5281/zenodo.20292158)'s per-site
+automorphism algebra. The determination is expected to come from
+Paper III's data, not from a design preference inside `dcl_core`.
+
+The release also ships an **instrumentation kit** so the engine can
+be characterised on whatever hardware it runs against:
+
+- `experiments/exp_01_throughput.py` sweeps lattice shapes from
+  $8^3$ to $256^3$ and emits a structured `.npy` + JSON sidecar
+  tagged with host / CPU / Python / NumPy versions; meant to be
+  re-run on upgraded hardware and diffed.
+- `experiments/exp_02_phase_profile.py` runs one tick at a fixed
+  shape under `cProfile`, surfacing which phases — hop, residual,
+  writeback — own the wall-clock time.
+- `tools/diff_baselines.py` reports per-shape speedup between two
+  throughput baselines, designed for the pre- and post-upgrade
+  comparison.
+
+Test status at release: 228 passed, 4 skipped (cross-validation
+tests whose bodies live downstream in Paper III), 26 xfailed
+(pre-existing Paper I drift inherited verbatim with the port).
+
+What is deliberately **not** in v0.1.0 — and is on the v0.2.0 list:
+the GPU backend's CuPy kernels (allocators are wired, but the
+`RawKernel` bodies are stubs); pairwise multi-session interactions
+(Coulomb, gauge coupling, emission); and the complex-carry switch
+in the residual.
+
+Pinning notation for downstream consumers:
+
+``` text
+dcl_core @ git+https://github.com/JackDMenendez/dcl-core@v0.1.0
+```
+
+Pointers:
+
+- Zenodo deposit: [doi.org/10.5281/zenodo.20350952](https://doi.org/10.5281/zenodo.20350952)
+- GitHub release: [github.com/JackDMenendez/dcl-core/releases/tag/v0.1.0](https://github.com/JackDMenendez/dcl-core/releases/tag/v0.1.0)
+- Repository: [github.com/JackDMenendez/dcl-core](https://github.com/JackDMenendez/dcl-core)
+- Series papers: see the [papers page](../../papers/index.qmd).

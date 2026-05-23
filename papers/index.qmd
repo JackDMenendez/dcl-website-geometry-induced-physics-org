@@ -26,9 +26,25 @@ from a single conservation axiom on the lattice. Leaves the
 gauge-coupling prefactor $c$ open; closure is the centerpiece of the
 planned discrete-probability paper.
 
-- **Version:** v1.0
-- **DOI:** [10.5281/zenodo.20240736](https://doi.org/10.5281/zenodo.20240736)
+- **Version:** v1.01
+- **DOI:** [10.5281/zenodo.20292158](https://doi.org/10.5281/zenodo.20292158)
+- **Prior-version DOI:** [10.5281/zenodo.20240736](https://doi.org/10.5281/zenodo.20240736) (v1.0)
 - **Repository:** [`dcl-sm-derivation`](https://github.com/JackDMenendez/dcl-paper-02-sm-derivation)
+
+### `dcl-core` — Python engine
+
+The simulation engine that underlies the experiment scripts in the
+paper repositories. Ships **two engines under one import**:
+`dcl_core.core` is a verbatim port of Paper I's continuous-amplitude
+implementation; `dcl_core.core3d` is a new integer-token
+reimplementation that enforces A=1 by integer arithmetic — Paper III
+will compare them side-by-side.
+
+- **Version:** v0.1.0
+- **DOI:** [10.5281/zenodo.20350952](https://doi.org/10.5281/zenodo.20350952)
+- **Repository:** [`dcl-core`](https://github.com/JackDMenendez/dcl-core)
+- **Pinning syntax for downstream papers:**
+  `dcl_core @ git+https://github.com/JackDMenendez/dcl-core@v0.1.0`
 
 ## In progress
 
@@ -51,14 +67,6 @@ proton-internals paper.
 
 - **Version:** v0.1 (draft)
 - **Repository:** [`dcl-generator-zoo`](https://github.com/JackDMenendez/dcl-generator-zoo)
-
-### `dcl-core` — Python engine
-
-The simulation engine that underlies the experiment scripts in the
-paper repositories. `dcl_core.core` + `dcl_core.core3d`.
-
-- **Version:** v0.1.0-dev
-- **Repository:** [`dcl-core`](https://github.com/JackDMenendez/dcl-core)
 
 ## Planned
 
