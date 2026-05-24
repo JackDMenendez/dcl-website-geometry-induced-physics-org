@@ -1,0 +1,129 @@
+---
+title: "Physics, Plato's Cave, and what the Discrete Causal Lattice might reveal about the projector"
+description: >-
+  A response to James Reeves on whether modern physics has mistaken
+  a successful predictive framework for ontological knowledge — and
+  how the lattice family around the A=1 substrate could let us
+  constrain the projector from inside the cave.
+author: "Jack D. Menendez"
+date: "2026-05-23"
+categories: [essay, interpretation, ontology, lattice-family, philosophy]
+---
+
+James Reeves [recently argued](https://www.linkedin.com/pulse/how-much-money-has-science-spent-interpretation-never-james-reeves-spwlc/)
+that modern physics has spent vast resources building on top of an
+interpretation — the idea that spacetime is a physical fabric — that
+has never been experimentally demonstrated. His point is not that
+the equations are wrong, but that we have mistaken a successful
+predictive framework for knowledge of the underlying ontology.
+
+That critique resonates with me for a different reason.
+
+## Physics is a set of constructions around human perception
+
+Our measurements are anthropocentric — not because of how we
+calibrate units, but because of which *categories* we measure in.
+Length, charge, temperature, and the rest are conceptual carvings
+of nature that fit a species moving through a thermal,
+electrostatic, Earth-bound environment. In the DCL framework the
+substrate primitive is probability:
+[Paper I](https://doi.org/10.5281/zenodo.20078529) derives the
+Dirac equation, gravity, and the Bohr-atom (hydrogen) spectrum
+from the A=1 lattice's probability dynamics, and distance enters
+only as a calibration — a translation layer that pins the grid to
+the units our existing physics already uses, not a substrate
+quantity in its own right. The calibration is an accommodation
+for readers anchored to those units, not a substrate requirement;
+the underlying argument runs on probability alone. That speaks
+directly to Reeves's critique: the framework's predictions remain
+checkable against existing physics, but the framework itself does
+not rest on the spacetime-as-fabric interpretation he flagged as
+unverified. The harder work of re-reading
+temperature, charge, and the other perception-bound categories
+directly off the substrate is current work.
+
+In this sense, we are the prisoners in Plato's Cave: we have
+built an extraordinarily successful science of shadows, but we
+are still studying the wall. If there exists a deeper structure
+from which our physics emerges, then gaining access to that
+structure would not make us "free," but it would shift our
+vantage point. We would not be outside the cave behind the
+machinery creating the shadows; we would become the shadows
+themselves, watching the patterns from the inside — still unable
+to see the projector. The calibration is what reproduces the
+prisoner's perception; the substrate's description of itself,
+before we apply that calibration, can diverge sharply from the
+one we see.
+
+## What a lattice family can tell us about the projector
+
+This is where I think a framework like the Discrete Causal Lattice
+(DCL) may actually say something useful about the projector.
+
+The 3-dimensional octahedral lattice with amplitude $A=1$ is not an
+isolated construction. It belongs to a family of higher-dimensional
+diamond lattices. As dimensionality increases, the transition
+probability spreads thinner across more neighbors, producing a
+characteristic fractal signature in the induced walk.
+
+Each lattice in that family corresponds to a different possible
+*projector architecture*. Different lattices → different causal
+skeletons → different statistical fingerprints in the hologram we
+observe.
+
+So, the question "which lattice is the right one?" becomes:
+
+> **Which projector geometry is compatible with the statistics of
+> the shadows?**
+
+## Two ways to test it
+
+There are at least two routes into that question.
+
+**Pixelation and anisotropy.** If the underlying lattice is
+3D-octahedral rather than a higher-dimensional diamond, then the
+small-scale dispersion of wave packets and the angular distribution
+of scattering should differ in principle. Even if the continuum
+limit looks Lorentz-invariant, the corrections need not be.
+
+**Fractal scaling.** As the lattice dimension increases, the
+induced walk's return probability and wave-packet spreading rate
+take on a characteristic time-dependence — what the discrete-walk
+literature captures as an effective spectral dimension $d_s$.
+Different members of the diamond family predict different $d_s$,
+and an asymptotic measurement of high-energy propagation can in
+principle pin down which value holds. Decoherence profiles and
+high-frequency noise spectra are downstream consequences of the
+same scaling, not independent tests; the propagator's spreading
+law is the direct observable.
+
+In other words: we may not see the projector directly, but we can
+rule out entire classes of projectors by studying the shadows.
+
+## Branching and what it means for the machinery
+
+This brings me back to Plato's Cave and to Reeves's argument. If the
+universe is a hologram generated by some deeper mechanism — a
+rotating crystal, a film, a causal generator — then replaying the
+crystal from the same initial orientation might produce the same
+hologram each time. Or it might not.
+
+If the DCL dynamics enforce genuine branching, then the projector is
+not a fixed film but a generative mechanism capable of
+non-isomorphic futures — that is, the projector is compatible with
+more than one possible history.
+
+And that alone is a meaningful statement about the machinery behind
+the shadows.
+
+## References
+
+- James Reeves, ["How much money has science spent on an
+  interpretation that has never been experimentally
+  verified?"](https://www.linkedin.com/pulse/how-much-money-has-science-spent-interpretation-never-james-reeves-spwlc/),
+  LinkedIn (2026).
+- Menendez, *Geometry First — the A=1 Discrete Causal Lattice*
+  (Paper I).
+  doi:[10.5281/zenodo.20078529](https://doi.org/10.5281/zenodo.20078529).
+  The substrate paper introducing the A=1 octahedral lattice and
+  the higher-dimensional diamond family it sits within.
