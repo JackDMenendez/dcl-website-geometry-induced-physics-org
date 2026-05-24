@@ -40,7 +40,7 @@ website:
         text: Contact
   page-footer:
     left: |
-      © Jack D. Menendez. Site code: [MIT](LICENSE-CODE); prose: [CC BY 4.0](LICENSE-PROSE.md).
+      © Jack D. Menendez. Site code: [MIT](/LICENSE-CODE); prose: [CC BY 4.0](/LICENSE-PROSE.md).
     center: |
       [Source on GitHub](https://github.com/JackDMenendez/dcl-website-geometry-induced-physics-org)
     right: |
