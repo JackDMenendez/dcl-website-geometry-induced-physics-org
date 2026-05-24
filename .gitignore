@@ -21,3 +21,5 @@ Thumbs.db
 # Tooling
 .idea/
 node_modules/
+
+**/*.quarto_ipynb
