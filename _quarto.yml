@@ -65,5 +65,12 @@ format:
     twitter-card:
       card-style: summary_large_image
     image: /assets/bipartite-lattice.png
+    # Bing Webmaster Tools site-verification meta tag. Required for
+    # Bing to confirm ownership before accepting the sitemap. Remove
+    # this once verified if Bing supports verification-by-history;
+    # otherwise leave in place — it is inert after verification.
+    include-in-header:
+      - text: |
+          <meta name="msvalidate.01" content="30FC39A4CB5B21D9D00D3C5AD5CBF2A6" />
 
 freeze: auto
