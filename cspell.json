@@ -1,0 +1,35 @@
+{
+  "version": "0.2",
+  "language": "en,en-GB",
+  "words": [
+    "arXiv",
+    "Bresenham",
+    "cff",
+    "core3d",
+    "DCL",
+    "dcl",
+    "dcl_core",
+    "DOI",
+    "DOIs",
+    "FQXi",
+    "geometryinducedphysics",
+    "JackDMenendez",
+    "jackmenendez",
+    "katex",
+    "Menendez",
+    "ORCID",
+    "PhilSci",
+    "Poincaré",
+    "Quarto",
+    "viXra",
+    "Zenodo"
+  ],
+  "flagWords": [],
+  "ignorePaths": [
+    "_site/**",
+    ".quarto/**",
+    "site_libs/**",
+    ".venv-*/**",
+    "**/*.svg"
+  ]
+}
