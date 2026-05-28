@@ -59,5 +59,11 @@ format:
     html-math-method: katex
     anchor-sections: true
     link-external-newwindow: true
+    # Social / SEO metadata. open-graph + twitter-card emit rich link
+    # previews; `image` is the default social card (overridable per page).
+    open-graph: true
+    twitter-card:
+      card-style: summary_large_image
+    image: /assets/bipartite-lattice.png
 
 freeze: auto

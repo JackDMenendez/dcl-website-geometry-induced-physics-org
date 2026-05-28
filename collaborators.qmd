@@ -1,5 +1,8 @@
 ---
 title: "Collaborators"
+description: >-
+  Collaborators, contributors, and reviewers of the A=1 Discrete Causal
+  Lattice research program, led by Jack D. Menendez.
 ---
 
 The A=1 Discrete Causal Lattice program is led by Jack D. Menendez.

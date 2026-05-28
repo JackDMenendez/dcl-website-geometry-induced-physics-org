@@ -1,5 +1,8 @@
 ---
 title: "Contact"
+description: >-
+  Contact the A=1 Discrete Causal Lattice program for review,
+  endorsement, collaboration, or press inquiries.
 ---
 
 The A=1 Discrete Causal Lattice program welcomes correspondence on
@@ -8,8 +11,9 @@ review, endorsement, collaboration, and constructive critique.
 ## Primary contact
 
 - **GitHub:** [@JackDMenendez](https://github.com/JackDMenendez)
-- **Email:** *(add public-facing email here once decided)*
-- **ORCID:** *(add ORCID iD here once registered for the series)*
+- **LinkedIn:** [Jack Menendez](https://www.linkedin.com/in/jackmenendez/)
+- **Email:** [jack@geometryinducedphysics.org](mailto:jack@geometryinducedphysics.org)
+- **ORCID:** [0009-0003-1166-307X](https://orcid.org/0009-0003-1166-307X)
 
 ## What to expect when you reach out
 
@@ -26,8 +30,7 @@ review, endorsement, collaboration, and constructive critique.
 
 ## Project board and repositories
 
-- **Series project board:**
-  <https://github.com/users/JackDMenendez/projects/6/views/1?layout_template=table>
+- **Series project board:** [github.com/users/JackDMenendez/projects/6](https://github.com/users/JackDMenendez/projects/6)
 - **Project-tracking repository:**
   <https://github.com/JackDMenendez/discrete-causal-lattice-project>
 - **Paper repositories:** see the [papers page](papers/index.qmd).

@@ -1,5 +1,9 @@
 ---
 title: "About the program"
+description: >-
+  A substrate-first research program deriving spacetime, the Standard
+  Model gauge group, and gravity from one conservation law on a
+  discrete causal lattice.
 ---
 
 The A=1 Discrete Causal Lattice (DCL) program is a research effort

@@ -1,5 +1,9 @@
 ---
 title: "News"
+description: >-
+  News from the A=1 Discrete Causal Lattice series: paper releases,
+  Zenodo deposits, talks, audit-row flips, and framework milestones in
+  discrete-spacetime physics.
 listing:
   contents: posts
   type: default

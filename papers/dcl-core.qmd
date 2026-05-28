@@ -1,0 +1,103 @@
+---
+title: "dcl_core — the A=1 DCL simulation engine"
+description: >-
+  The Python simulation engine underlying the A=1 Discrete Causal
+  Lattice series. Two engines under one import: a continuous-amplitude
+  port of Paper I and an integer-token reimplementation that enforces
+  A=1 by integer arithmetic.
+draft: true
+---
+
+<!--
+  Draft landing page for the dcl_core package. Does not render to
+  the live site while `draft: true` is set.
+
+  Unlike the paper landing pages, this is software documentation
+  and updates with every release tag — bump Version, DOI, test
+  status, "what is / isn't in this release" with each v0.n.0.
+  Earlier versions remain citeable by their own Zenodo DOIs; the
+  concept DOI resolves to the latest.
+-->
+
+## What dcl_core is
+
+`dcl_core` is the Python simulation engine that underlies the
+experiment scripts in the A=1 Discrete Causal Lattice paper
+repositories. Downstream papers in the series **pin to a tagged
+release** of `dcl_core` for reproducibility — the pinning string
+appears below.
+
+The package ships **two engines under a single import**, side by
+side:
+
+- **`dcl_core.core`** — a verbatim port of Paper I's
+  continuous-amplitude Dirac-spinor implementation. Sessions carry
+  complex `psi_R` / `psi_L` amplitudes, evolve under the bipartite
+  tick rule, and enforce A=1 through a post-hop float-tolerance
+  renormalisation. This is the continuous-baseline reference.
+- **`dcl_core.core3d`** — the integer-token reimplementation. A
+  session is a fixed budget of `n_units` indistinguishable
+  probability tokens distributed across the lattice as `int64`
+  fields, with continuous phases carried alongside. The analytical
+  Dirac hop produces fractional new amplitudes; a Bresenham-style
+  residual converts those to integer counts via a floor-plus-
+  global-rebalance step that preserves the total *exactly*. A=1
+  holds as a **bitwise integer identity** at every tick, not a
+  float-tolerance constraint.
+
+The two engines coexist because **Paper III** runs a direct
+discrete-versus-continuous probability study, with
+minimum-momentum-uncertainty experiments and Arnold-tongue
+frequency-locking scans as the primary observables.
+
+## What's in v0.1.0
+
+<Sections to maintain at each release — update with every v0.n.0
+tag.>
+
+- Continuous-amplitude engine (`core`) — verbatim Paper I port.
+- Integer-token engine (`core3d`) — Bresenham residual,
+  bitwise-A=1 invariant.
+- Instrumentation kit: `experiments/exp_01_throughput.py`,
+  `experiments/exp_02_phase_profile.py`,
+  `tools/diff_baselines.py`.
+
+**Test status at release:** 228 passed, 4 skipped (cross-validation
+tests whose bodies live downstream in Paper III), 26 xfailed
+(pre-existing Paper I drift inherited verbatim with the port).
+
+## What is deliberately not in v0.1.0
+
+On the v0.2.0 list:
+
+- **GPU backend's CuPy kernels.** Allocators are wired but the
+  `RawKernel` bodies are stubs.
+- **Pairwise multi-session interactions** — Coulomb, gauge
+  coupling, emission.
+- **Complex-carry switch in the residual.** The v0.1.0 default is a
+  real-valued carry; whether it should be complex (tying the carry
+  to the 51 unaccounted-for generators in Paper II's per-site
+  automorphism algebra) is a v0.2.0+ question — expected to be
+  decided by Paper III's data, not by a design preference inside
+  `dcl_core`. See [`notes/bresenham_residual_design.md`](https://github.com/JackDMenendez/dcl-core/blob/v0.1.0/notes/bresenham_residual_design.md).
+
+## Pinning for downstream consumers
+
+Downstream paper repositories should pin to a tagged release, not
+to `main`:
+
+``` text
+dcl_core @ git+https://github.com/JackDMenendez/dcl-core@v0.1.0
+```
+
+## Citation and version
+
+- **Version:** v0.1.0
+- **DOI:** [10.5281/zenodo.20350952](https://doi.org/10.5281/zenodo.20350952)
+- **Repository:** [JackDMenendez/dcl-core](https://github.com/JackDMenendez/dcl-core)
+- **GitHub release:** [v0.1.0](https://github.com/JackDMenendez/dcl-core/releases/tag/v0.1.0)
+
+The canonical citation lives on the Zenodo deposit page; export
+BibTeX / RIS / CSL from there. The concept DOI resolves to the
+latest version automatically; cite the version DOI when
+reproducibility matters.

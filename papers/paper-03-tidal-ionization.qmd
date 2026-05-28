@@ -1,0 +1,78 @@
+---
+title: "Paper III — Tidal Ionization and the Quantum Roche Limit"
+description: >-
+  A third ionization channel (gradient detuning) alongside the
+  standard thermal (Saha) and pressure (Pauli) channels. Predicts
+  an atomic ISCO with two observational signatures. In preparation.
+draft: true
+---
+
+<!--
+  Draft landing page for Paper III. Does not render to the live
+  site while `draft: true` is set.
+
+  Paper III is itself at v0.1 (draft) — no Zenodo DOI yet. This
+  landing page is forward-looking; sections describe what the paper
+  will establish rather than what it has established. When v1.0 is
+  deposited, rewrite the body in past tense, add the DOI, and
+  remove `draft: true`.
+-->
+
+::: {.callout-note}
+Paper III is **in preparation** (v0.1 draft). No Zenodo DOI yet;
+the working repository is the active development surface.
+:::
+
+## Planned contribution
+
+A third ionization channel — **gradient detuning** — alongside the
+two standard channels:
+
+- **Saha (thermal) ionization.** <One sentence locating it.>
+- **Pauli (pressure) ionization.** <One sentence.>
+- **Gradient-detuning ionization** (Paper III). <One sentence on
+  the mechanism: how a local clock-density gradient detunes the
+  resonance condition that holds the atom together.>
+
+## Headline prediction
+
+An **atomic ISCO** (innermost stable circular orbit, by analogy
+with the gravitational ISCO): a radius inside which atoms cannot
+remain bound regardless of temperature or pressure. Two
+observational signatures:
+
+1. **21 cm HI inner-edge morphology** near compact objects.
+2. **Fe K$\alpha$ line-profile inner edge** in accretion disks.
+
+<One paragraph on what each signature would look like and why
+existing data is consistent with both predictions but does not
+yet test them at the resolution Paper III requires.>
+
+## Methodological role
+
+Third step in the arc, observational predictions side: the
+framework's first **falsifiable astrophysical prediction**. <One
+paragraph on how this differs from Papers I and II (which were
+derivational / structural) and what it adds to the methodological
+case.>
+
+## Connection to dcl_core
+
+Paper III uses [`dcl_core`](dcl-core.qmd) for its numerical
+experiments — specifically the side-by-side comparison of
+`dcl_core.core` (continuous-amplitude) and `dcl_core.core3d`
+(integer-token) on minimum-momentum-uncertainty and
+Arnold-tongue frequency-locking scans. <Expand once experiments
+are finalized.>
+
+## Current state
+
+- **Version:** v0.1 (draft)
+- **Repository:** [JackDMenendez/dcl-paper-03-tidal-ionization](https://github.com/JackDMenendez/dcl-paper-03-tidal-ionization)
+- **DOI:** *not yet deposited; will be assigned at v1.0.*
+
+## What unlocks v1.0
+
+<Short bullet list of the remaining work items that gate the v1.0
+deposit — derivation closures, numerical experiments, observational
+data fits. Mirrors the project board for Paper III.>

@@ -1,0 +1,71 @@
+---
+title: "Paper II — Geometry Forces Physics"
+description: >-
+  Derives the Standard Model gauge group SU(3) × SU(2) × U(1) from
+  a single conservation axiom on the A=1 Discrete Causal Lattice.
+  Leaves the gauge-coupling prefactor open for the planned
+  discrete-probability paper.
+draft: true
+---
+
+<!--
+  Draft landing page for Paper II. Does not render to the live site
+  while `draft: true` is set.
+
+  Current Zenodo version: v1.01. Prior version v1.0 has its own DOI;
+  both are listed below. If a future v1.n revision is deposited, add
+  another prior-version line and update Version + DOI; see the
+  papers card pattern in `papers/index.qmd` for the matching format.
+-->
+
+## Abstract
+
+<!-- Verbatim from the v1.01 Zenodo deposit's abstract. -->
+
+## What this paper establishes
+
+- **Gauge group from a conservation axiom.** <One paragraph on how
+  $SU(3) \times SU(2) \times U(1)$ is *derived*, not assumed, from
+  the lattice's single conservation invariant.>
+- **The 71-dimensional per-site automorphism algebra.** <One
+  paragraph naming the algebra structure and its connection to the
+  generator-zoo catalog paper.>
+- **What remains open.** The gauge-coupling prefactor $c$ — closure
+  is the centerpiece of the planned discrete-probability paper.
+
+## Methodological role
+
+Second step in the arc: *geometry forces physics*. <One paragraph
+locating Paper II as the substrate-to-Standard-Model step.>
+
+## Audit-row impact
+
+<List the audit rows that flipped to **PASS** with v1.01, one per
+line. Note any rows that changed state between v1.0 and v1.01.>
+
+## What changed in v1.01 vs v1.0
+
+<One paragraph or short bullet list of the revision's scope. This
+mirrors the news-post change-log but lives here as the persistent
+reference; the news post is the announcement, this page is the
+record.>
+
+## Open questions deferred downstream
+
+- **Gauge-coupling prefactor $c$.** Centerpiece of the planned
+  discrete-probability paper.
+- **Proton internals.** Future paper consuming Paper II's SU(3)
+  machinery and the generator-zoo catalog.
+- <Other downstream consumers as they're decided.>
+
+## Citation and version
+
+- **Version:** v1.01
+- **DOI:** [10.5281/zenodo.20292158](https://doi.org/10.5281/zenodo.20292158)
+- **Prior-version DOI:** [10.5281/zenodo.20240736](https://doi.org/10.5281/zenodo.20240736) (v1.0)
+- **Repository:** [JackDMenendez/dcl-paper-02-sm-derivation](https://github.com/JackDMenendez/dcl-paper-02-sm-derivation)
+- **GitHub release:** [v1.01](https://github.com/JackDMenendez/dcl-paper-02-sm-derivation/releases/tag/v1.01)
+
+The canonical citation lives on the Zenodo deposit page; export
+BibTeX / RIS / CSL from there. The concept DOI on Zenodo resolves
+to the latest version automatically.

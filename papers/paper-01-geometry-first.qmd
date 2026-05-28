@@ -1,0 +1,63 @@
+---
+title: "Paper I — Geometry First"
+description: >-
+  Establishes the discrete bipartite octahedral lattice as the
+  ontological substrate of the A=1 Discrete Causal Lattice series
+  and recovers Lorentz invariance as an O_h-averaged consequence.
+draft: true
+---
+
+<!--
+  Draft landing page for Paper I. Does not render to the live site
+  while `draft: true` is set.
+
+  Conventions:
+    - Lift the abstract verbatim from the deposited paper (v1.0).
+    - Updates only when the paper version changes. The framing
+      paragraph here is the *canonical on-site abstract* — it should
+      agree with the Zenodo deposit's abstract field.
+    - When ready to publish, see `notes/seo_next_steps.md` on
+      whether to add a `citation:` block (Scholar-canonical
+      decision — Zenodo is currently canonical).
+-->
+
+## Abstract
+
+<!-- Verbatim from the Zenodo deposit's abstract. -->
+
+## What this paper establishes
+
+- **Substrate.** <One paragraph on the bipartite octahedral lattice,
+  the A=1 conservation invariant, and the discrete bipartite tick
+  rule.>
+- **Lorentz invariance.** <One paragraph on the O_h-averaging result
+  that recovers continuum Lorentz from the discrete substrate.>
+
+## Methodological role
+
+First step in the methodological arc: *geometry first → geometry
+forces physics → geometry axiomatizes physics*. <One paragraph
+locating Paper I as the substrate-priority paper that the rest of
+the series builds on.>
+
+## Audit-row impact
+
+<List the audit rows that flipped to **PASS** in this paper, one
+per line with the row identifier and a one-clause rationale. PART
+/ STUB / FAIL rows below, same shape.>
+
+## Open questions deferred downstream
+
+<What this paper leaves open and which downstream paper picks it
+up. Examples: Standard Model gauge derivation → Paper II; quantum
+Roche limit → Paper III; discrete-probability prefactor → planned.>
+
+## Citation and version
+
+- **Version:** v1.0
+- **DOI:** [10.5281/zenodo.20078529](https://doi.org/10.5281/zenodo.20078529)
+- **Repository:** [JackDMenendez/dcl](https://github.com/JackDMenendez/dcl)
+- **GitHub release:** [v1.0](https://github.com/JackDMenendez/dcl/releases/tag/v1.0)
+
+The canonical citation lives on the Zenodo deposit page; export
+BibTeX / RIS / CSL from there.

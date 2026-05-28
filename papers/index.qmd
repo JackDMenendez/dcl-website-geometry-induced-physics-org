@@ -1,5 +1,9 @@
 ---
 title: "Papers"
+description: >-
+  Papers in the A=1 Discrete Causal Lattice series, with Zenodo DOIs,
+  arXiv links, and repositories — discrete spacetime, emergent Lorentz
+  invariance, and the Standard Model gauge group from geometry.
 page-layout: full
 ---
 

@@ -1,5 +1,9 @@
 ---
 title: "Essays and reviews"
+description: >-
+  Short-form methodological essays from the A=1 Discrete Causal Lattice
+  series on discrete spacetime, emergent symmetry, and geometry-induced
+  physics.
 listing:
   contents:
     - "posts"

@@ -1,6 +1,10 @@
 ---
 title: "A=1 Discrete Causal Lattice"
 subtitle: "Geometry first. Geometry forces physics. Geometry axiomatizes physics."
+description: >-
+  A substrate-first physics program deriving Lorentz invariance, the
+  Standard Model gauge group, and gravity from a single conservation
+  law on a discrete bipartite octahedral lattice.
 page-layout: full
 listing:
   - id: latest-news

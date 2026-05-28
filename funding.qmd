@@ -1,5 +1,8 @@
 ---
 title: "Funding partners"
+description: >-
+  Funding partners and acknowledgements for the A=1 Discrete Causal
+  Lattice research program.
 ---
 
 The A=1 Discrete Causal Lattice program is supported by the

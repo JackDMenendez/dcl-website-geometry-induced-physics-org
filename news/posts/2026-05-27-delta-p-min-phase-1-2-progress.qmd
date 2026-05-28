@@ -1,0 +1,137 @@
+---
+title: "δp_min investigation: Phase 1 landed, Phase 2 first cut on core3d"
+description: >-
+  Three audit rows flipped from STUB. The δp_min investigation —
+  a Paper III v1.0 prerequisite — is next blocked on `dcl_core`
+  v0.2.0 exposing a `prob_floor` parameter.
+author: "Jack D. Menendez"
+date: "2026-05-27"
+categories: [investigation, progress]
+---
+
+The
+[δp_min investigation](https://github.com/JackDMenendez/dcl-delta-p-min)
+asks, before Paper III's v1.0 deposit, whether the framework's
+minimum probability quantum has a non-zero value that materially
+affects [Paper III](https://github.com/JackDMenendez/dcl-paper-03-tidal-ionization)'s
+predicted Roche limit
+$M_\text{min}(d) = \Delta\omega_\text{tongue} \cdot d^3 / R_1$. The
+methodology is a **4-cell grid**: two engines
+([`dcl_core.core`](https://github.com/JackDMenendez/dcl-core) continuous-amplitude
+and `dcl_core.core3d` integer-token) crossed with two δp_min regimes
+(effectively zero vs explicitly non-zero).
+
+Phase 1 (theoretical pass) and the first column of Phase 2 (numerical
+probe on `core3d`) both landed on 2026-05-24. Three audit rows
+flipped from `STUB`.
+
+## Phase 1: three rows flipped
+
+- **Operational meaning of δp_min pinned: `STUB → PASS`.** The
+  investigation commits to two candidates *together*: a probability
+  floor in `dcl_core.core`, and identification with $1/N$ in
+  `dcl_core.core3d`, with the per-site-floor-plus-global-renormalisation
+  convention applied per tick (not at extraction) and no separate
+  phase quantum.
+- **Cross-engine equivalence, `core` clamp ↔ `core3d` $1/N$:
+  `STUB → PART`.** Structural finding: the two engines are
+  *not* equivalent at finite $N$ (the integer-token state space is a
+  $1/N$-quantised sublattice that `core`'s continuous-amplitude
+  dynamics does not preserve). The sufficient condition for
+  asymptotic equivalence is the **double limit** — $a \to 0$ *and*
+  $N \to \infty$ — with deviation $O(1/N)$ per tick at matched
+  $\epsilon = 1/N$. Numerical confirmation of the $O(1/N)$ rate, and
+  pinning the Bresenham-coupled prefactor, are Phase 2 targets.
+- **Consistency with Paper I PASS rows under non-zero δp_min:
+  `STUB → PART`.** Analytical upper bounds derived for both Paper I
+  guardrails — hydrogen Bohr recovery requires
+  $\epsilon \lesssim 10^{-10}$–$10^{-12}$ (order-of-magnitude from the
+  ground-state wavefunction's box-edge amplitude); Arnold-tongue
+  lock-in requires
+  $\epsilon \lesssim \Delta\omega_\text{tongue}^2$. Numerical
+  confirmation flips this row `PART → PASS`.
+
+The two inherited Paper I guardrail rows (hydrogen as joint Arnold-tongue
+lock-in; gradient detuning breaks joint resonance) remain `PASS` and
+must not become `FAIL` under any δp_min value the investigation
+finds — if they ever do, that is a Paper I revision, not a silent
+downgrade here.
+
+## Phase 2 first cut on `core3d`: empirical bound and an engine-protocol surprise
+
+The integer-token right column of the grid is unblocked at the
+`dcl_core` v0.1.0 pin, so it ran first. `exp_12_dp_min_sweep.py`
+swept the token budget $N$ across nine points from $10^2$ to $10^{10}$
+on a $33^3$ lattice (single-particle hydrogen in a fixed Coulomb well,
+400 ticks per $N$).
+
+**Empirical bound:** δp_min ≤ $10^{-7}$ preserves the engine's
+continuum-$N$ baseline at 5% tolerance — substantially less
+restrictive than the Phase 1 analytical estimate of $10^{-10}$–$10^{-12}$.
+The integer-quantisation noise is smoothed by the engine's diffusive
+dynamics faster than the worst-case wavefunction-tail estimate
+predicted.
+
+**Engine-protocol difference surfaced.** `core3d`'s ground-state
+$r_\text{peak} = 19.63$ does *not* match Paper I's $R_1 = 10.3$ at the
+same $33^3$ geometry. Both engines are designed as discretisations of
+the same Dirac dynamics, but `core3d`'s hop kernel (uniform average,
+alternating chirality per tick, periodic boundaries) is a different
+discretisation than Paper I `exp_12`'s (directed kinetic hop, both
+chiralities per tick, open boundaries). They are expected to agree
+in the continuum limit ($a \to 0$) but pin different ground-state
+observables at fixed $a$. The paper-text for the cross-engine
+equivalence row was refined to make this explicit; the row stays
+`PART` until the left column lands.
+
+No engine errors occurred; A=1 held as a bitwise integer identity at
+every tick across all 9 sweep points. Total wall-clock for the
+nine-point sweep: 39 s.
+
+The first cut also surfaced a new finding-target. `dcl_core` v0.1.0
+carries a **real** fractional bit in its Bresenham-style residual; the
+v0.1.0 release notes parked the hypothesis that it should be
+**complex** — a complex carry would tie the residual to the 51
+unaccounted-for generators in
+[Paper II](https://doi.org/10.5281/zenodo.20292158)'s per-site
+automorphism algebra. The δp_min Phase 2 protocols are being shaped to
+include observables that distinguish coherent (complex) from
+decoherent (real) quantisation noise, so the investigation can speak to
+the carry question on the way to its primary deliverable.
+
+## What is blocked, and on what
+
+The left column of the 4-cell grid — `dcl_core.core` with an
+explicit probability floor — requires a `prob_floor: float | None`
+parameter on the continuous-amplitude engine's amplitude-update
+primitives. That parameter is the principal upstream coordination
+output of this investigation. It is additive (default `None`
+preserves current behaviour) and is the planned content of
+**`dcl_core` v0.2.0**.
+
+Once v0.2.0 is released:
+
+- This repository's `virtual-env-requirements.txt` bumps to the
+  v0.2.0 pin.
+- `exp_09_dp_min_floor.py` runs on `core` with `prob_floor =
+  10^-12, 10^-10, 10^-8, …`; the resulting
+  $\Delta\omega_\text{tongue}(\delta p_\min)$ measurement closes the
+  Arnold-tongue-width-floor row and provides the direct
+  `core`-vs-`core3d` cross-baseline comparison at matched geometry.
+- The 4-cell grid on $g_\text{crit}$ and $T_\text{escape}(g)$ —
+  `exp_18_dp_min_grid.py` — completes across all four cells, closing
+  the two `STUB` rows that gate Paper III's stance decision.
+
+The `core3d` right column can continue in parallel; `exp_18`'s
+right-column points are unblocked at the v0.1.0 pin.
+
+Pointers:
+
+- Investigation repository:
+  [github.com/JackDMenendez/dcl-delta-p-min](https://github.com/JackDMenendez/dcl-delta-p-min)
+- Paper III (the downstream consumer):
+  [github.com/JackDMenendez/dcl-paper-03-tidal-ionization](https://github.com/JackDMenendez/dcl-paper-03-tidal-ionization)
+- `dcl_core` (engine; v0.2.0 in coordination):
+  [github.com/JackDMenendez/dcl-core](https://github.com/JackDMenendez/dcl-core)
+- Previous related news: [`dcl_core` v0.1.0
+  deposited](2026-05-22-dcl-core-v0-1-0.qmd).
