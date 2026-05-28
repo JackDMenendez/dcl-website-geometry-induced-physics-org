@@ -22,5 +22,42 @@
         }
     },
     
-    "files.eol": "lf"
+    "files.eol": "lf",
+
+    "ltex.language": "en-US",
+    "ltex.dictionary": {
+        "en-US": [
+            "arXiv",
+            "Bresenham",
+            "cff",
+            "characterised",
+            "core3d",
+            "DCL",
+            "dcl",
+            "dcl_core",
+            "DOI",
+            "DOIs",
+            "FQXi",
+            "geometryinducedphysics",
+            "JackDMenendez",
+            "jackmenendez",
+            "katex",
+            "Menendez",
+            "ORCID",
+            "pagetitle",
+            "PhilSci",
+            "Poincaré",
+            "Quarto",
+            "renormalisation",
+            "summarised",
+            "viXra",
+            "Zenodo"
+        ]
+    },
+
+    "spellright.documentTypes": [
+        "plaintext",
+        "latex",
+        "tex"
+    ]
 }
