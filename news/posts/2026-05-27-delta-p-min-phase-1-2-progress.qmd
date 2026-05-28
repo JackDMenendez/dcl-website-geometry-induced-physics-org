@@ -1,5 +1,6 @@
 ---
-title: "δp_min investigation: Phase 1 landed, Phase 2 first cut on core3d"
+title: "δp_min investigation: Phase 1+2 progress"
+subtitle: "Phase 1 (theoretical) closed; Phase 2 first cut on core3d landed; three audit rows flipped from STUB"
 description: >-
   Three audit rows flipped from STUB. The δp_min investigation —
   a Paper III v1.0 prerequisite — is next blocked on `dcl_core`

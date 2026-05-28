@@ -36,6 +36,18 @@ Four workflows are templated:
   ~150 chars, mirrors the registered voice, becomes the Google /
   Open Graph / Twitter snippet (see
   [`seo_next_steps.md`](seo_next_steps.md)).
+- **Title length.** Quarto auto-appends " – A=1 Discrete Causal
+  Lattice" (~30 chars) to the page `title:` to form the HTML
+  `<title>` element. Aim for the rendered `<title>` to stay
+  **under ~65 chars** so it doesn't get truncated in search
+  results or trigger Bing Webmaster Tools' "title too long"
+  warning. Concretely: page `title:` should be **≤35 chars**. For
+  posts whose substantive headline needs more room, use Quarto's
+  `subtitle:` field — it renders directly below the H1 on the
+  page but does NOT feed `<title>` or `og:title`. Setting
+  `pagetitle:` instead of using `subtitle:` only fixes `og:title`,
+  not `<title>` (Quarto appends the site suffix to `<title>`
+  unconditionally); confirmed by experiment 2026-05-27.
 - **Link style.** Markdown links throughout, never bare URLs. House
   style uses `doi.org/10.5281/zenodo.<id>` as the display text for
   DOI links and `github.com/JackDMenendez/<repo>` for repository

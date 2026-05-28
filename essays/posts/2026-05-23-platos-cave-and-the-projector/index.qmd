@@ -1,5 +1,6 @@
 ---
-title: "Physics, Plato's Cave, and what the Discrete Causal Lattice might reveal about the projector"
+title: "Plato's Cave and the DCL projector"
+subtitle: "A response to James Reeves on physics interpretation and what the lattice family might reveal"
 description: >-
   A response to James Reeves on whether modern physics has mistaken
   a successful predictive framework for ontological knowledge — and
