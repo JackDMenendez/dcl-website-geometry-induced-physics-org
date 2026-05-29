@@ -92,7 +92,11 @@ DOI line.
 2. **Write the news post** at `news/posts/<YYYY-MM-DD>-paper-<NN>-v1-<n>.qmd`
    using the news template below. The framing paragraph is repeated
    for v1.0 (introducing the paper) and replaced with a *what
-   changed since v1.<n-1>* paragraph for revisions.
+   changed since v1.<n-1>* paragraph for revisions. **Skip this step
+   for a purely metadata / front-matter revision** (author-block
+   alignment, layout, `CITATION.cff` bump — no scientific change): the
+   GitHub release changelog is the record. Step 1 still applies — the
+   card and landing page move to the new version regardless.
 3. **Render and verify.** Run `quarto render`, then verify the meta
    tags landed (see *Verification checklist* at the bottom).
 4. **Do not** rewrite the paper card's framing paragraph during a
@@ -161,6 +165,14 @@ Pointers:
 ```
 
 ### Template — news post, paper v1.n (revision; n ≥ 1)
+
+Only write this post when the revision carries a substantive change,
+**or** when it is the paper's first on-site announcement (a v1.0 that
+was never posted, now superseded by v1.n). For a purely
+metadata / front-matter revision with no scientific change, skip the
+post — update the card and landing page to the new version (with a
+prior-version DOI line) and let the GitHub changelog stand as the
+record.
 
 ```markdown
 ---
