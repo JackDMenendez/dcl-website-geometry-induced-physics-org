@@ -11,11 +11,14 @@ Every paper in the A=1 Discrete Causal Lattice series. Each entry
 points to the canonical Zenodo deposit (where applicable), the
 working repository, and the current version.
 
-The series is gathered in two Zenodo communities: the author's own
+The series is collected in the author's
 [A=1 Discrete Causal Lattice](https://zenodo.org/communities/a1-discrete-causal-lattice)
-collection, and the independently curated
+community on Zenodo. Individual papers are also featured in
+independently curated communities:
 [Geometric Foundations of Quantum Theory and Gravity](https://zenodo.org/communities/fbt-framework)
-community, which features both papers.
+(both papers) and
+[Quantum Gravity Research (Open Source)](https://zenodo.org/communities/osqgr)
+(Paper I).
 
 ## Published
 
