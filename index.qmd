@@ -2,9 +2,9 @@
 title: "A=1 Discrete Causal Lattice"
 subtitle: "Geometry first. Geometry forces physics. Geometry axiomatizes physics."
 description: >-
-  A substrate-first physics program deriving Lorentz invariance, the
-  Standard Model gauge group, and gravity from a single conservation
-  law on a discrete bipartite octahedral lattice.
+  Substrate-first physics — emergent Lorentz invariance, the origin of
+  the Standard Model gauge group, and gravity as clock-density — all
+  from a single conservation law on a discrete-spacetime causal lattice.
 page-layout: full
 listing:
   - id: latest-news
@@ -19,16 +19,18 @@ listing:
 ![Bipartite octahedral lattice — the A=1 substrate. RGB and CMY basis directions $V_1, V_2, V_3$ encode even / odd ticks; $A=1$ implies $|\psi_R|^2 + |\psi_L|^2 = 1$ (from Paper~I).](assets/bipartite-lattice.png){fig-alt="Diagram of the A=1 architecture: a central nucleus node t_n0 with six labeled neighbours t_n1..t_n6 in RGB (red, green, blue) and CMY (cyan, magenta, yellow), reached by basis vectors V1, V2, V3 (and their negatives). A legend table on the right gives the (x,y,z) coordinates and spin role for each basis."}
 
 The **A=1 Discrete Causal Lattice (DCL)** program takes a single
-conservation law on a bipartite octahedral lattice and uses it to
-recover, in order, Lorentz invariance, the Standard Model gauge
-group, gravity from clock-density, and a quantum analogue of the
-Roche limit. Successive papers in the series advance a single
-methodological arc:
+conservation law on a discrete-spacetime bipartite octahedral lattice
+and uses it to recover emergent Lorentz invariance, locate the origin
+of the Standard Model gauge group, recast gravity as a clock-density
+effect, and predict a quantum analogue of the Roche limit. Successive
+papers in the series advance a single methodological arc:
 
-1. **Geometry first** (Paper I) — the substrate is a discrete causal
-   lattice, and the rest follows.
-2. **Geometry forces physics** (Paper II) — the Standard Model gauge
-   group is derived from a single conservation axiom.
+1. **Geometry first** ([Paper I](papers/paper-01-geometry-first.qmd)) —
+   the substrate is a discrete causal lattice, and the rest follows.
+2. **Geometry forces physics**
+   ([Paper II](papers/paper-02-geometry-forces-physics.qmd)) — the
+   Standard Model gauge group is recovered from a single conservation
+   axiom, with containment established and exact equality left open.
 3. **Geometry axiomatizes physics** (capstone, in progress) — the
    methodological arc is closed into a Hilbert-Sixth-shaped
    axiomatization.

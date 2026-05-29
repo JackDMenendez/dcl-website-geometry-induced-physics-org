@@ -1,62 +1,189 @@
 ---
 title: "Paper II — Geometry Forces Physics"
 description: >-
-  Derives the Standard Model gauge group SU(3) × SU(2) × U(1) from
-  a single conservation axiom on the A=1 Discrete Causal Lattice.
-  Leaves the gauge-coupling prefactor open for the planned
-  discrete-probability paper.
-draft: true
+  Characterises the Standard Model gauge group SU(3) × SU(2) × U(1)
+  as the factor-product projection of the A=1 lattice's symmetry
+  algebra. Containment holds, equality does not; predicts
+  g3²/g2² = 3/2 at the lattice scale.
 ---
-
-<!--
-  Draft landing page for Paper II. Does not render to the live site
-  while `draft: true` is set.
-
-  Current Zenodo version: v1.01. Prior version v1.0 has its own DOI;
-  both are listed below. If a future v1.n revision is deposited, add
-  another prior-version line and update Version + DOI; see the
-  papers card pattern in `papers/index.qmd` for the matching format.
--->
 
 ## Abstract
 
-<!-- Verbatim from the v1.01 Zenodo deposit's abstract. -->
+This is Paper II of the A=1 Discrete Causal Lattice series. We take up
+the central open conjecture of Paper I (*Geometry First*, Eq. (137)):
+that the automorphism algebra of the bipartite octahedral causal lattice
+$\mathcal{T}_\diamond^3$ under the unity constraint $\mathcal{A}=1$ is
+the Standard Model gauge group plus Lorentz,
+$SO(3,1) \times SU(3) \times SU(2) \times U(1)$, with real dimension
+$18 = 6+8+3+1$. The result is a precise characterisation: containment
+$\supseteq$ holds, equality $=$ does not. The lattice's
+discrete-Hermitian centralizer of the bipartite tick rule on the
+extended per-site amplitude
+$\mathbb{C}^{12} = \mathbb{C}^2 \otimes \mathbb{C}^2 \otimes \mathbb{C}^3$
+is the left–right symmetric algebra
+$\mathfrak{su}(6) \oplus \mathfrak{su}(6) \oplus \mathfrak{u}(1)$ of real
+dimension 71; the SM gauge algebra is recovered exactly as the
+*factor-product projection* of this centralizer (the map that restricts
+each generator to its action on a single tensor factor of
+$\mathbb{C}^{12}$, setting the other factors to the identity). The
+remaining $59 = 71 - 12$ generators (counting against the 12-dim
+Hermitian SM-gauge subalgebra inside the centralizer) form a coset
+module that transforms as $(\mathbf{8}, \mathbf{3})$
+leptoquark-flavoured plus chirality-shadow SM under the SM adjoint
+action. The framework's quantitative prediction $g_3^2 / g_2^2 = 3/2$ at
+the lattice scale follows from spectator-factor counting and is
+independent of the universal one-loop prefactor inherited from Paper I.
+The SM's chirality and $CP$ violation are not derivable from the
+substrate at the discrete level: bipartite parity is spatial parity
+(orthogonal Bloch involution to $\gamma_5$), and no natural antilinear
+modification of the tick rule admits Branch B SU(3)
+($\mathbf{3} \oplus \bar{\mathbf{3}}$). The paper's contribution is to
+identify which features of the Standard Model are geometric consequences
+of $\mathcal{A}=1$ on $\mathcal{T}_\diamond^3$ (the Lie algebra
+structure; the bipartite-plaquette gauge invariance; the non-abelian
+colour algebra dynamically generated) and which are not (chirality,
+$CP$, the Higgs mechanism's separation of kinetic and mass terms). All
+claims are symbolically verified by sympy scripts in `src/utilities/`
+and tagged in the audit table.
 
 ## What this paper establishes
 
-- **Gauge group from a conservation axiom.** <One paragraph on how
-  $SU(3) \times SU(2) \times U(1)$ is *derived*, not assumed, from
-  the lattice's single conservation invariant.>
-- **The 71-dimensional per-site automorphism algebra.** <One
-  paragraph naming the algebra structure and its connection to the
-  generator-zoo catalog paper.>
-- **What remains open.** The gauge-coupling prefactor $c$ — closure
-  is the centerpiece of the planned discrete-probability paper.
+- **Gauge group from a conservation axiom.** The Standard Model gauge
+  algebra $\mathfrak{su}(3) \oplus \mathfrak{su}(2) \oplus
+  \mathfrak{u}(1)$ is *recovered*, not assumed, from a single invariant:
+  it is the **factor-product projection** of the centralizer of the
+  bipartite tick rule on the extended per-site amplitude
+  $\mathbb{C}^{12} = \mathbb{C}^2 \otimes \mathbb{C}^2 \otimes
+  \mathbb{C}^3$. The non-abelian colour algebra is *dynamically
+  generated* — the $S_3$ orbit of colour-memory tick operators closes
+  under Lie brackets to the full $\mathfrak{su}(3)$ — and
+  bipartite-plaquette Wilson loops are gauge-invariant by construction.
+  The honest result is a **characterisation, not an identity**:
+  containment $\supseteq$ of the conjectured 18-dim
+  $SO(3,1) \times SU(3) \times SU(2) \times U(1)$ algebra holds, but
+  strict equality does not.
+
+- **The 71-dimensional per-site automorphism algebra.** The full
+  discrete-Hermitian centralizer is the left–right symmetric algebra
+  $\mathfrak{su}(6) \oplus \mathfrak{su}(6) \oplus \mathfrak{u}(1)$ of
+  real dimension 71, the two $\mathfrak{su}(6)$ factors acting on the
+  $\pm 1$ chirality eigenspaces. The 12-dim Hermitian SM-gauge
+  subalgebra sits inside it; the remaining 59 generators form a coset
+  module transforming as $(\mathbf{8}, \mathbf{3})$ (leptoquark-flavoured)
+  plus a chirality-shadow SM piece — the same structural pattern as
+  left–right-symmetric grand unification (Pati–Salam, $SO(10)$),
+  emerging from the lattice geometry alone. This 71-dim algebra is the
+  object catalogued by the companion
+  [`dcl-generator-zoo`](index.qmd) artifact and consumed by the planned
+  proton-internals paper.
+
+- **A sharp coupling-ratio prediction.** Spectator-factor counting on
+  $\mathbb{C}^2 \otimes \mathbb{C}^2 \otimes \mathbb{C}^3$ gives
+  $g_1^2 : g_2^2 : g_3^2 = 1 : 4 : 6$ at the lattice scale — equivalently
+  $g_3^2 / g_2^2 = 3/2$ — independent of the universal one-loop
+  prefactor Paper I left open.
+
+- **What remains open.** The universal gauge-coupling prefactor $c$ (the
+  explicit $-\mathrm{Tr}\ln D_\text{lat}[U]$ calculation) is *not*
+  closed here; only the dimensionless ratio is. Closure is the
+  centerpiece of the planned discrete-probability paper. The SM's
+  chirality and $CP$ structure are shown **not** recoverable from the
+  discrete substrate.
 
 ## Methodological role
 
-Second step in the arc: *geometry forces physics*. <One paragraph
-locating Paper II as the substrate-to-Standard-Model step.>
+Second step in the arc: *geometry first → geometry forces physics →
+geometry axiomatizes physics*. Paper II takes the substrate fixed by
+[Paper I](paper-01-geometry-first.qmd) and asks the one structural
+question Paper I left as its central open conjecture (Eq. (137)):
+**is the Standard Model gauge group the lattice's automorphism group?**
+The answer is a characterisation rather than a clean yes — the SM
+algebra is the factor-product-effective shadow of a larger,
+left–right-symmetric lattice symmetry. This is the
+substrate-to-Standard-Model step: it converts the qualitative
+"gauge structure may be forced by bipartite geometry" claim of Paper I
+into a precise, sympy-verified Lie-algebra statement, complete with a
+falsifiable coupling-ratio prediction and an explicit accounting of what
+the geometry does *not* deliver (chirality, $CP$).
 
 ## Audit-row impact
 
-<List the audit rows that flipped to **PASS** with v1.01, one per
-line. Note any rows that changed state between v1.0 and v1.01.>
+Paper II's audit table is structured as a single central claim — Eq.
+(137) of Paper I — whose status is the conjunction of the rows above it.
+Every row is backed by a sympy verification script in `src/utilities/`.
+
+**PASS** (8 rows — containment and structural foundations):
+
+- Discrete spatial automorphism group has order 48 ($O_h$)
+  (`automorphism_discrete.py`).
+- RGB sublattice symmetry contributes only $\mathbb{Z}_3 \subset SU(3)$
+  (`automorphism_rgb_su3.py`).
+- $SO(3,1) \times U(1)$ acts on the existing $\mathbb{C}^2 =
+  (\psi_R,\psi_L)$ — dim 7 (`automorphism_direct_product.py`).
+- Direct-product structure on the extended $\mathbb{C}^{12}$ — dim 18
+  (`automorphism_direct_product_extended.py`).
+- Tick-rule consistency on $\mathbb{C}^{12}$
+  (`tick_rule_extended_consistency.py`).
+- Wilson-plaquette gauge invariance
+  (`tick_rule_gauge_invariance.py`).
+- SU(3) representation-branch consistency — only Branch A
+  ($\mathbf{3} \oplus \mathbf{3}$) commutes with the tick rule
+  (`su3_branch_consistency.py`).
+- Non-abelian $SU(3)$ dynamically generated from the $\mathbb{C}^3$
+  colour memory (`su3_generation_from_colour_memory.py`).
+
+**PART** (3 rows — mechanism shown, full quantitative closure pending):
+
+- Exact equality vs containment in the extended automorphism algebra —
+  the dim-71 centralizer is enumerated and its bracket structure
+  verified (`automorphism_centralizer_extended.py`,
+  `aut_centralizer_extras_commutators.py`).
+- SM-chirality coupling alignment — the framework yields a vector-like
+  $SU(2)$ and a spatial-parity $\mathbb{Z}_2$ orthogonal to the SM's
+  chirality $\mathbb{Z}_2$ (`chirality_parity_alignment.py`).
+- Explicit $1/g^2$ prefactor for the $SU(2)_W$ / $SU(3)$ Wilson actions
+  — ratio $g_3^2/g_2^2 = 3/2$ derived, universal $c$ still open
+  (`induced_gauge_action_nonabelian.py`).
+
+**FAIL** (1 row — tested and disconfirmed):
+
+- Modified (antilinear) tick rule for Branch B SU(3) /$CP$
+  compatibility — no non-zero colour matrix anticommutes with every
+  Gell-Mann generator; the lattice cannot incorporate SM-style $CP$ as
+  a discrete symmetry of any natural tick modification
+  (`tick_rule_cp_modified.py`).
+
+**Central claim — Eq. (137)** is therefore scored **PART**: containment
+$\supseteq$ established, strict equality $=$ does not hold at the
+discrete level, and chirality / $CP$ are explicitly not recovered.
 
 ## What changed in v1.01 vs v1.0
 
-<One paragraph or short bullet list of the revision's scope. This
-mirrors the news-post change-log but lives here as the persistent
-reference; the news post is the announcement, this page is the
-record.>
+v1.01 is a **metadata-only point release** (deposited 2026-05-19; v1.0
+deposited 2026-05-16). It brings the title-page author block into
+alignment with the project domain `geometryinducedphysics.org` — project
+email and a website line in the author block — and bumps the title-page
+footnote, inline data-availability block, and `CITATION.cff` from v1.0
+to v1.01 with the matching DOI. **No scientific content changes:** the
+paper body, sections, appendices, figures, audit table, experiments,
+scripts, notes, and bibliography are byte-for-byte unchanged from v1.0.
+The `v1.01` numbering (rather than `v1.1`) signals the patch scale. This
+parallels Paper I's own v1.01 metadata release.
 
 ## Open questions deferred downstream
 
-- **Gauge-coupling prefactor $c$.** Centerpiece of the planned
-  discrete-probability paper.
-- **Proton internals.** Future paper consuming Paper II's SU(3)
-  machinery and the generator-zoo catalog.
-- <Other downstream consumers as they're decided.>
+- **Universal gauge-coupling prefactor $c$.** Paper II fixes the
+  dimensionless ratio $g_3^2/g_2^2 = 3/2$ but not the absolute scale;
+  the explicit $-\mathrm{Tr}\ln D_\text{lat}[U]$ calculation is the
+  centerpiece of the planned discrete-probability paper.
+- **The 59-generator coset / proton internals.** The $(\mathbf{8},
+  \mathbf{3})$ leptoquark-flavoured extras catalogued in
+  [`dcl-generator-zoo`](index.qmd) are consumed by a future
+  proton-internals paper built on Paper II's SU(3) machinery.
+- **Chirality and $CP$.** Shown *not* derivable from the discrete
+  substrate; whether they enter through a continuum or
+  symmetry-breaking mechanism is left to later work and the
+  Hilbert-Sixth axiomatization capstone.
 
 ## Citation and version
 
@@ -67,5 +194,5 @@ record.>
 - **GitHub release:** [v1.01](https://github.com/JackDMenendez/dcl-paper-02-sm-derivation/releases/tag/v1.01)
 
 The canonical citation lives on the Zenodo deposit page; export
-BibTeX / RIS / CSL from there. The concept DOI on Zenodo resolves
-to the latest version automatically.
+BibTeX / RIS / CSL from there. The concept DOI on Zenodo resolves to the
+latest version automatically.

@@ -22,18 +22,22 @@ invariance as an O$_h$-averaged consequence of the tick rule.
 - **Version:** v1.0
 - **DOI:** [10.5281/zenodo.20078529](https://doi.org/10.5281/zenodo.20078529)
 - **Repository:** [`dcl`](https://github.com/JackDMenendez/dcl)
+- **Landing page:** [Paper I — Geometry First](paper-01-geometry-first.qmd)
 
 ### Paper II — *Geometry Forces Physics*
 
-Derives the Standard Model gauge group $SU(3) \times SU(2) \times U(1)$
-from a single conservation axiom on the lattice. Leaves the
-gauge-coupling prefactor $c$ open; closure is the centerpiece of the
-planned discrete-probability paper.
+Characterises the Standard Model gauge group $SU(3) \times SU(2) \times U(1)$
+as the *factor-product projection* of the lattice's 71-dimensional
+automorphism algebra — containment holds, exact equality does not.
+Predicts the coupling ratio $g_3^2/g_2^2 = 3/2$ at the lattice scale and
+leaves the universal gauge-coupling prefactor $c$ open; its closure is
+the centerpiece of the planned discrete-probability paper.
 
 - **Version:** v1.01
 - **DOI:** [10.5281/zenodo.20292158](https://doi.org/10.5281/zenodo.20292158)
 - **Prior-version DOI:** [10.5281/zenodo.20240736](https://doi.org/10.5281/zenodo.20240736) (v1.0)
 - **Repository:** [`dcl-sm-derivation`](https://github.com/JackDMenendez/dcl-paper-02-sm-derivation)
+- **Landing page:** [Paper II — Geometry Forces Physics](paper-02-geometry-forces-physics.qmd)
 
 ### `dcl-core` — Python engine
 

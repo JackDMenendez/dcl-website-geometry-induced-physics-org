@@ -1,0 +1,54 @@
+---
+title: "Paper II — Geometry Forces Physics"
+subtitle: >-
+  v1.01 metadata release of the Standard Model gauge-group derivation
+  on the A=1 lattice, deposited to Zenodo on 2026-05-19.
+description: >-
+  Paper II at v1.01 — a metadata-only release of the Lie-algebra study
+  characterising the Standard Model gauge group SU(3) × SU(2) × U(1) as
+  a factor-product projection of the A=1 lattice's symmetry algebra:
+  containment, not equality.
+author: "Jack D. Menendez"
+date: "2026-05-19"
+categories: [release, paper, revision]
+---
+
+Paper II (*Geometry Forces Physics*) is now at v1.01 on Zenodo with DOI
+[10.5281/zenodo.20292158](https://doi.org/10.5281/zenodo.20292158). The
+prior version (v1.0) remains citable at
+[10.5281/zenodo.20240736](https://doi.org/10.5281/zenodo.20240736).
+
+Paper II takes up the central open conjecture of
+[Paper I](https://doi.org/10.5281/zenodo.20078529) (Eq. (137)): whether
+the automorphism algebra of the bipartite octahedral causal lattice
+under $\mathcal{A}=1$ is the Standard Model gauge group plus Lorentz.
+The result is a precise characterisation rather than a clean identity —
+**containment holds, exact equality does not.** The SM gauge algebra
+$\mathfrak{su}(3) \oplus \mathfrak{su}(2) \oplus \mathfrak{u}(1)$ is
+recovered as the *factor-product projection* of the lattice's
+71-dimensional discrete-Hermitian centralizer, the non-abelian colour
+algebra is dynamically generated from the $\mathbb{C}^3$ colour memory,
+and the framework yields a sharp, falsifiable coupling-ratio prediction
+$g_3^2 / g_2^2 = 3/2$ at the lattice scale. Chirality and $CP$ violation
+are shown explicitly *not* derivable from the discrete substrate. Every
+claim is symbolically verified by sympy scripts and tagged in the audit
+table on the
+[landing page](../../papers/paper-02-geometry-forces-physics.qmd).
+
+v1.01 is a **metadata-only point release** (v1.0 was deposited
+2026-05-16). It aligns the title-page author block with the project
+domain `geometryinducedphysics.org` and bumps the data-availability
+footnote and `CITATION.cff` to v1.01 with the matching DOI. **No
+scientific content changed:** the paper body, sections, appendices,
+audit table, experiments, scripts, and bibliography are byte-for-byte
+identical to v1.0 — the `v1.01` numbering (rather than `v1.1`) signals
+the patch scale, and parallels Paper I's own metadata release.
+
+Pointers:
+
+- Zenodo deposit (v1.01): [doi.org/10.5281/zenodo.20292158](https://doi.org/10.5281/zenodo.20292158)
+- Zenodo deposit (v1.0): [doi.org/10.5281/zenodo.20240736](https://doi.org/10.5281/zenodo.20240736)
+- GitHub release: [github.com/JackDMenendez/dcl-paper-02-sm-derivation/releases/tag/v1.01](https://github.com/JackDMenendez/dcl-paper-02-sm-derivation/releases/tag/v1.01)
+- Repository: [github.com/JackDMenendez/dcl-paper-02-sm-derivation](https://github.com/JackDMenendez/dcl-paper-02-sm-derivation)
+- Landing page: [Paper II — Geometry Forces Physics](../../papers/paper-02-geometry-forces-physics.qmd)
+- Series papers: see the [papers page](../../papers/index.qmd).

@@ -1,0 +1,56 @@
+---
+title: "Paper I — Geometry First (v1.0)"
+subtitle: >-
+  First stable release of the substrate-priority paper of the A=1
+  Discrete Causal Lattice series, deposited to Zenodo on 2026-05-07.
+description: >-
+  Paper I of the A=1 Discrete Causal Lattice series — emergent Lorentz
+  invariance, the Dirac equation, and the Born rule from a single
+  conservation law on a discrete-spacetime causal lattice.
+author: "Jack D. Menendez"
+date: "2026-05-07"
+categories: [release, paper]
+---
+
+Paper I (*Geometry First*) is on Zenodo with DOI
+[10.5281/zenodo.20078529](https://doi.org/10.5281/zenodo.20078529). It
+is the substrate-priority paper of the A=1 Discrete Causal Lattice
+series: it fixes the lattice, the conservation axiom, and the discrete
+tick rule, then shows that the principal results of quantum mechanics,
+special relativity, and Newtonian gravity follow as consequences rather
+than inputs.
+
+From the single axiom $\mathcal{A}=1$ — conservation of probability —
+the paper recovers the Dirac equation in the continuum limit (with the
+gamma matrices reading directly off the bipartite RGB/CMY sublattice
+geometry), the Born rule and wave–particle duality, quantization of
+atomic orbitals as Arnold-tongue attractors that reproduce the hydrogen
+Bohr radius to four significant figures with no fitting, and gravity as
+a clock-density gradient that reproduces the $1/r^2$ force law. Lorentz
+invariance is not imposed: rotational symmetry is recovered on
+$O_h$-averaged observables, the directional cross-terms of the
+octahedral lattice cancelling exactly as staggered fermions recover it
+in lattice QCD. Energy and momentum conservation are outputs of
+$\mathcal{A}=1$ on closed session sets, not separate postulates.
+
+The numerically tractable claims are backed by a suite of more than
+fifteen experiments with no free parameters beyond the Planck-scale
+lattice spacing; the audit table on the
+[landing page](../../papers/paper-01-geometry-first.qmd) records the
+PASS / PART / STUB status of each. The framework's sharpest falsifiable
+prediction is a residual lattice birefringence aligned with the optical
+axis $(1,1,-1)$ — a closed-form departure from exact continuum symmetry.
+
+Paper I is the foundation the rest of the series stands on:
+[Paper II](https://doi.org/10.5281/zenodo.20292158) takes up its central
+open conjecture (is the Standard Model gauge group the lattice's
+automorphism group?), and the planned Paper III turns the clock-density
+picture of gravity into a falsifiable astrophysical prediction.
+
+Pointers:
+
+- Zenodo deposit: [doi.org/10.5281/zenodo.20078529](https://doi.org/10.5281/zenodo.20078529)
+- GitHub release: [github.com/JackDMenendez/dcl/releases/tag/v1.0](https://github.com/JackDMenendez/dcl/releases/tag/v1.0)
+- Repository: [github.com/JackDMenendez/dcl](https://github.com/JackDMenendez/dcl)
+- Landing page: [Paper I — Geometry First](../../papers/paper-01-geometry-first.qmd)
+- Series papers: see the [papers page](../../papers/index.qmd).

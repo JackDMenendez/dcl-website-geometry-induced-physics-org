@@ -1,56 +1,195 @@
 ---
 title: "Paper I — Geometry First"
 description: >-
-  Establishes the discrete bipartite octahedral lattice as the
-  ontological substrate of the A=1 Discrete Causal Lattice series
-  and recovers Lorentz invariance as an O_h-averaged consequence.
-draft: true
+  Discrete-spacetime substrate for the A=1 Discrete Causal Lattice
+  series: a bipartite octahedral causal lattice yielding emergent
+  Lorentz invariance and the Dirac equation as O_h-averaged
+  consequences.
 ---
-
-<!--
-  Draft landing page for Paper I. Does not render to the live site
-  while `draft: true` is set.
-
-  Conventions:
-    - Lift the abstract verbatim from the deposited paper (v1.0).
-    - Updates only when the paper version changes. The framing
-      paragraph here is the *canonical on-site abstract* — it should
-      agree with the Zenodo deposit's abstract field.
-    - When ready to publish, see `notes/seo_next_steps.md` on
-      whether to add a `citation:` block (Scholar-canonical
-      decision — Zenodo is currently canonical).
--->
 
 ## Abstract
 
-<!-- Verbatim from the Zenodo deposit's abstract. -->
+We propose that conservation of probability — the single axiom
+$\mathcal{A}=1$ — is sufficient to derive the principal results of
+quantum mechanics without additional postulates. On a bipartite
+three-dimensional causal lattice $\mathbb{T}_\diamond$, each particle is
+represented as a *causal session*: an independent phase oscillator that
+propagates amplitude across the lattice subject to
+$|\psi_R|^2 + |\psi_L|^2 = 1$ at every tick. No Hamiltonian and no
+measurement postulate are assumed; a Hilbert-space structure with
+unitary evolution emerges from the $U(1)$ oscillator and the per-session
+amplitude constraint rather than being postulated a priori.
+
+From this single constraint we derive:
+
+**(i)** the Dirac equation in the continuum limit $a \to 0$, with the
+gamma matrices identified as geometric encodings of the RGB/CMY
+bipartite sublattice geometry; rotational invariance is recovered on
+$O_h$-averaged observables (the same mechanism by which staggered
+fermions recover Lorentz invariance in lattice QCD), and the residual
+lattice birefringence aligned with the optical axis
+$\mathbf{V}_1+\mathbf{V}_2+\mathbf{V}_3 = (1,1,-1)$ is a falsifiable
+prediction with closed-form coefficients;
+
+**(ii)** wave–particle duality and the Born rule as consequences of
+amplitude redistribution under $\mathcal{A}=1$;
+
+**(iii)** quantization of atomic orbitals as Arnold tongue attractors of
+the two-body phase dynamics, recovering the hydrogen Bohr radius to four
+significant figures without fitting;
+
+**(iv)** gravity as a clock-density gradient rather than spacetime
+curvature — a refraction of causal paths through regions of higher
+session density, reproducing the $1/r^2$ force law with a falsifiable
+discrete correction at short range;
+
+**(v)** photon emission as a structural consequence of $\mathcal{A}=1$:
+the Coulomb interaction is a probability source that a single session
+cannot accommodate, mandating creation of a new photon session at orbit
+lock-in; a first numerical implementation (`exp_19c`) preserves
+per-session unitarity at all swept emission rates, and a controlled
+three-arm operator comparison (`exp_20`) confirms a pointwise unitary
+beam splitter as the joint-$\mathcal{A}=1$-preserving emission operator
+(joint $\mathcal{A}=1$ preserved to machine precision
+$8.9 \times 10^{-16}$); orbital settling remains open, traced to a
+long-horizon two-body baseline instability isolated in `exp_12b` (both
+rows `PART`);
+
+**(vi)** the structural form of the induced gauge action
+(Sakharov / Zeldovich), whose leading-order term has the Maxwell form on
+$O_h$-averaged observables together with a closed-form *gauge-sector
+birefringence* sharing the same optical axis $(1,1,-1)$ as the
+kinematic-sector prediction (numerical $1/g^2$ prefactor and the
+empirical test of the birefringence remain open); the predicted
+concordance of kinematic, gauge, gravitational, and atomic-clock
+channels along this single axis is the framework's strongest
+*falsifiable* prediction (P9).
+
+Energy conservation and momentum conservation are not independent inputs
+— they are consequences of $\mathcal{A}=1$ applied to closed session
+sets.
+
+The numerically tractable results are verified or partially verified by
+a suite of more than fifteen experiments with no free parameters beyond
+the Planck-scale calibration of the lattice spacing (the system audit
+table records the status of each claim); the framework's remaining
+derivations — black-hole thermodynamics among them — are established
+analytically under explicitly stated modelling assumptions and flagged
+as such where they appear.
+
+The framework suggests a structural reinterpretation of the Standard
+Model's gauge degrees of freedom as the minimal accounting required to
+maintain $\mathcal{A}=1$ on the bipartite lattice geometry: the particle
+content is reframed as the catalogue of probability imbalances the
+lattice generates and the session types required to resolve them.
+Whether the full Standard Model gauge group
+$\mathrm{SU}(3) \times \mathrm{SU}(2) \times \mathrm{U}(1)$ is the
+automorphism group of $(\mathbb{T}_\diamond, \mathcal{A}=1)$ is a
+well-posed finite-dimensional Lie-algebra question, deferred to a
+companion paper.
 
 ## What this paper establishes
 
-- **Substrate.** <One paragraph on the bipartite octahedral lattice,
-  the A=1 conservation invariant, and the discrete bipartite tick
-  rule.>
-- **Lorentz invariance.** <One paragraph on the O_h-averaging result
-  that recovers continuum Lorentz from the discrete substrate.>
+- **Substrate.** Physics is built on a bipartite three-dimensional
+  octahedral lattice $\mathbb{T}_\diamond$ whose six basis vectors split
+  into two chirally-opposite sublattices — RGB on even ticks, CMY on odd
+  ticks. The single ontological commitment is the conservation invariant
+  $\mathcal{A}=1$: each particle is a *causal session*, a $U(1)$ phase
+  oscillator carrying a two-component amplitude $(\psi_R, \psi_L)$ that
+  is renormalised to $|\psi_R|^2 + |\psi_L|^2 = 1$ at every tick. The
+  discrete bipartite tick rule — a chirality-alternating hop between the
+  RGB and CMY sublattices — is the only dynamical law. Energy and
+  momentum conservation, the Born rule, and unitary Hilbert-space
+  evolution are *derived* from this one constraint, not assumed.
+
+- **Lorentz invariance.** The continuum limit $a \to 0$ of the bipartite
+  tick rule is the Dirac equation, with the gamma matrices reading
+  directly off the RGB/CMY sublattice geometry. Rotational — and hence
+  Lorentz — invariance is not imposed: it is recovered on
+  $O_h$-averaged observables, the directional cross-terms of the
+  octahedral lattice cancelling in the average exactly as staggered
+  fermions recover Lorentz invariance in lattice QCD. The residual
+  anisotropy survives as a closed-form *lattice birefringence* aligned
+  with the optical axis $\mathbf{V}_1+\mathbf{V}_2+\mathbf{V}_3=(1,1,-1)$
+  — a falsifiable departure from exact continuum symmetry.
 
 ## Methodological role
 
-First step in the methodological arc: *geometry first → geometry
-forces physics → geometry axiomatizes physics*. <One paragraph
-locating Paper I as the substrate-priority paper that the rest of
-the series builds on.>
+First step in the methodological arc: *geometry first → geometry forces
+physics → geometry axiomatizes physics*. Paper I is the
+**substrate-priority** paper — it fixes the lattice, the conservation
+axiom, and the tick rule, then shows that the principal results of
+quantum mechanics, special relativity, and Newtonian gravity follow as
+consequences rather than inputs. Everything later in the series builds on
+this substrate: Paper II asks whether the Standard Model gauge group is
+the lattice's automorphism group; Paper III turns the clock-density
+picture of gravity into a falsifiable astrophysical prediction. Paper I
+is the foundation those papers stand on, and the audit table here is the
+authority all downstream claims are reconciled against.
 
 ## Audit-row impact
 
-<List the audit rows that flipped to **PASS** in this paper, one
-per line with the row identifier and a one-clause rationale. PART
-/ STUB / FAIL rows below, same shape.>
+Rows that reach **PASS** in this paper, grouped by sector (each backed by
+a no-free-parameter experiment or an analytic derivation):
+
+- **Kinematics.** Speed-of-light limit `c=1` (`exp_00`); inertial
+  persistence (`exp_01`); $1/r^2$ discrete path-count correction
+  (`exp_06`); the Dirac equation and spin-$\tfrac{1}{2}$ (derived
+  analytically); the equivalence principle $m_g = m_i$ (`exp_01`,
+  `exp_02`).
+- **Quantum phenomena.** Interference (`exp_03`); decoherence (`exp_04`);
+  measurement / irreversibility (`exp_05`); the Born rule
+  (`exp_03`–`exp_05`); mass quantization as Arnold-tongue locking and
+  photon dispersion (`exp_09`).
+- **Gravity.** Gravitational attraction (`exp_02`); gravitational time
+  dilation (`exp_02`, `exp_07`); clock-density conservation / continuity
+  equation (`exp_07`).
+- **Electromagnetism.** EM-vs-gravity curl-vs-div force geometry and
+  photon emission at orbit lock-in (`exp_08`).
+- **Hydrogen and atomic physics.** Hydrogen $E_n \sim -1/n^2$ (`exp_10`);
+  spontaneous quantization at $n=1$ (`exp_11`); two-body hydrogen to four
+  significant figures, $k_\text{min}=0.0970$ vs $k_\text{Bohr}=0.0971$
+  (`exp_12`); bound state requires an active proton (`exp_11` $n{=}2$,
+  `exp_12`); three-body helium-like system (`exp_13`); two-electron
+  helium (`exp_14`).
+
+Rows that are **PART** (mechanism established, full numerical or
+long-horizon confirmation open): black-hole event horizon + Hawking
+temperature and Bekenstein–Hawking entropy (analytic, under stated
+modelling assumptions); photon emission as an $\mathcal{A}=1$ necessity
+and the emission-operator joint-$\mathcal{A}=1$ beam splitter (`exp_19c`,
+`exp_20`); the induced gauge action in Sakharov form; two-body
+long-horizon stability and its escape mechanism (`exp_12b`, `exp_12c`);
+lock-in grid-independence (`exp_12d_tight`); the proton-mass lower bound
+(`exp_16`).
+
+Rows that are **STUB** (predicted with closed-form structure, not yet
+tested): kinematic lattice birefringence; the Zitterbewegung-source dual
+hypothesis; gauge-sector birefringence; the Standard-Model-gauge-group
+automorphism conjecture; and the multi-channel concordance prediction
+(P9) along the $(1,1,-1)$ optical axis.
 
 ## Open questions deferred downstream
 
-<What this paper leaves open and which downstream paper picks it
-up. Examples: Standard Model gauge derivation → Paper II; quantum
-Roche limit → Paper III; discrete-probability prefactor → planned.>
+- **Standard Model gauge group as an automorphism → Paper II.** Whether
+  $\mathrm{Aut}(\mathbb{T}_\diamond, \mathcal{A}=1)$ equals
+  $SU(3) \times SU(2) \times U(1)$ (times the Lorentz factor) is posed
+  here as a well-defined finite-dimensional Lie-algebra question and
+  answered in
+  [*Geometry Forces Physics*](paper-02-geometry-forces-physics.qmd).
+- **Quantum Roche limit / tidal ionization → Paper III.** The
+  clock-density picture of gravity opens a third (gradient-detuning)
+  ionization channel and an atomic ISCO; developed in *Tidal
+  Ionization and the Quantum Roche Limit* (Paper III,
+  [in preparation](index.qmd)).
+- **Gauge-coupling prefactor $1/g^2$ → planned discrete-probability
+  paper.** The induced gauge action's Maxwell *form* is established but
+  its numerical prefactor is open; closure is the centerpiece of the
+  planned discrete-probability companion.
+- **Long-horizon two-body settling.** Orbital lock-in survives only on a
+  finite-volume grid; the bare two-body baseline escapes (`exp_12b`,
+  `exp_12c`). Resolving genuine long-horizon settling — distinct from the
+  short-run resonance match — remains open.
 
 ## Citation and version
 
