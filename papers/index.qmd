@@ -11,6 +11,10 @@ Every paper in the A=1 Discrete Causal Lattice series. Each entry
 points to the canonical Zenodo deposit (where applicable), the
 working repository, and the current version.
 
+The series is also collected in the
+[Geometric Foundations of Quantum Theory and Gravity](https://zenodo.org/communities/fbt-framework)
+community on Zenodo.
+
 ## Published
 
 ### Paper I — *Geometry First*
