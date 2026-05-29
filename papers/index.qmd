@@ -19,8 +19,9 @@ The substrate-priority paper. Establishes the discrete bipartite
 octahedral lattice as the ontological substrate and recovers Lorentz
 invariance as an O$_h$-averaged consequence of the tick rule.
 
-- **Version:** v1.0
-- **DOI:** [10.5281/zenodo.20078529](https://doi.org/10.5281/zenodo.20078529)
+- **Version:** v1.01
+- **DOI:** [10.5281/zenodo.20291342](https://doi.org/10.5281/zenodo.20291342)
+- **Prior-version DOI:** [10.5281/zenodo.20078529](https://doi.org/10.5281/zenodo.20078529) (v1.0)
 - **Repository:** [`dcl`](https://github.com/JackDMenendez/dcl)
 - **Landing page:** [Paper I — Geometry First](paper-01-geometry-first.qmd)
 

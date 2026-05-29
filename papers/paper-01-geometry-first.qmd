@@ -169,6 +169,16 @@ hypothesis; gauge-sector birefringence; the Standard-Model-gauge-group
 automorphism conjecture; and the multi-channel concordance prediction
 (P9) along the $(1,1,-1)$ optical axis.
 
+## What changed in v1.01 vs v1.0
+
+v1.01 is a metadata and front-matter release (deposited 2026-05-19; v1.0
+deposited 2026-05-07). It brings the title-page author block into
+alignment with the project domain `geometryinducedphysics.org` and
+reorders the front matter so the abstract follows immediately after the
+title. The derivations, experiments, audit table, and results are
+unchanged from v1.0; the `v1.01` numbering signals the metadata scale,
+and parallels Paper II's own v1.01 metadata release.
+
 ## Open questions deferred downstream
 
 - **Standard Model gauge group as an automorphism → Paper II.** Whether
@@ -193,10 +203,12 @@ automorphism conjecture; and the multi-channel concordance prediction
 
 ## Citation and version
 
-- **Version:** v1.0
-- **DOI:** [10.5281/zenodo.20078529](https://doi.org/10.5281/zenodo.20078529)
+- **Version:** v1.01
+- **DOI:** [10.5281/zenodo.20291342](https://doi.org/10.5281/zenodo.20291342)
+- **Prior-version DOI:** [10.5281/zenodo.20078529](https://doi.org/10.5281/zenodo.20078529) (v1.0)
 - **Repository:** [JackDMenendez/dcl](https://github.com/JackDMenendez/dcl)
-- **GitHub release:** [v1.0](https://github.com/JackDMenendez/dcl/releases/tag/v1.0)
+- **GitHub release:** [v1.01](https://github.com/JackDMenendez/dcl/releases/tag/v1.01)
 
 The canonical citation lives on the Zenodo deposit page; export
-BibTeX / RIS / CSL from there.
+BibTeX / RIS / CSL from there. The concept DOI on Zenodo resolves to the
+latest version automatically.
