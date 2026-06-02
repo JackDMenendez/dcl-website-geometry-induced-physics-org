@@ -1,0 +1,45 @@
+---
+title: "New essay: lattice birefringence"
+description: >-
+  A new essay traces how directional birefringence in the A=1 lattice
+  fell out of the Dirac derivation — an analytic prediction whose two
+  audit rows remain open.
+author: "Jack D. Menendez"
+date: "2026-06-01"
+categories: [essay, birefringence, anisotropy]
+---
+
+A new essay,
+[*Birefringence in the A=1 lattice*](../../essays/posts/2026-05-20-birefringence-from-dirac/index.qmd),
+is now on the [essays page](../../essays/index.qmd). It is a discovery
+write-up: the lattice's directional dependence was not something we set
+out to find — it fell out of the rotational-invariance step while
+deriving the Dirac equation in
+[Paper I](../../papers/paper-01-geometry-first.qmd).
+
+The short version: the bipartite octahedral lattice does not propagate
+signals at the same speed in every direction. Preparing a referee-proof
+appendix for the Dirac limit surfaced that a load-bearing "frame
+condition" — used to argue the propagator has no preferred direction —
+is simply false for the actual basis vectors. Chasing that through the
+propagator eigenvalues turned a bug into a prediction: a single optical
+axis $(1,1,-1)$, shared by the kinematic and gauge sectors, along which
+the dispersion is flat while oblique wave packets split in two. The
+honest replacement for the false claim is crystallographic — the lattice
+carries $O_h$ symmetry at the operator level, with full rotational
+invariance recovered only on $O_h$-averaged observables.
+
+This is an analytic result, not an experimental confirmation, and the
+essay keeps it there. Both birefringence rows in Paper I's audit table —
+kinematic and gauge-sector — are marked **`STUB`**: derived symbolically,
+not yet tested numerically. The decisive open question is whether the
+per-tick $\mathcal{A}=1$ renormalisation washes the anisotropy out of the
+observable amplitude in the continuum limit. A planned companion paper,
+*Balanced Equations and Birefringent Channels on the A=1 Lattice*, is
+where that test would move the rows off `STUB`.
+
+Pointers:
+
+- Read the essay: [Birefringence in the A=1 lattice](../../essays/posts/2026-05-20-birefringence-from-dirac/index.qmd)
+- Substrate paper: [Paper I — Geometry First](../../papers/paper-01-geometry-first.qmd)
+- All essays: [essays page](../../essays/index.qmd)
