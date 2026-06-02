@@ -39,6 +39,10 @@ website:
         text: About
       - href: contact.qmd
         text: Contact
+    right:
+      - icon: rss
+        href: news/index.xml
+        aria-label: News RSS feed
   page-footer:
     left: |
       © Jack D. Menendez. Site code: [MIT](/LICENSE-CODE); prose: [CC BY 4.0](/LICENSE-PROSE.md).

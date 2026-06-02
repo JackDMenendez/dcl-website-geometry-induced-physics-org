@@ -22,3 +22,17 @@ model-viewer {
   border-radius: 6px;
   border: 1px solid #e5e7eb;
 }
+
+/* Subscribe-by-RSS line on the news and essays listing pages. */
+.subscribe-rss {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.subscribe-rss .btn {
+  white-space: nowrap;
+}
+
+.subscribe-rss code {
+  font-size: 0.85em;
+}

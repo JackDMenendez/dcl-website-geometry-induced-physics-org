@@ -23,3 +23,8 @@ Distinct from [news](../news/index.qmd) (announcement-shaped) and
 from [papers](../papers/index.qmd) (peer-review-shaped). Essays are
 the surface for ideas that need more than a news post but less than
 a paper.
+
+<p class="subscribe-rss">
+<a class="btn btn-outline-primary btn-sm" href="index.xml" role="button"><i class="bi bi-rss-fill" aria-hidden="true"></i> Subscribe via RSS</a>
+&nbsp;or paste <code>https://geometryinducedphysics.org/essays/index.xml</code> into your feed reader.
+</p>

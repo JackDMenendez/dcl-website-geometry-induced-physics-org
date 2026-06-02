@@ -19,3 +19,8 @@ page-layout: full
 Project updates from the A=1 Discrete Causal Lattice series: paper
 releases, Zenodo deposits, talks, audit-row flips, and framework
 milestones.
+
+<p class="subscribe-rss">
+<a class="btn btn-outline-primary btn-sm" href="index.xml" role="button"><i class="bi bi-rss-fill" aria-hidden="true"></i> Subscribe via RSS</a>
+&nbsp;or paste <code>https://geometryinducedphysics.org/news/index.xml</code> into your feed reader (Feedly, Inoreader, NetNewsWire, Thunderbird).
+</p>
