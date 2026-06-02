@@ -23,6 +23,3 @@ Distinct from [news](../news/index.qmd) (announcement-shaped) and
 from [papers](../papers/index.qmd) (peer-review-shaped). Essays are
 the surface for ideas that need more than a news post but less than
 a paper.
-
-*No essays yet — the first will land alongside the first
-substantial review-response or framework-decision write-up.*

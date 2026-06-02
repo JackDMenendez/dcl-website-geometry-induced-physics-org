@@ -1,0 +1,222 @@
+---
+title: "Birefringence in the A=1 lattice"
+subtitle: "A finding from the Dirac derivation"
+description: >-
+  How directional dependence in the lattice's propagation showed up
+  as a side effect of deriving the Dirac equation, and what it
+  implies for what we can predict and measure.
+author: "Jack D. Menendez"
+date: "2026-05-20"
+categories: [essay, dirac, birefringence, anisotropy, paper-i]
+---
+
+## The result in one paragraph
+
+The bipartite octahedral lattice does not propagate signals at the same
+speed in every direction. When you push the discrete update toward its
+continuum limit and ask it to look like the Dirac operator, the
+propagator's energy eigenvalues turn out to depend on the *direction* of
+the wavevector, not just its magnitude — the lattice is **birefringent**,
+like a uniaxial crystal. There is a single special direction, the
+**optical axis** $V_1+V_2+V_3 = (1,1,-1)$, along which the dispersion is
+flat to all orders; in the plane perpendicular to it, the leading
+quadratic term carries an anisotropic coefficient of $4/3$. A wave packet
+launched oblique to that axis projects onto two propagator eigenmodes of
+equal magnitude but different phase, so they travel at different group
+velocities and the packet splits in two over distance. That splitting —
+*one pulse becoming two* — is the canonical signature of birefringence,
+and here the birefringent medium is spacetime itself. The effect is fixed
+by the lattice geometry alone, and it is sharp enough to be falsifiable.
+
+## How it came up
+
+It was not something we went looking for. It fell out of the rotational
+-invariance step of the Dirac derivation in Paper I
+(§\ref{sec:kinematics}, the continuum-limit subsection
+§\ref{subsec:dirac_limit}).
+
+The original draft leaned on a clean-looking "frame condition,"
+$\sum_{v\in\text{RGB}} v\,v^{\mathsf T} = 3\,\mathbb{I}$, to argue that the
+discrete propagator has no preferred direction and so reduces to the
+isotropic Dirac operator. That identity is the load-bearing line for the
+$\mathrm{SO}(3)$ rotational-invariance claim. It is also *false* for the
+actual basis vectors. A five-line SymPy check settles it immediately:
+
+```python
+import sympy as sp
+V1 = sp.Matrix([ 1,  1,  1])
+V2 = sp.Matrix([ 1, -1, -1])
+V3 = sp.Matrix([-1,  1, -1])
+M  = sum(v * v.T for v in [V1, V2, V3])
+print(M.tolist())              # [[3, -1, 1], [-1, 3, 1], [1, 1, 3]]
+print(M.equals(3 * sp.eye(3))) # False
+```
+
+The off-diagonal entries are not zero. Preparing a referee-proof appendix
+for exactly this step is what surfaced the problem, and chasing it through
+the eigenvalues of the spinor propagator is what turned a bug into a
+prediction. The anisotropy is not an artefact we introduced to make the
+Dirac limit work — it is a side-condition the geometry *imposes*, and the
+honest continuum limit keeps it.
+
+## What it looks like
+
+### The math
+
+The single-tick spinor propagator in Fourier space is
+
+$$
+T(\mathbf{k}) = \begin{pmatrix}
+  i\sin(\omega/2) & \cos(\omega/2)\,H_\text{RGB}(\mathbf{k}) \\
+  \cos(\omega/2)\,H_\text{CMY}(\mathbf{k}) & i\sin(\omega/2)
+\end{pmatrix},
+\qquad
+H_\text{RGB}(\mathbf{k}) = \tfrac13\!\sum_{v\in\text{RGB}} e^{i\mathbf{k}\cdot v},
+\quad
+H_\text{CMY} = \overline{H_\text{RGB}}.
+$$
+
+Its trace is $k$-independent, $\operatorname{tr}T = 2i\sin(\omega/2)$, and
+the eigenvalues are
+
+$$
+\lambda_\pm(\mathbf{k}) = i\sin(\omega/2)\,\pm\,\cos(\omega/2)\,|H_\text{RGB}(\mathbf{k})|.
+$$
+
+So the *entire* directional content lives in $|H_\text{RGB}|^2$. Expanding
+near $\mathbf{k}=0$:
+
+$$
+|H_\text{RGB}(\mathbf{k})|^2 = 1 - \mathbf{k}^{\mathsf T} M_\text{eff}\,\mathbf{k} + O(k^4),
+\qquad
+M_\text{eff} = \tfrac19\begin{pmatrix} 8 & -4 & 4 \\ -4 & 8 & 4 \\ 4 & 4 & 8 \end{pmatrix}.
+$$
+
+The eigenvalues of $M_\text{eff}$ are $\{\,4/3,\ 4/3,\ 0\,\}$. The **zero**
+eigenvalue points along $(1,1,-1)$. That is the optical axis, and the flat
+direction is not just a leading-order accident: set
+$\mathbf{k}=s\,(1,1,-1)/\sqrt3$ and all three dot products
+$\mathbf{k}\cdot V_i$ become equal, so $|H_\text{RGB}|^2 = 1$ *exactly, at
+all orders in* $k$. Along the axis the two eigenmodes never separate; off
+the axis they do.
+
+There is a second, dual copy of the same structure. The gauge sector — the
+photon kinetic term induced by the bipartite plaquette sum — produces its
+own quadratic form $\mathbf{Q}$ on $\mathbf{B}$-space with eigenvalues
+$\{4,4,16\}$. Same optical axis $(1,1,-1)$, opposite shape: where the
+kinematic ellipsoid is *prolate* (stretched along the axis, dispersion
+flat there), the gauge ellipsoid is *oblate* (squashed along the axis,
+kinetic term steepest there). One axis, two anisotropies, two independent
+falsifiable signatures.
+
+### The picture
+
+![Dual anisotropy on a single optical axis. Both surfaces are level sets $x^{\mathsf T}Ax = 3$. Left (kinematic sector): the frame matrix $M$ with eigenvalues $\{4,4,1\}$ — a prolate ellipsoid whose long axis is the optical axis $(1,1,-1)$; kinematic dispersion is flat along that axis and steep perpendicular to it. Right (gauge sector): the plaquette tensor $\mathbf{Q}$ with eigenvalues $\{4,4,16\}$ — an oblate ellipsoid whose short axis is the same $(1,1,-1)$; the induced photon kinetic term is steepest along the axis. Both shapes inherit the special direction from the same RGB/CMY bipartite geometry.](fig-dual-anisotropy.png){fig-alt="Two 3D ellipsoid surfaces side by side, each pierced by a dashed line marking the (1,1,-1) optical axis. Left: a prolate (cigar-shaped) ellipsoid stretched along the axis. Right: an oblate (disc-shaped) ellipsoid flattened along the same axis."}
+
+The two ellipsoids are duals of each other on a shared axis. That shared
+axis is the whole content of the prediction: if the lattice is real, the
+kinematic and gauge sectors must point the *same way*.
+
+## Why it matters
+
+**It supports two audit rows — but only as far as the audit honestly
+goes.** In Paper I's audit table, *Lattice birefringence (kinematic)*
+($M_\text{eff}$ eigenvalues $\{4/3,4/3,0\}$) and *Gauge-sector
+birefringence* ($\mathbf{Q}$ eigenvalues $\{4,4,16\}$) are both marked
+**`STUB`**: derived analytically, not yet tested numerically. This essay
+is a write-up of an analytic result, not an experimental confirmation, and
+the language is kept at that altitude deliberately. Both rows are slated
+for a planned companion paper — *Balanced Equations and Birefringent
+Channels on the A=1 Lattice* — which recasts the lattice dynamics as
+site-level balance equations and develops the P9 prediction as a bipartite
+split of the probability gradient $\nabla\rho$ into ordinary and
+extraordinary modes along the optical axis $(1,1,-1)$. That is the paper
+that will move these rows off `STUB`; this essay is the geometric preview
+of its central object.
+
+**The decisive open question is whether the anisotropy survives.** The
+lattice's $\mathcal{A}=1$ conservation law is enforced by a per-tick
+renormalisation (`enforce_unity_spinor`) that sits *between* consecutive
+applications of the propagator. The bare propagator is birefringent — that
+is settled symbolically. What is *not* settled is whether that
+renormalisation step washes the anisotropy out of the observable amplitude
+in the continuum limit. If it does, birefringence is a property of the
+bare operator but not of anything you can measure, and the prediction has
+to be qualified. If it does not, the prediction stands as written. That is
+the difference between "discreteness artefact" and "real, falsifiable
+signature," and it is exactly the test that has not been run yet.
+
+**It replaces a weaker, false claim with a stronger, true one.** The paper
+used to assert $\mathrm{SO}(3)$ Lorentz invariance was *forced* by the
+frame condition. That was wrong as written. The honest replacement is
+crystallographic: the lattice has $O_h$ symmetry, not $\mathrm{SO}(3)$, at
+the operator level, and full rotational invariance is recovered only on
+$O_h$-averaged observables. Trading a false isotropy claim for a true
+anisotropy prediction is a net gain — most discrete-spacetime proposals
+would happily take a sharp falsifiable handle in exchange for an
+over-strong symmetry claim.
+
+**Downstream subprojects inherit the axis.** The same $(1,1,-1)$ direction
+shows up in the P7 photon-dispersion refinement (direction-resolved GRB
+time-of-flight), the P9 multi-channel concordance prediction (kinematic,
+gauge, gravitational, and atomic channels all sharing one axis), the
+gauge-derivation companion paper, and the gravity sector, whose $1/r^2$
+recovery picks up direction-dependent discrete corrections along the same
+axis. If the lattice is real, all of these have to agree on which way
+$(1,1,-1)$ points in the sky.
+
+## Open / next
+
+- **Is the magnitude fixed by the substrate alone, or does the
+  conservation law correct it?** The bare-propagator coefficient is $4/3$
+  in the perpendicular plane, fixed by geometry. Whether the
+  $\mathcal{A}=1$ renormalisation rescales, cancels, or preserves it in the
+  observable dispersion is unknown. This is the same `enforce_unity_spinor`
+  question as above, stated as a magnitude rather than a yes/no.
+
+- **What would distinguish lattice birefringence from ordinary material
+  birefringence?** Two handles. First, *universality of the axis*: a real
+  crystal's optical axis is set by the crystal; the lattice predicts a
+  *single* cosmic axis shared across photons, gravity, and atomic-clock
+  anisotropies (P9). Second, *scaling*: the splitting goes as
+  $(a/\lambda)^2$, so it grows with photon energy — gamma-ray and TeV
+  photons over cosmological baselines (Fermi GBM, IceCube) are the
+  sensitive channel, not a laboratory laser. The cheapest existing test is
+  to re-bin a public GRB time-of-flight catalog by sky direction relative
+  to a candidate axis: bursts near the axis should disperse *less* than
+  perpendicular ones. The current bound $a \lesssim 10^{-19}\,\text{m}$
+  assumes isotropy and so has averaged any such signal away.
+
+- **Is there an `exp_NN` a reader could run?** Not yet — and that is the
+  honest gap. The decisive numerical test is small and well-specified:
+  propagate a free wave packet ($\omega \approx 0.1019$) along $(1,1,-1)$
+  and along a perpendicular direction on a $\sim 33^3$ grid for ~1000
+  ticks, and compare group velocities. Equal velocities ⇒ renormalisation
+  restored isotropy; different velocities ⇒ birefringence is observable.
+  That run is what would move both audit rows off `STUB`, and it is the
+  first piece of the planned *Balanced Equations and Birefringent Channels*
+  companion paper, where the ordinary/extraordinary split along $(1,1,-1)$
+  is the central diagram.
+
+## References
+
+- Paper I — *Geometry First: Quantum Mechanics, Gravity, and the Origin of
+  the Standard Model from a Single Conservation Law*. The birefringence
+  result lives in the kinematics section (continuum / Dirac-limit
+  subsection, $M_\text{eff}$ and its eigenvalues), its P7 direction
+  -resolved refinement and P9 optical-axis concordance in the predictions
+  section, and the gauge-sector dual ($\mathbf{Q}$, eigenvalues
+  $\{4,4,16\}$) in the induced-gauge-action appendix. See the
+  [Paper I landing page](../../../papers/paper-01-geometry-first.qmd) for
+  the abstract, current version, and the canonical Zenodo deposit.
+- Working notes (derivation and falsification handles):
+  [`notes/lattice_birefringence_prediction.md`](https://github.com/JackDMenendez/dcl/tree/main/notes)
+  and
+  [`notes/frame_condition_isotropy_memo.md`](https://github.com/JackDMenendez/dcl/tree/main/notes)
+  — the eigenvalue computation that surfaced the optical axis and the memo
+  that traced the false frame condition through the paper.
+- Planned companion paper — *Balanced Equations and Birefringent Channels
+  on the A=1 Lattice* (follow-on seed #14). Recasts the lattice as
+  site-level balance equations and develops the kinematic and gauge-sector
+  birefringence rows (currently `STUB`) into the P9 ordinary/extraordinary
+  split along $(1,1,-1)$. In preparation; not yet released.
