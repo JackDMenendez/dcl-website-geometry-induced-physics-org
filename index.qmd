@@ -16,6 +16,20 @@ listing:
     feed: false
 ---
 
+::: {.callout-note title="Statement of Intent" appearance="default"}
+The A=1 discrete causal lattice is **not** proposed as the literal
+microscopic structure of the universe. Instead, it is a mathematically
+defined geometric object whose intrinsic constraints induce conservation
+laws, symmetries, and interaction patterns reminiscent of known physics.
+
+My research program investigates the **expressive power** of this object:
+what physical structures it can encode, what symmetries it supports, and
+how far its induced geometry can be pushed toward reproducing the Standard
+Model and general relativity.
+
+This is an exploration of mathematical capability, not an ontological claim.
+:::
+
 ![Bipartite octahedral lattice — the A=1 substrate. RGB and CMY basis directions $V_1, V_2, V_3$ encode even / odd ticks; $A=1$ implies $|\psi_R|^2 + |\psi_L|^2 = 1$ (from Paper~I).](assets/bipartite-lattice.png){fig-alt="Diagram of the A=1 architecture: a central nucleus node t_n0 with six labeled neighbours t_n1..t_n6 in RGB (red, green, blue) and CMY (cyan, magenta, yellow), reached by basis vectors V1, V2, V3 (and their negatives). A legend table on the right gives the (x,y,z) coordinates and spin role for each basis."}
 
 The **A=1 Discrete Causal Lattice (DCL)** program takes a single

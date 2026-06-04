@@ -37,6 +37,8 @@ website:
         text: Funding
       - href: about.qmd
         text: About
+      - href: bio.qmd
+        text: Bio
       - href: contact.qmd
         text: Contact
     right:

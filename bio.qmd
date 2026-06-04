@@ -1,0 +1,30 @@
+---
+title: "Bio"
+description: >-
+  Jack D. Menendez — principal investigator of the A=1 Discrete Causal
+  Lattice research program.
+---
+
+> I choose to explore mathematics and physics.
+> Not because they are easy or hard,
+> but because I am curious.
+
+**Jack D. Menendez** leads the A=1 Discrete Causal Lattice (DCL)
+program — a substrate-first effort to derive spacetime, the Standard
+Model gauge group, and gravity from a single conservation law on a
+discrete causal lattice. He is the author of Papers I and II in the
+series and the maintainer of `dcl-core` and the series-wide framework.
+
+<!-- Personal background goes here — education, prior work, what drew
+     you to foundational physics, anything you want readers to know.
+     This is the part only you can write; replace this comment. -->
+
+## Find me
+
+- **GitHub:** [@JackDMenendez](https://github.com/JackDMenendez)
+- **LinkedIn:** [Jack Menendez](https://www.linkedin.com/in/jackmenendez/)
+- **ORCID:** [0009-0003-1166-307X](https://orcid.org/0009-0003-1166-307X)
+- **Email:** [jack@geometryinducedphysics.org](mailto:jack@geometryinducedphysics.org)
+
+For review, endorsement, collaboration, or press, see the
+[contact page](contact.qmd).
