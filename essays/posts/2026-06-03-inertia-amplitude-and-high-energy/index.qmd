@@ -1,0 +1,196 @@
+---
+title: "What happens at high energy?"
+subtitle: "Inertia, amplitude, and the lattice's built-in cutoff"
+description: >-
+  A standing objection to discrete-spacetime models is that they should
+  misbehave at high energy. On the A=1 lattice, inertia and amplitude are
+  one conserved quantity repartitioned by the rate at which phase
+  advances — and that same rate caps energy and momentum per mode. The
+  continuum dispersion is the low-energy limit.
+author: "Jack D. Menendez"
+date: "2026-06-03"
+categories: [essay, dispersion, high-energy, inertia, adjacency, dirac, paper-i]
+---
+
+## The result in one paragraph
+
+Critics of discrete spacetime reach for the same objection: a lattice
+has a shortest length, so it must do something unphysical at high energy
+— break Lorentz invariance, or hide an arbitrary cutoff, or simply stop
+making sense. On the A=1 lattice the answer is built into the update
+rule, and it is not a patch. There is only **one** amplitude per site,
+and the **rate at which its phase advances**, $\Delta\phi=\omega+V$,
+decides how that amplitude is split between *propagating* and *staying in
+place*. Staying in place is what inertia **is** here — it is not a second
+substance added to the model, it is the fraction of the amplitude the
+phase-rate diverts from hopping. Push the phase-rate up and the amplitude
+moves from the propagating channel into the inertial one; at the extreme
+it is fully frozen. The same phase-rate, read spatially as momentum,
+enters the hop through a structure factor that **saturates** at the zone
+boundary, so momentum and energy per mode are bounded. The familiar
+relativistic dispersion $E^2=m^2+|\mathbf p|^2$ is the *low-energy limit*
+of this; "high energy" does not run away, the **dispersion curve** bends
+over (the lattice itself is fixed — it is the energy–momentum relation
+that curves, not the substrate). None of this is
+bolted on — it is what the bipartite Dirac update already says.
+
+## The objection, stated fairly
+
+The strong form of the objection is not vague. It is **fermion
+doubling**: discretise a Dirac field naively and the momentum operator,
+which should vanish only at $\mathbf k=0$, picks up extra zeros at the
+edges of the Brillouin zone — spurious light modes that wreck the
+continuum count and the chiral structure. Any lattice claiming to *be*
+the Dirac equation, rather than merely approximate it, has to say what
+happens at the zone boundary. So the question "what happens at high
+energy?" is really two questions: where does the energy you pump in
+actually go, and what does the dispersion do as momentum approaches the
+lattice scale?
+
+## What it looks like
+
+### The math
+
+The bipartite tick rule (the operator derived in Paper I, implemented in
+`dcl_core.core3d.HopOperator`) updates the spinor as
+
+$$
+\psi^{\text{new}}_R
+  = \underbrace{\cos(\Delta\phi/2)\,\langle \psi_L\rangle_{\text{hop}}}_{\text{propagating}}
+  \;+\;\underbrace{\,i\,\sin(\Delta\phi/2)\,\psi_R\,}_{\text{inertial (stay)}},
+\qquad \Delta\phi=\omega+V .
+$$
+
+The two coefficients are not free — $\cos^2+\sin^2=1$ — so the
+**amplitude fractions** in the two channels,
+
+$$
+p_{\text{move}}=\cos^2(\Delta\phi/2),
+\qquad
+p_{\text{stay}}=\sin^2(\Delta\phi/2),
+$$
+
+sum to one at every site, every tick. That sum *is* the $\mathcal{A}=1$
+conservation law, seen locally: the amplitude is never created or
+destroyed, only repartitioned between moving and staying. At
+$\Delta\phi=0$ everything propagates — a massless photon, no inertia,
+moving at $c$ every tick. At $\Delta\phi=\pi$ everything stays — the
+amplitude rotates in place ($i\sin$, pure Zitterbewegung) and goes
+nowhere, the maximally inertial, heaviest mode the lattice can hold. A
+massive particle lives in between. **Mass and inertia are the stay
+fraction; the phase-rate sets it.**
+
+The spatial side of the same phase-rate is momentum, $\mathbf k =
+\nabla\phi$, and it enters the hop through the structure factor
+
+$$
+S(\mathbf k)=\tfrac12\bigl(H_{\text{RGB}}-H_{\text{CMY}}\bigr),
+\qquad
+H_{\text{RGB}}(\mathbf k)=\tfrac13\!\sum_{v\in\text{RGB}} e^{i\mathbf k\cdot v},
+$$
+
+which is exactly `HopOperator.fourier_kernel`. At small $\mathbf k$ it
+reduces to $i\,\mathbf k\cdot\boldsymbol\gamma/3$ — the continuum Dirac
+momentum operator — so $E^2=m^2+|\mathbf p|^2$ is recovered. Along a
+lattice axis, $|S| = |\sin k|/3$: it rises, peaks at $k=\pi/2$, and
+returns to zero at the zone boundary $k=\pi$. That return to zero is the
+doubler, stated honestly. The single-tick propagator's eigenvalues tie
+the two sides together,
+
+$$
+\lambda_\pm(\mathbf k)=i\sin(\omega/2)\;\pm\;\cos(\omega/2)\,|H_{\text{RGB}}(\mathbf k)|,
+$$
+
+— the $i\sin$ piece is the inertial channel, the $\cos\cdot|H|$ piece is
+the propagating one. This is the **same** propagator whose *directional*
+content gives the lattice's [birefringence](../2026-05-20-birefringence-from-dirac/index.qmd);
+that essay is about the angular shape of $|H_{\text{RGB}}|$, this one is
+about its magnitude and what it does to energy.
+
+### The picture
+
+![Phase-progression rate versus amplitude on the A=1 lattice, three panels. **A — inertia and propagation share one amplitude.** The propagating fraction $\cos^2(\Delta\phi/2)$ (blue) and the inertial "stay" fraction $\sin^2(\Delta\phi/2)$ (red) versus the per-tick phase-rate $\Delta\phi=\omega+V$; they sum to one (that is $\mathcal{A}=1$). At $\Delta\phi=0$ the amplitude all propagates (photon, no inertia); at $\Delta\phi=\pi$ it all stays (frozen, maximal inertia). **B — the lattice caps momentum.** The effective momentum $p_{\text{eff}}=|S(\mathbf k)|$ computed from the engine's `fourier_kernel`: the lattice value $|\sin k|/3$ (green) tracks the continuum $k/3$ (grey dashed) at small $k$ but peaks at $k=\pi/2$ and returns to zero at the zone boundary, where group velocity vanishes. **C — dispersion.** $E(k)=\sqrt{m^2+p_{\text{eff}}^2}$ with rest mass $m=\omega$ (the same $\omega$ that set the split in panel A, since $E(0)=m$): the lattice *dispersion curve* (purple) bends below the continuum cone (grey dashed) and turns back toward the mass shell at the zone boundary — the continuum $E^2=m^2+|\mathbf p|^2$ is the low-energy limit. Panel B is the engine kernel directly; panel C combines it with $E^2=m^2+p_{\text{eff}}^2$ (the exact single-tick eigenvalue dispersion shares the same qualitative features — continuum recovery, bend-over, doubler).](fig-phase-inertia-amplitude.png){fig-alt="Three stacked plots. Top: two curves crossing, cos-squared falling and sin-squared rising versus phase rate, summing to one. Middle: a green lattice momentum curve that follows a straight grey continuum line at first, then bends over, peaks, and falls back to zero at the zone boundary. Bottom: an energy-versus-momentum plot where the grey continuum cone keeps rising while the purple lattice curve bends below it and turns back toward the rest-mass line."}
+
+## Why it matters
+
+**The lattice is its own ultraviolet regulator, for free.** There is a
+maximum phase-rate per tick — phases separated by $2\pi$ are the same on
+a discrete clock — so the energy a single mode can carry is bounded by
+the tick rate, and the effective momentum is bounded by $|S|_{\max}=1/3$
+(panel B). No cutoff is imposed by hand; it is the discreteness of the
+clock and the lattice. Continuum field theory pays for unbounded momenta
+with ultraviolet divergences and then regulates them after the fact. Here
+the bound is upstream of the dynamics.
+
+**Nothing in the substrate bends — there is nothing that *could*.** The
+lattice is causal **adjacency**: which events neighbour which, and nothing
+more. The integer coordinates are bookkeeping for that adjacency and carry
+no metric of their own; distance, momentum, and energy are all *emergent*
+from the phase field on a fixed graph. So when the curve in panel C
+"bends," it is a line on a *derived* energy–momentum plot, not a
+deformation of anything physical — the adjacency is untouched. This is the
+same reason the framework can have gravity without curved spacetime: what
+looks like bending — light deflected near a mass — is **clock-density
+refraction**, a gradient in the phase-advance rate $V$, the very $V$ in
+$\Delta\phi=\omega+V$ that sets the inertia split in panel A. One quantity,
+the phase-rate on a fixed adjacency graph, carries inertia, dispersion,
+*and* gravity — and none of the three deform the lattice. Conflating "the
+dispersion curve bends" with "the lattice bends" would quietly smuggle back
+the metric background the model is built to do without.
+
+**Inertia stops being mysterious.** "Why does a massive thing resist
+acceleration?" becomes, on the lattice, "because a faster-rotating phase
+diverts more of its one amplitude into staying put." Mass is the
+$\sin^2(\Delta\phi/2)$ fraction; that is the whole mechanism, and panel A
+is the whole picture. It costs the model nothing extra, because it is the
+same amplitude that also does the propagating.
+
+**The continuum is recovered where it should be, and only there.** Panels
+B and C agree with the relativistic forms at small $k$ — that is the
+honest content of "deriving the Dirac equation." They depart at high $k$,
+which is exactly where a *real* lattice should depart from a continuum
+idealisation, and where any falsifiable difference would live. In Paper
+I's audit table this phenomenology already sits on three rows marked
+**`PASS`**: the dispersion-and-zone-boundary behaviour of panels B/C is
+*Photon dispersion* (group velocity vs. wavenumber, lattice corrections
+at the Brillouin-zone boundary; `exp_09`), the inertia split of panel A is
+*Inertial persistence* (`exp_01`), and the small-$k$ recovery is the
+*Dirac equation* row (derived analytically).
+
+## Open / next
+
+- **What actually happens at the doubler?** The return of $|S|$ to zero at
+  $k=\pi$ is the fermion-doubling point, and this is where the strong form
+  of the objection has to be answered, not waved away. The lattice is
+  bipartite — RGB and CMY alternate by tick parity — which is the
+  staggered-fermion family of mechanisms that lattice QCD uses to thin the
+  doublers. Whether the bipartite tick rule disposes of the zone-boundary
+  mode cleanly, or leaves a residue with physical consequences, is a
+  specific, checkable question and is not settled here.
+
+- **Is there a signature, not just a regulator?** A regulator that is
+  invisible is only half-interesting. The dispersion bends over at high
+  $k$, so the lattice predicts an **energy-dependent** propagation speed —
+  the same channel as the birefringence prediction (gamma-ray time-of
+  -flight over cosmological baselines), but now in the *magnitude* of $k$
+  rather than its direction. The question is whether the bend is large
+  enough, at any accessible energy, to separate from the isotropic
+  Lorentz-invariance bounds, or whether it lives only at the lattice scale
+  where nothing yet reaches.
+
+## References
+
+- Paper I — *Geometry First: Quantum Mechanics, Gravity, and the Origin of
+  the Standard Model from a Single Conservation Law*. The bipartite tick
+  rule, the $\cos/\sin$ mass split (Zitterbewegung as the stay fraction),
+  and the continuum Dirac limit live in the kinematics section; see the
+  [Paper I landing page](../../../papers/paper-01-geometry-first.qmd).
+- Companion essay — [*Birefringence in the A=1
+  lattice*](../2026-05-20-birefringence-from-dirac/index.qmd): the angular
+  structure of the same propagator $T(\mathbf k)$ whose magnitude structure
+  this essay describes.
+- Engine — the dispersion panels are computed from
+  `dcl_core.core3d.HopOperator.fourier_kernel` (the structure factor
+  $S(\mathbf k)$) in [`dcl-core`](https://github.com/JackDMenendez/dcl-core);
+  the figure script is
+  [`notes/phase_inertia_amplitude.py`](https://github.com/JackDMenendez/dcl-core/tree/main/notes/phase_inertia_amplitude.py).

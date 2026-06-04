@@ -1,0 +1,47 @@
+---
+title: "New essay: what happens at high energy?"
+description: >-
+  A new essay answers the standard high-energy objection to discrete
+  spacetime — on the A=1 lattice, inertia and amplitude are one
+  conserved quantity split by the phase-rate, and that same rate caps
+  energy per mode.
+author: "Jack D. Menendez"
+date: "2026-06-03"
+categories: [essay, dispersion, high-energy, inertia]
+---
+
+A new essay,
+[*What happens at high energy?*](../../essays/posts/2026-06-03-inertia-amplitude-and-high-energy/index.qmd),
+is now on the [essays page](../../essays/index.qmd). It takes on the
+standard objection to discrete spacetime — that a lattice must misbehave
+at high energy, breaking Lorentz invariance or hiding an arbitrary cutoff
+— and shows the answer is already in the bipartite Dirac update derived in
+[Paper I](../../papers/paper-01-geometry-first.qmd), not bolted on.
+
+The short version: there is only **one** amplitude per site, and the rate
+at which its phase advances, $\Delta\phi=\omega+V$, decides how much of it
+*propagates* versus *stays in place*. Staying in place is what inertia
+**is** here — the fraction $\sin^2(\Delta\phi/2)$ the phase-rate diverts
+from hopping — so mass and inertia are two readings of one quantity, not a
+second substance. The same phase-rate read as momentum enters through a
+structure factor that **saturates** at the zone boundary, so energy and
+momentum per mode are bounded: the lattice is its own ultraviolet
+regulator, for free, and the familiar $E^2=m^2+|\mathbf p|^2$ is the
+*low-energy limit*. Nothing in the substrate bends — the adjacency graph
+is fixed; it is the derived energy–momentum curve that bends, the same
+distinction that lets the framework carry gravity without a curved metric.
+
+This maps onto three **`PASS`** rows in Paper I's audit table: *Photon
+dispersion* (group velocity vs. wavenumber, with zone-boundary
+corrections; `exp_09`), *Inertial persistence* (`exp_01`), and the *Dirac
+equation* continuum limit. The essay is paired with the
+[birefringence essay](../../essays/posts/2026-05-20-birefringence-from-dirac/index.qmd):
+that one is about the *direction* of the same propagator, this one about
+its *magnitude* and what it does to energy.
+
+Pointers:
+
+- Read the essay: [What happens at high energy?](../../essays/posts/2026-06-03-inertia-amplitude-and-high-energy/index.qmd)
+- Companion essay: [Birefringence in the A=1 lattice](../../essays/posts/2026-05-20-birefringence-from-dirac/index.qmd)
+- Substrate paper: [Paper I — Geometry First](../../papers/paper-01-geometry-first.qmd)
+- All essays: [essays page](../../essays/index.qmd)
