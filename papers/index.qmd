@@ -11,6 +11,12 @@ Every paper in the A=1 Discrete Causal Lattice series. Each entry
 points to the canonical Zenodo deposit (where applicable), the
 working repository, and the current version.
 
+::: {.callout-tip appearance="simple"}
+**New to the series?** The [**Claim map**](claim-map.qmd) is a
+one-page, reviewer-facing summary of what Papers I and II *prove* versus
+what they *conjecture* — every claim labelled and tied to its audit tag.
+:::
+
 The series is collected in the author's
 [A=1 Discrete Causal Lattice](https://zenodo.org/communities/a1-discrete-causal-lattice)
 community on Zenodo. Individual papers are also featured in

@@ -25,8 +25,16 @@ website:
         text: Home
       - href: news/index.qmd
         text: News
-      - href: papers/index.qmd
-        text: Papers
+      - text: Papers
+        menu:
+          - href: papers/index.qmd
+            text: All papers
+          - href: papers/claim-map.qmd
+            text: Claim map
+          - href: papers/paper-01-geometry-first.qmd
+            text: Paper I — Geometry First
+          - href: papers/paper-02-geometry-forces-physics.qmd
+            text: Paper II — Geometry Forces Physics
       - href: artifacts/index.qmd
         text: Research artifacts
       - href: essays/index.qmd

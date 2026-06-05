@@ -1,0 +1,174 @@
+---
+title: "Claim map"
+description: >-
+  Reviewer-facing claim map for Papers I and II of the A=1 Discrete
+  Causal Lattice series: every claim labelled proven vs. conjectured,
+  with its native PASS / PART / STUB / FAIL audit tag.
+page-layout: full
+---
+
+A one-page, reviewer-facing summary of **what the series proves and what
+it only conjectures**. Each claim carries two labels: a plain-language
+**status** (Proven / Conjectured / Disconfirmed) and its native
+**audit tag** from the paper's own audit table. This page *surfaces* the
+canonical audit tables; it does not replace them — the authoritative
+tables travel with the papers in their repositories
+([Paper I](paper-01-geometry-first.qmd) · `dcl`;
+[Paper II](paper-02-geometry-forces-physics.qmd) · `dcl-sm-derivation`).
+
+This map is read in light of the program's
+[Statement of Intent](../index.qmd): the goal is to chart the
+*expressive power* of the A=1 lattice, not to assert that it is the
+literal microscopic structure of reality. "Proven" below means
+*proven about the object* — a theorem, or a no-free-parameter
+experiment — not a claim about nature.
+
+::: {.callout-note}
+## How to read the labels
+
+| Status | Audit tag | Meaning |
+|---|---|---|
+| **Proven** | `PASS` | Theorem, or no-free-parameter experiment, that holds. |
+| **Conjectured** | `PART` | Mechanism established; full numerical / long-horizon closure pending. |
+| **Conjectured** | `STUB` | Predicted with closed-form structure; not yet tested. |
+| **Disconfirmed** | `FAIL` | Tested at the discrete level and *not* recovered. |
+
+"Backed by" names the experiment (`exp_NN`) or verification script that
+carries the row in the paper's audit table.
+:::
+
+## Paper I — *Geometry First*
+
+The substrate-priority paper: a bipartite octahedral causal lattice
+under the single axiom $\mathcal{A}=1$, from which quantum mechanics,
+special relativity, and Newtonian gravity are derived as consequences.
+
+### Proven (`PASS`)
+
+| Sector | Claim | Status | Audit | Backed by |
+|---|---|---|---|---|
+| Kinematics | Speed-of-light limit $c=1$ | Proven | `PASS` | `exp_00` |
+| Kinematics | Inertial persistence | Proven | `PASS` | `exp_01` |
+| Kinematics | $1/r^2$ discrete path-count correction | Proven | `PASS` | `exp_06` |
+| Kinematics | Dirac equation and spin-$\tfrac12$ | Proven | `PASS` | analytic |
+| Kinematics | Equivalence principle $m_g = m_i$ | Proven | `PASS` | `exp_01`, `exp_02` |
+| Quantum | Interference | Proven | `PASS` | `exp_03` |
+| Quantum | Decoherence | Proven | `PASS` | `exp_04` |
+| Quantum | Measurement / irreversibility | Proven | `PASS` | `exp_05` |
+| Quantum | Born rule | Proven | `PASS` | `exp_03`–`exp_05` |
+| Quantum | Mass quantization (Arnold-tongue) & photon dispersion | Proven | `PASS` | `exp_09` |
+| Gravity | Gravitational attraction | Proven | `PASS` | `exp_02` |
+| Gravity | Gravitational time dilation | Proven | `PASS` | `exp_02`, `exp_07` |
+| Gravity | Clock-density conservation / continuity equation | Proven | `PASS` | `exp_07` |
+| EM | EM-vs-gravity force geometry & photon emission at lock-in | Proven | `PASS` | `exp_08` |
+| Atomic | Hydrogen $E_n \sim -1/n^2$ | Proven | `PASS` | `exp_10` |
+| Atomic | Spontaneous quantization at $n=1$ | Proven | `PASS` | `exp_11` |
+| Atomic | Two-body hydrogen to 4 sig figs ($k=0.0970$ vs $0.0971$) | Proven | `PASS` | `exp_12` |
+| Atomic | Bound state requires an active proton | Proven | `PASS` | `exp_11`, `exp_12` |
+| Atomic | Three-body helium-like system | Proven | `PASS` | `exp_13` |
+| Atomic | Two-electron helium | Proven | `PASS` | `exp_14` |
+
+### Conjectured — mechanism shown (`PART`)
+
+| Claim | Status | Audit | Backed by |
+|---|---|---|---|
+| Black-hole horizon + Hawking temp. & Bekenstein–Hawking entropy (analytic, stated modelling assumptions) | Conjectured | `PART` | analytic |
+| Photon emission as an $\mathcal{A}=1$ necessity & joint-$\mathcal{A}=1$ beam-splitter emission operator | Conjectured | `PART` | `exp_19c`, `exp_20` |
+| Induced gauge action in Sakharov form | Conjectured | `PART` | analytic |
+| Two-body long-horizon stability & escape mechanism | Conjectured | `PART` | `exp_12b`, `exp_12c` |
+| Lock-in grid-independence | Conjectured | `PART` | `exp_12d_tight` |
+| Proton-mass lower bound | Conjectured | `PART` | `exp_16` |
+
+### Conjectured — predicted, untested (`STUB`)
+
+| Claim | Status | Audit |
+|---|---|---|
+| Kinematic lattice birefringence along $(1,1,-1)$ | Conjectured | `STUB` |
+| Zitterbewegung-source dual hypothesis | Conjectured | `STUB` |
+| Gauge-sector birefringence | Conjectured | `STUB` |
+| Multi-channel concordance prediction (P9) along $(1,1,-1)$ | Conjectured | `STUB` |
+
+The SM-gauge-group-as-lattice-automorphism conjecture is *posed* here
+and *advanced* in Paper II; it appears under Paper II below at its latest
+status.
+
+## Paper II — *Geometry Forces Physics*
+
+Characterises the Standard Model gauge group as the *factor-product
+projection* of the lattice's 71-dimensional automorphism algebra.
+Every row is backed by a sympy verification script in `src/utilities/`.
+
+### Proven (`PASS`)
+
+| Claim | Status | Audit | Backed by |
+|---|---|---|---|
+| Discrete spatial automorphism group has order 48 ($O_h$) | Proven | `PASS` | `automorphism_discrete.py` |
+| RGB sublattice contributes only $\mathbb{Z}_3 \subset SU(3)$ | Proven | `PASS` | `automorphism_rgb_su3.py` |
+| $SO(3,1)\times U(1)$ acts on $\mathbb{C}^2=(\psi_R,\psi_L)$ — dim 7 | Proven | `PASS` | `automorphism_direct_product.py` |
+| Direct-product structure on extended $\mathbb{C}^{12}$ — dim 18 | Proven | `PASS` | `automorphism_direct_product_extended.py` |
+| Tick-rule consistency on $\mathbb{C}^{12}$ | Proven | `PASS` | `tick_rule_extended_consistency.py` |
+| Wilson-plaquette gauge invariance | Proven | `PASS` | `tick_rule_gauge_invariance.py` |
+| SU(3) branch consistency — only Branch A commutes with tick rule | Proven | `PASS` | `su3_branch_consistency.py` |
+| Non-abelian $SU(3)$ dynamically generated from $\mathbb{C}^3$ colour memory | Proven | `PASS` | `su3_generation_from_colour_memory.py` |
+
+### Conjectured — mechanism shown (`PART`)
+
+| Claim | Status | Audit | Backed by |
+|---|---|---|---|
+| Exact equality vs. containment in the dim-71 centralizer | Conjectured | `PART` | `automorphism_centralizer_extended.py` |
+| SM-chirality coupling alignment (vector-like $SU(2)$, spatial-parity $\mathbb{Z}_2$) | Conjectured | `PART` | `chirality_parity_alignment.py` |
+| Explicit $1/g^2$ prefactor — ratio $g_3^2/g_2^2 = 3/2$ derived, universal $c$ open | Conjectured | `PART` | `induced_gauge_action_nonabelian.py` |
+
+### Disconfirmed (`FAIL`)
+
+| Claim | Status | Audit | Backed by |
+|---|---|---|---|
+| Modified (antilinear) tick rule for Branch B $SU(3)$ / $CP$ — no colour matrix anticommutes with every Gell-Mann generator | Disconfirmed | `FAIL` | `tick_rule_cp_modified.py` |
+
+**Central claim — Eq. (137):** *Conjectured* (`PART`). Containment
+$\supseteq$ of $SO(3,1)\times SU(3)\times SU(2)\times U(1)$ is
+established; strict equality $=$ does **not** hold at the discrete level,
+and chirality / $CP$ are explicitly not recovered.
+
+## Paper III — *Tidal Ionization and the Quantum Roche Limit* (in preparation)
+
+Paper III ([in progress](index.qmd#in-progress)) adds a third
+(gradient-detuning) ionization channel and an atomic ISCO, with two
+observational signatures. Its claims will be mapped here at first
+Zenodo deposit; until then this section is a placeholder, and no
+Paper III row should be read as audited.
+
+## What these papers do *not* claim
+
+A reviewer's fastest orientation is often the negative space:
+
+- **Not** that the A=1 lattice is the literal microscopic substrate of
+  the universe — see the [Statement of Intent](../index.qmd).
+- **Not** strict equality of the SM gauge group with the lattice
+  automorphism group — only containment holds (Paper II, `PART`).
+- **Not** chirality or $CP$ from the discrete substrate — tested and
+  not recovered (Paper II, `FAIL`).
+- **Not** the absolute gauge-coupling scale — only the dimensionless
+  ratio $g_3^2/g_2^2 = 3/2$ is fixed; the universal prefactor $c$ is
+  open (deferred to the planned discrete-probability paper).
+- **Not** the `STUB` predictions as confirmed — they carry closed-form
+  structure but are untested.
+
+## Standing falsifiable predictions
+
+The claims most useful to a skeptical reviewer are the ones that could
+kill the framework:
+
+- **$(1,1,-1)$ optical-axis birefringence** — closed-form kinematic and
+  gauge-sector anisotropy along $\mathbf{V}_1+\mathbf{V}_2+\mathbf{V}_3$,
+  and their predicted multi-channel concordance (P9).
+- **Short-range $1/r^2$ discrete correction** — a calculable departure
+  from the exact inverse-square law at lattice range.
+- **Coupling ratio $g_3^2/g_2^2 = 3/2$** at the lattice scale.
+
+## Provenance
+
+This page is reconciled against, and subordinate to, the audit tables in
+the paper repositories. Where this summary and a paper's audit table
+disagree, **the paper's table is authoritative.** Last reconciled against
+Paper I v1.01 and Paper II v1.01.

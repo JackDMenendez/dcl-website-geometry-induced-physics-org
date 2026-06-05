@@ -108,6 +108,10 @@ the geometry does *not* deliver (chirality, $CP$).
 
 ## Audit-row impact
 
+See the [**Claim map**](claim-map.qmd) for a one-page, reviewer-facing
+table of every claim below — proven vs. conjectured, with audit tags —
+across Papers I and II.
+
 Paper II's audit table is structured as a single central claim — Eq.
 (137) of Paper I — whose status is the conjunction of the rows above it.
 Every row is backed by a sympy verification script in `src/utilities/`.
