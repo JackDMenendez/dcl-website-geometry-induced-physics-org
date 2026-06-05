@@ -54,6 +54,7 @@ program is for others to decide.
 - **GitHub:** [@JackDMenendez](https://github.com/JackDMenendez)
 - **LinkedIn:** [Jack Menendez](https://www.linkedin.com/in/jackmenendez/)
 - **ORCID:** [0009-0003-1166-307X](https://orcid.org/0009-0003-1166-307X)
+- **Google Scholar:** [Jack D. Menendez](https://scholar.google.com/citations?user=ZmWF3_AAAAAJ&hl=en)
 - **Email:** [jack@geometryinducedphysics.org](mailto:jack@geometryinducedphysics.org)
 
 For review, endorsement, collaboration, or press, see the
