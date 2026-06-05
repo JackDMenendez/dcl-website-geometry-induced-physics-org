@@ -1,0 +1,43 @@
+---
+title: "New: a reviewer-facing claim map for Papers I & II"
+description: >-
+  A one-page map of what the A=1 series proves versus what it conjectures
+  — every claim from Papers I and II labelled Proven / Conjectured /
+  Disconfirmed and tied to its native PASS / PART / STUB / FAIL audit tag.
+author: "Jack D. Menendez"
+date: "2026-06-05"
+categories: [site, papers, audit, claim-map]
+---
+
+There is now a [**Claim map**](../../papers/claim-map.qmd) on the
+[papers page](../../papers/index.qmd): a single page that states, claim
+by claim, **what the series proves and what it only conjectures.**
+
+Every claim from [Paper I](../../papers/paper-01-geometry-first.qmd) and
+[Paper II](../../papers/paper-02-geometry-forces-physics.qmd) carries two
+labels — a plain-language status (**Proven** / **Conjectured** /
+**Disconfirmed**) and its native audit tag (`PASS` / `PART` / `STUB` /
+`FAIL`) — so a reviewer can see at a glance where a result is a theorem
+or a no-free-parameter experiment, where the mechanism is shown but
+closure is pending, where a prediction is structured but untested, and —
+just as important — where something was tested and **not** recovered
+(chirality and $CP$ at the discrete level, Paper II `FAIL`).
+
+The page is deliberately honest about its own limits. It does not replace
+the audit tables in the paper repositories; where the two disagree, the
+**paper's table is authoritative**. And it makes the negative space
+explicit — a *"What these papers do not claim"* section — in keeping with
+the site's [Statement of Intent](../../index.qmd): the program charts the
+*expressive power* of the A=1 lattice, not an ontological claim about
+reality. "Proven" means proven *about the object*, not about nature.
+
+[Paper III — *Tidal Ionization and the Quantum Roche Limit*](../../papers/index.qmd#in-progress)
+has a placeholder section already; its rows will be mapped at first
+Zenodo deposit.
+
+Pointers:
+
+- The map: [Claim map](../../papers/claim-map.qmd)
+- Papers: [Paper I](../../papers/paper-01-geometry-first.qmd) ·
+  [Paper II](../../papers/paper-02-geometry-forces-physics.qmd)
+- Framing: [Statement of Intent](../../index.qmd)
