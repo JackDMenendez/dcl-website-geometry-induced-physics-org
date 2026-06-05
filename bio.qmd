@@ -9,15 +9,45 @@ description: >-
 > Not because they are easy or hard,
 > but because I am curious.
 
-**Jack D. Menendez** leads the A=1 Discrete Causal Lattice (DCL)
+**Jack D. Menendez.** I lead the A=1 Discrete Causal Lattice (DCL)
 program — a substrate-first effort to derive spacetime, the Standard
 Model gauge group, and gravity from a single conservation law on a
-discrete causal lattice. He is the author of Papers I and II in the
+discrete causal lattice. I am the author of Papers I and II in the
 series and the maintainer of `dcl-core` and the series-wide framework.
 
-<!-- Personal background goes here — education, prior work, what drew
-     you to foundational physics, anything you want readers to know.
-     This is the part only you can write; replace this comment. -->
+I have a bachelor's in mathematics from San José State University. I built
+the first network-protocol tunneling software — SNA through Hyperchannel,
+later SNA through OSI, and finally SNA through TCP/IP. I built the first
+NAT software and the first large-scale website load balancer, work that
+produced four patents naming me as one of three inventors. I have been a
+manager at the director level in software development, and I have a deep
+understanding of how businesses work across several industries.
+
+I have close to forty years of experience in software development, with a
+focus on system design, architecture, and implementation. Over the years,
+I've built systems from sparse requirements in large domains, even global
+domains. So when I think about physics, I naturally think about how I can
+build a system that allows physics to emerge.
+
+The secret to building any system with sparse requirements is to start
+with the simplest abstraction possible that has the most degrees of freedom
+for emergence. For the DCL program, that abstraction is a discrete causal
+lattice with a single conservation law. The DCL program is an effort to
+learn what physics can emerge from that simple abstraction.
+
+For me, this project is a way to express my creativity and curiosity. At
+the very least, my methodology is something that others can learn from and
+apply to their own projects. The idea that such a simple, basic design can
+give rise to the rich physics we see in our universe is fascinating to me.
+I could not do this without the physics that has come before, because it
+provides a perspective that I can measure and falsify against.
+
+I am not trying to prove that the DCL program is correct, but rather to
+explore what it can do and to share that exploration with others. I hope
+that others will find this interesting and be inspired to explore it
+further, whether that means building on it, finding flaws in it, or using
+it as a springboard for their own ideas. The ultimate meaning of the DCL
+program is for others to decide.
 
 ## Find me
 
