@@ -42,6 +42,18 @@ give rise to the rich physics we see in our universe is fascinating to me.
 I could not do this without the physics that has come before, because it
 provides a perspective that I can measure and falsify against.
 
+I work in the open, by necessity as much as conviction. I am not part of
+an institution, so everything — the papers, the code, the experiments, and
+the audit tables that mark each claim as proven or merely conjectured — is
+public, and that openness is what preserves the work independent of me or
+any affiliation. It is also my only real channel for feedback: an
+independent researcher has no department down the hall, so working in the
+open is how the work earns scrutiny, critique, and falsification. Whether
+any of it has lasting value to physics is not mine to decide — that verdict
+belongs to the physics community, and it would be the icing, not the cake.
+The cake is the methodology itself, set out openly so that others can check
+it, build on it, and one day take part.
+
 I am not trying to prove that the DCL program is correct, but rather to
 explore what it can do and to share that exploration with others. I hope
 that others will find this interesting and be inspired to explore it
