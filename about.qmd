@@ -110,6 +110,10 @@ Every paper, experiment, script, and audit table is public:
   resolves to its latest version.
 - **`dcl-core`** is the shared simulation engine the experiments run on,
   pinned by version so a downstream paper reproduces exactly.
+- **The [project board](https://github.com/users/JackDMenendez/projects/6)**
+  tracks the series' open work in public — what is in progress, what is
+  planned, and where the next contributions can land. It is the standing
+  invitation for others to take part.
 
 ### Falsifiability
 
