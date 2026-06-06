@@ -101,7 +101,11 @@ table so it can be located and re-run:
 
 Because I work outside an institution, the openness of the record is what
 preserves the work and the only channel through which it earns scrutiny.
-Every paper, experiment, script, and audit table is public:
+The **repositories and the Zenodo deposits are the authorities** — the
+canonical record of every claim, result, and audit status. This website is
+a surface over them, never a replacement; where the two disagree, the
+repository and its deposit win. Every paper, experiment, script, and audit
+table is public:
 
 - **Repositories** hold the source, the experiments, and the audit tables —
   which are *canonical*. Where this site and a paper's table disagree, the
