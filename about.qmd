@@ -12,10 +12,14 @@ in foundational physics: what if spacetime, the Standard Model gauge
 group, and gravity are all consequences of a single conservation law
 imposed on a discrete bipartite octahedral lattice?
 
-This page expands on the framework's claims, methodology, and
-relationship to existing literature. **Draft in progress** — initial
-content lands alongside the first news posts; until then, the
-[papers page](papers/index.qmd) is the authoritative entry-point.
+This page explains how the program works: its methodological arc, the
+audit system that tracks the status of every claim, how those claims are
+verified, and how the whole record is kept open and reproducible. It is
+read in light of the program's [Statement of Intent](index.qmd) — the
+goal is to chart the *expressive power* of the A=1 lattice, not to assert
+that it is the literal microscopic structure of reality. For the canonical
+results, the [papers page](papers/index.qmd) and the per-claim
+[claim map](papers/claim-map.qmd) are the authoritative entry-points.
 
 ## Methodological arc
 
@@ -42,9 +46,76 @@ The working domain — *geometryinducedphysics.org* — is deliberate.
 induced, in the mathematical-induction sense, by a substrate-level
 rule. Not a metaphor.
 
-## Auditability
+## How the program works
 
-Every claim in the series carries an *audit-row impact*: PASS,
-PART, STUB, or FAIL. Audit tables travel with each paper. The
-website surfaces the latest audit state without replacing the
-canonical tables in the paper repositories.
+The program runs like an engineered system, not a sequence of essays.
+Every claim has a tracked status, a named piece of evidence, and a public
+home. Four conventions hold the whole thing together.
+
+### Every claim carries an audit status
+
+Each claim in the series is an *audit row* with one of four statuses.
+Nothing is asserted without a status, and the status is the honest
+summary of how far the claim has actually been carried:
+
+| Status | Meaning |
+|---|---|
+| `PASS` | Proven — a theorem, or a no-free-parameter experiment, that holds. |
+| `PART` | Mechanism established; full numerical or long-horizon closure pending. |
+| `STUB` | Predicted with closed-form structure; not yet tested. |
+| `FAIL` | Tested at the discrete level and *not* recovered. |
+
+`FAIL` rows are kept, not hidden. Where the lattice was asked to produce
+something and did not — chirality and $CP$ at the discrete level, for
+instance (Paper II) — that result is recorded in writing alongside the
+successes. A framework that can fail a row is one that can be falsified.
+
+### Claims move between statuses
+
+A claim is not static. It typically enters as a `STUB` — a closed-form
+prediction the geometry makes — becomes `PART` once the mechanism is
+shown, and reaches `PASS` only when a no-free-parameter experiment or a
+symbolic proof confirms it. If a test disconfirms it, it becomes `FAIL`
+and stays on the record. A claim posed in one paper and advanced in a
+later one is shown at its **latest** status; the [claim map](papers/claim-map.qmd)
+tracks the current state across the series.
+
+### Verification: experiments and symbolic proofs
+
+Claims are carried by evidence of two kinds, each named in the audit
+table so it can be located and re-run:
+
+- **Numerical experiments** (`exp_NN`) for dynamical claims — interference,
+  the hydrogen spectrum, gravitational time dilation, photon emission, and
+  the rest. These run on the shared [`dcl-core`](papers/index.qmd) engine
+  and carry **no free parameters** beyond the Planck-scale calibration of
+  the lattice spacing. The hydrogen Bohr radius, for example, comes out to
+  four significant figures with nothing fitted.
+- **Symbolic proofs** (sympy scripts) for algebraic and Lie-theoretic
+  claims — the automorphism algebra of the lattice, the recovery of the
+  Standard Model gauge algebra, the coupling-ratio prediction
+  $g_3^2/g_2^2 = 3/2$. Each `PASS` row in Paper II names the script that
+  verifies it.
+
+### The open record
+
+Because I work outside an institution, the openness of the record is what
+preserves the work and the only channel through which it earns scrutiny.
+Every paper, experiment, script, and audit table is public:
+
+- **Repositories** hold the source, the experiments, and the audit tables —
+  which are *canonical*. Where this site and a paper's table disagree, the
+  paper's table wins.
+- **Zenodo deposits** are the citable record; each paper's concept DOI
+  resolves to its latest version.
+- **`dcl-core`** is the shared simulation engine the experiments run on,
+  pinned by version so a downstream paper reproduces exactly.
+
+### Falsifiability
+
+The program stakes out predictions that could kill it: a closed-form
+lattice birefringence along the $(1,1,-1)$ optical axis and the predicted
+concordance of multiple channels along it; a short-range discrete
+correction to the $1/r^2$ law; and the coupling ratio $g_3^2/g_2^2 = 3/2$
+at the lattice scale. These are listed, with their audit status, on the
+[claim map](papers/claim-map.qmd).
