@@ -1,63 +1,13 @@
 {
-    "python.defaultInterpreterPath": "C:/dev/dcl-website-geometry-induced-physics-org/.venv-ucrt64/bin/python.exe",
-    "terminal.integrated.defaultProfile.windows": "UCRT64",
+    "python.defaultInterpreterPath": "C:/Users/jackd/.venv/Scripts/python.exe",
+    "terminal.integrated.defaultProfile.windows": "PowerShell 7",
     "terminal.integrated.profiles.windows": {
-        "UCRT64": {
-            "path": "C:\\msys64\\usr\\bin\\bash.exe",
-            "args": ["--login", "-i"],
-            "env": {
-                "MSYSTEM": "UCRT64",
-                "CHERE_INVOKING": "1",
-                "MSYS2_PATH_TYPE": "inherit"
-            }
-        },
-        "MINGW64": {
-            "path": "C:\\msys64\\usr\\bin\\bash.exe",
-            "args": ["--login", "-i"],
-            "env": {
-                "MSYSTEM": "MINGW64",
-                "CHERE_INVOKING": "1",
-                "MSYS2_PATH_TYPE": "inherit"
-            }
+        "PowerShell 7": {
+            "source": "PowerShell"
         }
     },
-    
-    "files.eol": "lf",
-
-    "ltex.language": "en-US",
-    "ltex.dictionary": {
-        "en-US": [
-            "arXiv",
-            "Bresenham",
-            "cff",
-            "characterised",
-            "core3d",
-            "DCL",
-            "dcl",
-            "dcl_core",
-            "DOI",
-            "DOIs",
-            "FQXi",
-            "geometryinducedphysics",
-            "JackDMenendez",
-            "jackmenendez",
-            "katex",
-            "Menendez",
-            "ORCID",
-            "pagetitle",
-            "PhilSci",
-            "Poincaré",
-            "Quarto",
-            "renormalisation",
-            "summarised",
-            "viXra",
-            "Zenodo"
-        ]
-    },
-
-    "spellright.documentTypes": [
-        "plaintext",
-        "latex",
-        "tex"
-    ]
+    "files.eol": "\r\n",
+    "chat.tools.terminal.autoApprove": {
+        "rename-item": true
+    }
 }
