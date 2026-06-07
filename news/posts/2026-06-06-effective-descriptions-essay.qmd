@@ -1,0 +1,47 @@
+---
+title: "New essay: effective descriptions and the dynamics they discard"
+description: >-
+  A new essay asks whether some aspects of quantum mechanics are
+  effective descriptions hiding richer behavior — the lattice reaches
+  familiar atomic structure through coupled dynamics more involved than
+  the effective picture it reproduces.
+author: "Jack D. Menendez"
+date: "2026-06-06"
+categories: [essay, effective-theory, emergence, atomic-structure]
+---
+
+A new essay,
+[*Effective descriptions and the dynamics they discard*](../../essays/posts/2026-06-06-effective-descriptions/index.qmd),
+is now on the [essays page](../../essays/index.qmd). It takes up a
+question the A=1 lattice keeps raising: **could some aspects of quantum
+mechanics be effective descriptions that hide a much richer underlying
+behavior?**
+
+The lattice reproduces atomic structure — the hydrogen spectrum, the Bohr
+radius to four significant figures — but it gets there by a more
+complicated road. Where the effective picture has a static eigenstate of a
+fixed Coulomb potential, the lattice has to *assemble* the bound state
+through coupled dynamics: an active, moving proton; stochastic
+exploration; a resonance (Arnold-tongue) lock; and a photon-mediated
+transition demanded by $\mathcal{A}=1$ at orbit lock-in. Same endpoint,
+very different pathway.
+
+That gap is the essay's real subject: **when a theory successfully
+predicts observations, what dynamical information was discarded in
+building the effective description?** The fixed-point description is right
+about its fixed points — but the dynamics it drops to reach them are not
+thereby absent, only invisible at that level of abstraction.
+
+In keeping with the [Statement of Intent](../../index.qmd), the lattice is
+not offered as a correction to established physics, whose predictive
+success stands. It is explored as a possible source of insight into the
+processes from which familiar behavior emerges. The essay is also honest
+about its own ledger: the atomic spectra are `PASS`, but the long-horizon
+settling dynamics it finds interesting are still `PART` on the
+[claim map](../../papers/claim-map.qmd).
+
+Pointers:
+
+- Read the essay: [Effective descriptions and the dynamics they discard](../../essays/posts/2026-06-06-effective-descriptions/index.qmd)
+- Substrate paper: [Paper I — Geometry First](../../papers/paper-01-geometry-first.qmd)
+- Status of the claims: [Claim map](../../papers/claim-map.qmd)
