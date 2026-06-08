@@ -11,7 +11,7 @@ date: "2026-05-23"
 categories: [essay, interpretation, ontology, lattice-family, philosophy]
 ---
 
-James Reeves [recently argued](https://www.linkedin.com/pulse/how-much-money-has-science-spent-interpretation-never-james-reeves-spwlc/)
+James Reeves recently argued
 that modern physics has spent vast resources building on top of an
 interpretation — the idea that spacetime is a physical fabric — that
 has never been experimentally demonstrated. His point is not that
@@ -119,10 +119,9 @@ the shadows.
 
 ## References
 
-- James Reeves, ["How much money has science spent on an
+- James Reeves, "How much money has science spent on an
   interpretation that has never been experimentally
-  verified?"](https://www.linkedin.com/pulse/how-much-money-has-science-spent-interpretation-never-james-reeves-spwlc/),
-  LinkedIn (2026).
+  verified?", LinkedIn (2026).
 - Menendez, *Geometry First — the A=1 Discrete Causal Lattice*
   (Paper I).
   doi:[10.5281/zenodo.20078529](https://doi.org/10.5281/zenodo.20078529).
