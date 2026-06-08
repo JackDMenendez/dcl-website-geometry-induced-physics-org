@@ -1,0 +1,46 @@
+---
+title: "New: an explorable 3D lattice model"
+description: >-
+  dcl-lattice-viewer v0.1.0 turns A=1 lattice state into browser-explorable
+  3D models — and the first one is now live on the site, a rotatable lattice
+  you can drag, zoom, and pan in place.
+author: "Jack D. Menendez"
+date: "2026-06-07"
+categories: [release, artifact, visualization, dcl-lattice-viewer, 3D]
+---
+
+There is now a **live, explorable 3D lattice model** on the site:
+[Explorable lattice — interactive 3D viewer](../../artifacts/explorable-lattice.qmd).
+Drag to rotate, scroll to zoom, pan, and reset — the lattice renders in the
+page, no download required.
+
+It is produced by a new tool,
+[`dcl-lattice-viewer`](https://github.com/JackDMenendez/dcl-lattice-viewer)
+**v0.1.0**, the downstream visualization companion to the `dcl-core`
+engine. The tool reads the `.npy` / `.npz` token-and-phase fields that
+`dcl-core` experiments write and emits two things:
+
+- a **`.glb`** you can drop into a [`<model-viewer>`](https://modelviewer.dev/)
+  (which is exactly how the model on the artifact page is embedded), and
+- a self-contained **interactive three.js `.html`** — orbit, zoom, pan, and,
+  for a time series, scrub through ticks.
+
+The model now on the site uses **parity** colouring, so the bipartite
+structure is visible directly: the RGB (even) sublattice is warm, the CMY
+(odd) sublattice is cool, and the interleaved cubes *are* the two
+interpenetrating sublattices the whole framework rests on. (The tool also
+offers a full phase colour-wheel and a token-count ramp.)
+
+You can run it yourself with no engine run required:
+
+```sh
+pip install "dcl_lattice_viewer[glb] @ git+https://github.com/JackDMenendez/dcl-lattice-viewer@v0.1.0"
+dcl-lattice-viewer demo -o lattice --color parity
+```
+
+Pointers:
+
+- Explore the model: [Explorable lattice](../../artifacts/explorable-lattice.qmd)
+- The tool: [`dcl-lattice-viewer`](https://github.com/JackDMenendez/dcl-lattice-viewer)
+- All artifacts: [Research artifacts](../../artifacts/index.qmd)
+- The substrate it draws: [Paper I — Geometry First](../../papers/paper-01-geometry-first.qmd)

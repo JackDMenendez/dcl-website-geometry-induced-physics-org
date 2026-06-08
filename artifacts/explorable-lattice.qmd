@@ -1,0 +1,97 @@
+---
+title: "Explorable lattice — interactive 3D viewer"
+description: >-
+  A live, rotatable 3D model of an A=1 lattice state, produced by the
+  dcl-lattice-viewer tool. Parity colouring shows the bipartite RGB/CMY
+  sublattice split that defines the substrate.
+categories: [3D model, visualization, dcl-lattice-viewer]
+resources:
+  - explorable-lattice.glb
+format:
+  html:
+    include-in-header:
+      - text: |
+          <script type="module" src="https://unpkg.com/@google/model-viewer@^4.0.0/dist/model-viewer.min.js"></script>
+---
+
+A **live, explorable** A=1 lattice state — drag to rotate, scroll to zoom,
+right-drag to pan, double-click to reset. It is rendered straight from
+lattice field data by [`dcl-lattice-viewer`](https://github.com/JackDMenendez/dcl-lattice-viewer)
+(v0.1.0), the downstream visualization tool for the `dcl-core` engine.
+
+```{=html}
+<model-viewer
+  src="explorable-lattice.glb"
+  alt="A roughly spherical cloud of small cubes on a 21x21x21 lattice, warm-coloured cubes on one sublattice interleaved with cool-coloured cubes on the other, densest at the centre and fading toward the edges."
+  shadow-intensity="1"
+  camera-controls
+  auto-rotate
+  touch-action="pan-y"
+  style="width: 100%; height: 520px; background-color: #111111;">
+  <div slot="poster" style="display:flex; align-items:center; justify-content:center; height:100%;">
+    <p style="text-align:center; padding:1rem; color:#ccc;">
+      Loading the lattice model… if nothing appears, your browser may not
+      support WebGL.
+    </p>
+  </div>
+</model-viewer>
+```
+
+## What you are looking at
+
+This is a **demonstration lattice state** — a minimum-uncertainty Gaussian
+wavepacket synthesised by the viewer's `demo` command, not an experiment
+run. Even so, it is drawn by exactly the rules the tool applies to real
+`dcl-core` dumps:
+
+- **Position** — each cube sits at its lattice coordinate, recentred on
+  the lattice ($21 \times 21 \times 21$ here).
+- **Size** — $\sqrt{}$-scaled by the total token count at the site, so the
+  dense core of the wavepacket reads larger than the tail.
+- **Colour** — this model uses **parity** mode: the RGB (even) sublattice
+  is warm, the CMY (odd) sublattice is cool. The interleaved warm/cool
+  cubes *are* the bipartite structure on which the whole framework rests —
+  two interpenetrating sublattices related by the tick rule. (The tool also
+  offers `phase`, a full colour wheel keyed to the token-weighted phase,
+  and `count`, a dark-to-amber ramp.)
+
+## Make your own
+
+The viewer turns the `.npy` / `.npz` token-and-phase fields that `dcl-core`
+experiments write into a `.glb` (for a `<model-viewer>` like the one above)
+and a self-contained interactive three.js `.html` (orbit, zoom, pan, and —
+for a time series — scrub through ticks).
+
+```sh
+# install (base = HTML only; the [glb] extra adds .glb export)
+pip install "dcl_lattice_viewer[glb] @ git+https://github.com/JackDMenendez/dcl-lattice-viewer@v0.1.0"
+
+# see output immediately, no engine run required
+dcl-lattice-viewer demo -o lattice --color parity        # writes lattice.glb + lattice.html
+
+# render a real experiment dump (a directory of .npy, or an .npz)
+dcl-lattice-viewer build data/exp_12_run/ -o figures/exp_12 --format both
+```
+
+A `4D` array `(T, nx, ny, nz)` is read as a tick sequence and **animates**
+in the HTML viewer. The base install needs only NumPy; `.glb` export adds
+`trimesh`, and an `[engine]` extra can build frames straight from a live
+`dcl-core` session.
+
+## Provenance
+
+- **Tool:** [`dcl-lattice-viewer`](https://github.com/JackDMenendez/dcl-lattice-viewer)
+  v0.1.0 (MIT). The model above was produced with
+  `dcl-lattice-viewer demo -o explorable-lattice --color parity --shape 21 21 21 --units 40000`.
+- **Engine of record:** [`dcl-core`](../papers/index.qmd#dcl-core---python-engine),
+  whose `.npy` field format the tool consumes.
+- **Substrate:** the bipartite octahedral lattice of
+  [Paper I — *Geometry First*](../papers/index.qmd#paper-i---geometry-first);
+  see also the [unit-cell model](lattice-unit-cell.qmd) for the substrate's
+  geometric primitive.
+
+## Accessibility
+
+The model carries a text description in its `alt` attribute, and a loading
+message stands in until WebGL initialises. For a high-resolution still or a
+guided walk-through, see the [contact page](../contact.qmd).
