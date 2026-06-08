@@ -1,0 +1,157 @@
+---
+title: "Six of eight: is the causal lattice a sparse slice?"
+subtitle: >-
+  A reader's question about the unit-cell model — could lattices of
+  different dimension share one topology, with ours keeping fewer of its
+  links?
+description: >-
+  The bipartite octahedral lattice uses six of the eight cube
+  body-diagonals as causal links — and the two it omits are exactly the
+  optical axis. A look at whether the 3D causal lattice is best read as a
+  sparse subset of something denser, and what would settle it.
+author: "Jack D. Menendez"
+date: "2026-06-07"
+categories: [essay, geometry, dimension, optical-axis, interpretation]
+---
+
+Looking at the new [unit-cell model](../../../artifacts/lattice-unit-cell.qmd),
+a reader asked a sharp question: suppose lattices of different dimension
+could exist in parallel on the same adjacency topology — is the 3D causal
+lattice just using a *less dense subset* of the available nodes?
+
+It is worth saying plainly what that object is. The lattice in the model
+is not a picture *of* physics — it is the mathematically defined geometric
+object whose intrinsic constraints the program uses to *induce* physics
+(its [Statement of Intent](../../../index.qmd)). So the reader's question
+is not idle: it asks how much structure that object actually *spends* —
+whether the physics we recover leans on all of the lattice, or only a
+thrifty part of it.
+
+The geometry has something concrete to say, and it points at one of the
+framework's open questions. Let me separate what the lattice actually
+shows from where the reading turns speculative.
+
+## Six directions, and the one that is missing
+
+A node's six causal neighbours sit along the basis vectors the engine
+uses — $V_1=(1,1,1)$, $V_2=(1,-1,-1)$, $V_3=(-1,1,-1)$ (the RGB / even
+sublattice) and their negatives $-V_1, -V_2, -V_3$ (the CMY / odd
+sublattice). Every one of those is a **body-diagonal of the unit cube**:
+a vector to a corner $(\pm1,\pm1,\pm1)$.
+
+But a cube has *eight* corners, and the lattice uses only **six** of them.
+Which two does it leave out? Subtract the six from the eight and exactly
+two remain:
+
+$$(1,1,-1) \quad\text{and}\quad (-1,-1,1) = \pm(1,1,-1).$$
+
+That is the **optical axis** — the direction $V_1+V_2+V_3 = (1,1,-1)$ along
+which Paper I predicts the lattice's residual birefringence and flat
+dispersion, the axis that ties together the framework's strongest
+falsifiable prediction. The lattice has **no direct causal link along the
+very axis where its symmetry restoration is weakest.** It is blind in the
+one direction it tells you to go looking.
+
+I want to be careful about the status of that observation. The six
+vectors and the optical axis are Paper I; the framing of the optical axis
+as *the two body-diagonals the lattice omits* is a consequence I am
+drawing from the engine's vectors, not a theorem stated in the paper. In
+fact Paper I takes the opposite view of the same number: it calls
+coordination six **"forced by the bipartite octahedral geometry"** — six
+is presented as intrinsic, not as a sparse selection from eight. Which is
+exactly where the reader's question bites.
+
+## "Less dense" in what, exactly?
+
+Before pushing on the subset idea, it helps to pin down *which* density.
+
+- **Nodes.** Over a full pair of ticks the dynamics touch every node — the
+  bipartite split only alternates which sublattice is active. So the
+  lattice is not really sparser in *nodes*.
+- **Directions.** At each tick a node hops along just **three** active
+  vectors (one sublattice). *That* is where the thinness lives — and it is
+  load-bearing. Three active directions correspond to three spatial
+  dimensions and the three spatial gamma matrices. In this framework, the
+  dimension of space *is* the count of active directions.
+
+So if there is a sense in which our lattice is "a less dense subset," it
+is about **coordination**, not node count: three live directions per tick,
+drawn from a cube that offers more. The reader's instinct survives the
+refinement — it just relocates from nodes to links.
+
+## Parallel dimensions, two ways
+
+There are two distinct ways "lattices of different dimension on one
+topology" can be made precise, and the framework already gestures at both.
+
+**Spatially — the diamond family.** The octahedral lattice is one member
+of a family of higher-dimensional diamond lattices, the theme of an
+earlier essay,
+[*Plato's Cave and the DCL projector*](../2026-05-23-platos-cave-and-the-projector/index.qmd).
+A $D$-dimensional member activates more directions per tick; raise $D$ and
+the induced walk spreads thinner across more neighbours. Different members
+could in principle share an ambient node set and differ only in which
+links are live — which is the reader's picture exactly: ours as a
+low-coordination slice of a richer graph. The quantity that tells the
+members apart is the **spectral dimension** $d_s$, the return-probability
+and spreading law of the walk. That is the discriminator you could measure
+from inside the cave.
+
+**Internally — and this is the closer match to the question.** Paper II
+keeps the *same* spatial nodes but extends the per-site amplitude to
+$\mathbb{C}^{12} = \mathbb{C}^2 \otimes \mathbb{C}^2 \otimes \mathbb{C}^3$,
+and finds the Standard-Model gauge algebra as a **factor-product
+projection** of a much larger, 71-dimensional symmetry of that extended
+amplitude. That is, almost literally, *multiple structures coexisting on
+one topology, with the physics we observe being a projection — a subset —
+of a denser object.* In the gauge sector, the reader's intuition is not
+far from the thesis of
+[Paper II](../../../papers/paper-02-geometry-forces-physics.qmd) itself.
+
+## What would settle it
+
+Here is the honest boundary. Whether the 3D causal lattice is best read as
+*a sparse slice of a denser or higher-dimensional structure* or as
+*intrinsically six-coordinate* is, for the spatial picture, an open
+interpretive question — a "which projector?" question, not a `PASS` row.
+The unused-diagonal observation is solid as geometry, but it does not by
+itself decide between "the lattice omits two links" and "the lattice
+simply has six." The internal version (Paper II's projection) stands on
+firmer ground; the spatial diamond-family version is exploratory, and the
+[claim map](../../../papers/claim-map.qmd) flags the relevant
+optical-axis predictions as `STUB`.
+
+Two things could move it from interpretation toward measurement:
+
+1. **Spectral dimension.** A high-energy propagation measurement that pins
+   $d_s$ would say which member of the diamond family — which density of
+   live directions — is compatible with the shadows.
+2. **The optical axis.** If the omitted-diagonal reading is more than a
+   coincidence, then the predicted $(1,1,-1)$ birefringence is the
+   *fingerprint of the link the lattice left out* — anisotropy
+   concentrated in precisely the direction with no causal edge. A
+   concordant multi-channel signal along that axis would be hard to read
+   any other way.
+
+The unit-cell model is what made the question askable — you can now turn
+the thing over and notice that one diagonal is conspicuously absent. That
+a single missing edge lands exactly on the framework's one falsifiable
+axis is, at the least, a coincidence worth chasing. Consistent with the
+program's [Statement of Intent](../../../index.qmd), I am not claiming the
+lattice *is* a slice of a hidden denser world — only that the geometry
+makes the question well-posed, and hands us two ways to test it.
+
+## References
+
+- Menendez, *Geometry First* ([Paper I](../../../papers/paper-01-geometry-first.qmd))
+  — the basis vectors $V_1, V_2, V_3$, fixed coordination six, and the
+  optical-axis $(1,1,-1)$ birefringence prediction.
+- Menendez, *Geometry Forces Physics*
+  ([Paper II](../../../papers/paper-02-geometry-forces-physics.qmd)) — the
+  $\mathbb{C}^{12}$ extension and the factor-product projection of the
+  71-dimensional automorphism algebra.
+- [*Plato's Cave and the DCL projector*](../2026-05-23-platos-cave-and-the-projector/index.qmd)
+  — the higher-dimensional diamond family and the spectral-dimension
+  discriminator.
+- [Unit-cell model](../../../artifacts/lattice-unit-cell.qmd) ·
+  [Claim map](../../../papers/claim-map.qmd).

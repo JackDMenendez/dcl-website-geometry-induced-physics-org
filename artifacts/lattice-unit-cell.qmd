@@ -20,6 +20,14 @@ fan out along the basis vectors $V_1, V_2, V_3$ (warm: the RGB / even
 sublattice) and $-V_1, -V_2, -V_3$ (cool: the CMY / odd sublattice).
 Drag to rotate; scroll to zoom; double-click for the default view.
 
+This is the mathematically defined geometric object the program uses to
+*induce* physics: its intrinsic constraints — the bipartite tick rule and
+the single axiom $\mathcal{A}=1$ — are what generate the conservation
+laws, symmetries, and interactions the papers recover. Everything in the
+series is built on the object you are turning over here. See the
+[Statement of Intent](../index.qmd) for what that claim does and does not
+assert.
+
 ```{=html}
 <model-viewer
   src="lattice-unit-cell.glb"

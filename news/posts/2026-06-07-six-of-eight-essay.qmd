@@ -1,0 +1,41 @@
+---
+title: "New essay: is the causal lattice a sparse slice?"
+description: >-
+  Prompted by the new unit-cell model — the lattice uses six of the eight
+  cube body-diagonals as causal links, and the two it omits are exactly
+  the optical axis. An essay on reading the 3D lattice as a subset of
+  something denser, and what would settle it.
+author: "Jack D. Menendez"
+date: "2026-06-07"
+categories: [essay, geometry, dimension, optical-axis]
+---
+
+A reader, turning over the new
+[unit-cell model](../../artifacts/lattice-unit-cell.qmd), asked whether
+the 3D causal lattice might be a *less dense subset* of some richer
+topology — lattices of different dimension sharing one set of nodes. The
+new essay,
+[*Six of eight: is the causal lattice a sparse slice?*](../../essays/posts/2026-06-07-six-of-eight/index.qmd),
+takes the question seriously.
+
+The geometry offers a concrete hook. A node's six causal neighbours are
+body-diagonals of the unit cube — but a cube has **eight** corners, and
+the lattice uses only six. The two it leaves out are exactly
+$\pm(1,1,-1)$: the **optical axis** along which the framework predicts its
+residual birefringence. The lattice has no causal link in the very
+direction it tells you to go looking.
+
+From there the essay separates the verified from the speculative: the six
+vectors and the optical axis are Paper I, but reading that axis as *the
+omitted diagonal* is an observation, not a theorem — and Paper I actually
+calls coordination six *intrinsic*, not a subset. It then lays out two
+ways "parallel dimensions on one topology" can be made precise (the
+spatial diamond family, discriminated by spectral dimension; and Paper
+II's internal $\mathbb{C}^{12}$ projection, the firmer case), and what
+measurement would settle which reading holds.
+
+Pointers:
+
+- Read the essay: [Six of eight](../../essays/posts/2026-06-07-six-of-eight/index.qmd)
+- The model that prompted it: [unit-cell viewer](../../artifacts/lattice-unit-cell.qmd)
+- Companion: [Plato's Cave and the DCL projector](../../essays/posts/2026-05-23-platos-cave-and-the-projector/index.qmd)

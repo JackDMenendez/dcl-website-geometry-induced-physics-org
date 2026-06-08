@@ -27,7 +27,7 @@ them does not.
 
 ## A familiar result by an unfamiliar road
 
-Take the most-tested case in [Paper I](../../papers/paper-01-geometry-first.qmd):
+Take the most-tested case in [Paper I](../../../papers/paper-01-geometry-first.qmd):
 the hydrogen atom. The lattice recovers the bound-state spectrum
 $E_n \sim -1/n^2$ and reproduces the Bohr radius to four significant
 figures with nothing fitted ($k_\text{min}=0.0970$ against
@@ -104,13 +104,13 @@ The atomic *spectra* are `PASS` rows; the long-horizon *settling* dynamics
 — the very transient I am pointing at as interesting — are still `PART` in
 the audit, with the bare two-body baseline escaping on an unbounded grid.
 That is exactly as it should be on the
-[claim map](../../papers/claim-map.qmd): the resonance match is solid, the
+[claim map](../../../papers/claim-map.qmd): the resonance match is solid, the
 full dynamical story of how an atom settles is open work, and I would
 rather say so than dress it up.
 
 In that spirit the lattice is not proposed as a replacement for
 established physics — consistent with the program's
-[Statement of Intent](../../index.qmd), it is explored as a *possible
+[Statement of Intent](../../../index.qmd), it is explored as a *possible
 source of additional insight* into the processes from which familiar
 physical behavior may emerge. If two formulations agree on every
 observable but disagree on the dynamics between observations, that
@@ -119,11 +119,11 @@ disagreement is not a contradiction to be resolved. It is a place to look.
 ## References
 
 - Menendez, *Geometry First — the A=1 Discrete Causal Lattice*
-  ([Paper I](../../papers/paper-01-geometry-first.qmd)) — the landing page
+  ([Paper I](../../../papers/paper-01-geometry-first.qmd)) — the landing page
   carries the Zenodo DOI and repository. Hydrogen spectrum, the
   active-proton requirement, Arnold-tongue quantization, and photon
   emission at orbit lock-in.
-- [Claim map](../../papers/claim-map.qmd) — the `PASS` / `PART` status of
+- [Claim map](../../../papers/claim-map.qmd) — the `PASS` / `PART` status of
   the atomic-structure and orbital-settling rows discussed here.
-- [About the program](../../about.qmd) — how claims are audited and what
+- [About the program](../../../about.qmd) — how claims are audited and what
   "proven" means in this series.
