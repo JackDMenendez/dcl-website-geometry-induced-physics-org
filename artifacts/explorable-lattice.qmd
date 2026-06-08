@@ -22,7 +22,7 @@ lattice field data by [`dcl-lattice-viewer`](https://github.com/JackDMenendez/dc
 ```{=html}
 <model-viewer
   src="explorable-lattice.glb"
-  alt="A roughly spherical cloud of small cubes on a 21x21x21 lattice, warm-coloured cubes on one sublattice interleaved with cool-coloured cubes on the other, densest at the centre and fading toward the edges."
+  alt="A roughly spherical cloud of small cubes on a cubic lattice, warm-coloured cubes on one sublattice interleaved with cool-coloured cubes on the other, densest at the centre and fading toward the edges."
   shadow-intensity="0"
   camera-controls
   auto-rotate
@@ -46,7 +46,7 @@ run. Even so, it is drawn by exactly the rules the tool applies to real
 `dcl-core` dumps:
 
 - **Position** — each cube sits at its lattice coordinate, recentred on
-  the lattice ($21 \times 21 \times 21$ here).
+  the lattice ($15 \times 15 \times 15$ here).
 - **Size** — $\sqrt{}$-scaled by the total token count at the site, so the
   dense core of the wavepacket reads larger than the tail.
 - **Colour** — this model uses **parity** mode: the RGB (even) sublattice
@@ -83,9 +83,9 @@ in the HTML viewer. The base install needs only NumPy; `.glb` export adds
 
 - **Tool:** [`dcl-lattice-viewer`](https://github.com/JackDMenendez/dcl-lattice-viewer)
   v0.1.0 (MIT). The model above was produced with
-  `dcl-lattice-viewer demo -o explorable-lattice --color parity --shape 21 21 21 --units 40000`,
-  then Draco-compressed for the web (≈1.4 MB → ≈100 KB) with
-  [`gltf-transform`](https://gltf-transform.dev/).
+  `dcl-lattice-viewer demo -o explorable-lattice --color parity --shape 15 15 15 --units 12000`
+  — a deliberately compact demo (≈1,800 sites) kept as a plain `.glb` so it
+  loads with no external decoder.
 - **Engine of record:** [`dcl-core`](../papers/index.qmd#dcl-core---python-engine),
   whose `.npy` field format the tool consumes.
 - **Substrate:** the bipartite octahedral lattice of
