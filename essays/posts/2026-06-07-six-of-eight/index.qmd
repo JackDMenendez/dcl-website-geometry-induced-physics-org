@@ -85,7 +85,7 @@ There are two distinct ways "lattices of different dimension on one
 topology" can be made precise, and the framework already gestures at both.
 
 **Spatially — the diamond family.** The octahedral lattice is one member
-of a family of higher-dimensional diamond lattices, the theme of an
+of a family of higher-dimensional diamond lattices,[^family] the theme of an
 earlier essay,
 [*Plato's Cave and the DCL projector*](../2026-05-23-platos-cave-and-the-projector/index.qmd).
 A $D$-dimensional member activates more directions per tick; raise $D$ and
@@ -96,6 +96,19 @@ low-coordination slice of a richer graph. The quantity that tells the
 members apart is the **spectral dimension** $d_s$, the return-probability
 and spreading law of the walk. That is the discriminator you could measure
 from inside the cave.
+
+[^family]: A caveat on rigour: the *construction* of this family is not yet
+    formally stated. Paper I establishes coordination six as the **unique**
+    solution for $\mathbb{Z}^3$, so the 3D lattice is special rather than a
+    sampled member; and at least two higher-dimensional generalisations
+    compete — a **cube-diagonal** one (the $D$-cube's $2^{D-1}$ diagonal
+    pairs, of which the lattice would keep $D$) versus a
+    **simplex / tetrahedral** one (the $(D{+}1)$-vertex $D$-simplex, the
+    sense in which a crystallographic "diamond" generalises). They already
+    diverge at four dimensions: the tesseract's 16 corners versus the
+    5-cell's 5 vertices. Pinning down which family is the right one — and
+    its spectral-dimension signature — is the subject of a planned paper in
+    the series.
 
 **Internally — and this is the closer match to the question.** Paper II
 keeps the *same* spatial nodes but extends the per-site amplitude to
