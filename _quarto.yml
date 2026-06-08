@@ -89,5 +89,10 @@ format:
     include-in-header:
       - text: |
           <meta name="msvalidate.01" content="30FC39A4CB5B21D9D00D3C5AD5CBF2A6" />
+      # GoatCounter web analytics — cookieless, privacy-first, no consent
+      # banner required. Dashboard: https://geometryinducedphysics.goatcounter.com
+      - text: |
+          <script data-goatcounter="https://geometryinducedphysics.goatcounter.com/count"
+                  async src="//gc.zgo.at/count.js"></script>
 
 freeze: auto
