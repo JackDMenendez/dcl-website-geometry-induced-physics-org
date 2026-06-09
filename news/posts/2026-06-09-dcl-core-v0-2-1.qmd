@@ -34,9 +34,18 @@ This is the release that makes the
 testable head-on. The question is simple to state: **is there a minimum
 delta-probability — a floor?** With integer tokens there is a natural
 candidate, because the smallest change the lattice can make is *one token
-out of $N$*. v0.2.1 lets us run **discrete A=1 against continuous
-probability** on the same problems and ask whether that floor is real and
-whether it changes the physics — rather than assuming the continuum.
+out of $N$*.
+
+A floor would mean probability is **pixelated**, and that is falsifiable
+with teeth. It says **interference and coherence are pixelated** — fringe
+contrast cannot fall continuously to zero, and coherence carries a grain.
+And it predicts that **higher-dimensional lattices pixelate more**,
+because probability spreads thinner across more directions and hits the
+one-token floor sooner — turning the grain into a measurement of the
+lattice's dimension. v0.2.1 is the instrument: run discrete A=1 against
+the continuum, and at different dimensions, and watch. The new essay
+[*Is probability pixelated?*](../../essays/posts/2026-06-09-is-probability-pixelated/index.qmd)
+develops this.
 
 ## Why discrete is more than a reformatting
 

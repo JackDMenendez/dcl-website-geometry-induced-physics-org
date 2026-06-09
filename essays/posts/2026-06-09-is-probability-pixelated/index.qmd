@@ -1,0 +1,132 @@
+---
+title: "Is probability pixelated?"
+subtitle: >-
+  If A=1 has a floor — a smallest possible probability — then
+  interference and coherence have a grain, and higher-dimensional
+  lattices have a coarser one.
+description: >-
+  The integer-token engine forces a sharp question: is there a minimum
+  probability, a δp_min floor? If so, probability is pixelated —
+  interference and coherence cannot be arbitrarily fine, and the
+  pixelation grows with the lattice's dimension. A falsifiable conjecture,
+  and the engine is the instrument.
+author: "Jack D. Menendez"
+date: "2026-06-09"
+categories: [essay, delta-p-min, discrete-probability, dimension, falsifiability]
+---
+
+The new integer-token engine
+([`dcl-core` v0.2.1](../../../papers/index.qmd#dcl-core---python-engine))
+makes A=1 exact: a session is a budget of $N$ indistinguishable
+probability tokens, and conservation is integer arithmetic rather than a
+floating-point near-miss. That reframing forces a question the continuum
+never had to answer:
+
+**Is there a minimum probability — a floor?**
+
+Call it $\delta p_\min$. If it is zero, probability is the smooth,
+infinitely divisible quantity of textbook quantum mechanics. If it is
+*not* zero, then probability is **pixelated** — and that has teeth.
+
+## What a floor would mean
+
+A floor says $|\psi|^2$ cannot be subdivided without limit. There is a
+smallest amount of probability the world can move, hold, or distinguish.
+On the lattice the natural candidate is immediate: with $N$ tokens, the
+smallest change is **one token out of $N$**. Below that, there is nothing
+to move. Continuity would then be an excellent approximation — the way a
+high-resolution photograph looks continuous — but an approximation, with a
+pixel size.
+
+This is not a claim that the floor exists. Whether $\delta p_\min > 0$ is
+an open question — the point of the
+[δp_min investigation](../../../news/posts/2026-06-09-dcl-core-v0-2-1.qmd).
+It is a claim that the question is now *decidable*, and that the answer,
+either way, is physical. Here is why it matters.
+
+## Pixelated interference, pixelated coherence
+
+Interference and coherence are where a probability floor would first show.
+
+A dark fringe is a place where amplitude cancels. In the continuum it can
+be *arbitrarily* dark — cancellation to any precision. With a floor, it
+cannot: the darkest a fringe can get is one quantum above nothing.
+Fringe contrast cannot fall continuously to zero; it bottoms out.
+Likewise **coherence carries a grain** — you cannot hold a superposition
+whose components differ by less than $\delta p_\min$, because there is no
+such difference to hold. The smooth visibility curves of standard quantum
+optics would, at the finest scale, be quantised.
+
+That is a genuine departure from continuous quantum mechanics, and it is
+**falsifiable**: sufficiently precise interferometry or weak-coherence
+measurement either finds a floor or it does not. If interference stays
+perfectly smooth below any reachable scale, then $\delta p_\min$ is zero
+or below experimental reach, and the pixelated picture is — at least there
+— wrong. A framework that can be told it is wrong by an experiment is
+doing its job.
+
+## Higher dimensions pixelate more
+
+The most distinctive consequence is structural. In the lattice family, a
+higher-dimensional member spreads each step's probability across **more**
+neighbours — the same thinning the
+[Plato's-Cave essay](../2026-05-23-platos-cave-and-the-projector/index.qmd)
+described, and the same economy the
+[six-of-eight essay](../2026-06-07-six-of-eight/index.qmd) traced through
+the lattice's coordination.
+
+Now add a floor. With a fixed token budget $N$ divided across more
+directions, each direction receives fewer tokens — and so the dynamics hit
+the one-token floor *sooner*. The grain gets coarser. **Pixelation scales
+with dimension:** the more dimensions the lattice spends, the blockier its
+interference.
+
+That turns pixelation into a **measurement of dimension**. The earlier
+[scoping](../2026-06-07-six-of-eight/index.qmd) of the family proposed
+*spectral dimension* as the way to tell members apart; pixelation is a
+*second, independent* handle — and a more directly observable one, because
+it lives in interference contrast rather than in the asymptotics of a
+random walk. Two handles on "which lattice is this?" are far better than
+one.
+
+## The engine is the instrument
+
+What makes this more than a thought experiment is that the
+release that raised the question can also test it. The integer-token
+engine does not approximate the floor — it *is* the floor, by
+construction. So you can:
+
+- run **discrete A=1 against the continuous-amplitude engine** on the same
+  interference problem and watch for where they part company — the
+  pixelation scale; and
+- run the discrete engine at **different lattice dimensions** and watch the
+  grain coarsen, testing the "higher dimensions pixelate more" prediction
+  directly, in silico, before any telescope or interferometer is involved.
+
+Empirically falsifiable in the lab; computationally checkable on a desk.
+
+## What this is, and is not
+
+In the spirit of the program's
+[Statement of Intent](../../../index.qmd): none of this asserts that the
+universe *is* a token lattice with a hard probability floor. It says that
+*if* the A=1 object carries a $\delta p_\min$, then continuity is the
+coarse-grained limit, interference and coherence inherit a grain, and that
+grain encodes the dimension of the substrate. Those are consequences of
+the object, stated so they can be checked — and now, with the integer
+engine, checked.
+
+If probability turns out to be pixelated, the surprising thing will not be
+the pixels. It will be that the size of the pixel was telling us how many
+dimensions we were standing in all along.
+
+## References
+
+- [`dcl-core` v0.2.1](../../../papers/index.qmd#dcl-core---python-engine) —
+  the integer-token engine that makes A=1 exact and the floor testable.
+- [Six of eight](../2026-06-07-six-of-eight/index.qmd) and
+  [Plato's Cave and the DCL projector](../2026-05-23-platos-cave-and-the-projector/index.qmd)
+  — the lattice family and the dimension question pixelation feeds into.
+- [Paper I](../../../papers/paper-01-geometry-first.qmd) — the
+  continuous-amplitude implementation the discrete engine is tested
+  against.
