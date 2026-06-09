@@ -60,15 +60,19 @@ the centerpiece of the planned discrete-probability paper.
 The simulation engine that underlies the experiment scripts in the
 paper repositories. Ships **two engines under one import**:
 `dcl_core.core` is a verbatim port of Paper I's continuous-amplitude
-implementation; `dcl_core.core3d` is a new integer-token
-reimplementation that enforces A=1 by integer arithmetic — Paper III
-will compare them side-by-side.
+implementation; `dcl_core.core3d` is an integer-token reimplementation
+that enforces A=1 by **exact integer arithmetic** — a session is a budget
+of $N$ probability tokens with $\sum_x N(x) = N$ exactly, fractional bits
+carried by a Bresenham-style residual accumulator, CPU (NumPy) and GPU
+(CuPy) backends. The two engines let discrete A=1 be tested head-to-head
+against continuous probability (the δp_min question).
 
-- **Version:** v0.1.0
-- **DOI:** [10.5281/zenodo.20350952](https://doi.org/10.5281/zenodo.20350952)
+- **Version:** v0.2.1
+- **DOI:** [10.5281/zenodo.20615410](https://doi.org/10.5281/zenodo.20615410)
+- **Prior-version DOI:** [10.5281/zenodo.20350952](https://doi.org/10.5281/zenodo.20350952) (v0.1.0)
 - **Repository:** [`dcl-core`](https://github.com/JackDMenendez/dcl-core)
 - **Pinning syntax for downstream papers:**
-  `dcl_core @ git+https://github.com/JackDMenendez/dcl-core@v0.1.0`
+  `dcl_core @ git+https://github.com/JackDMenendez/dcl-core@v0.2.1`
 
 ## In progress
 

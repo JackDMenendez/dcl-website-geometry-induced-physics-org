@@ -1,0 +1,68 @@
+---
+title: "dcl-core v0.2.1: exact integer A=1, and the hunt for a probability floor"
+description: >-
+  dcl-core v0.2.1 (the v0.2.0 release plus a patch) is deposited on Zenodo
+  and tagged on GitHub. Its integer-token engine lets us test discrete A=1
+  against continuous probability — and ask whether there is a minimum
+  Δp, a floor.
+author: "Jack D. Menendez"
+date: "2026-06-09"
+categories: [release, dcl-core, software, delta-p-min, discrete-probability]
+---
+
+**dcl-core v0.2.1** is out — deposited on Zenodo
+([doi:10.5281/zenodo.20615410](https://doi.org/10.5281/zenodo.20615410))
+and tagged on [GitHub](https://github.com/JackDMenendez/dcl-core/releases/tag/v0.2.1).
+It bundles the **v0.2.0** feature release with a **v0.2.1** patch.
+
+## What changed: probability you can count
+
+The engine now does A=1 by **exact integer arithmetic**. A session is a
+fixed budget of $N$ indistinguishable **probability tokens** spread over
+the bipartite octahedral lattice, and $\mathcal{A}=1$ means
+$\sum_x N(x) = N$ *exactly* — no floating-point drift, no renormalisation
+fudge. The fractional bits that used to live in floating point are carried
+by a **Bresenham-style residual accumulator**, so the books balance to the
+integer. This integer-token engine sits alongside the original
+continuous-amplitude engine (a verbatim port of Paper I), under one
+import.
+
+## The question it lets us ask: is there a minimum Δp?
+
+This is the release that makes the
+[δp_min investigation](2026-05-27-delta-p-min-phase-1-2-progress.qmd)
+testable head-on. The question is simple to state: **is there a minimum
+delta-probability — a floor?** With integer tokens there is a natural
+candidate, because the smallest change the lattice can make is *one token
+out of $N$*. v0.2.1 lets us run **discrete A=1 against continuous
+probability** on the same problems and ask whether that floor is real and
+whether it changes the physics — rather than assuming the continuum.
+
+## Why discrete is more than a reformatting
+
+Once probability is integer tokens, a great deal of the lattice becomes
+**exact combinatorics** — counting tokens and paths — *even after the
+lattice is calibrated to physical units*. Much of what was floating-point
+becomes integer calculation: reproducible, drift-free, and decidable by
+counting rather than by tolerance. That is a different epistemic footing
+for the framework's claims, and it is what the discrete-vs-continuous
+comparison is built to exploit.
+
+## What's next
+
+The next release brings **GPU and parallel processing** to bear: the
+integer/combinatorial workload parallelises well, and scaling it up is the
+path to the larger lattices and longer horizons the open audit rows need.
+
+## Citation
+
+- **Version:** v0.2.1
+- **DOI:** [10.5281/zenodo.20615410](https://doi.org/10.5281/zenodo.20615410)
+- **Prior version:** [10.5281/zenodo.20350952](https://doi.org/10.5281/zenodo.20350952) (v0.1.0)
+- **Repository:** [`dcl-core`](https://github.com/JackDMenendez/dcl-core)
+- **Pin:** `dcl_core @ git+https://github.com/JackDMenendez/dcl-core@v0.2.1`
+
+See the [papers page](../../papers/index.qmd#dcl-core---python-engine) for
+how the engine underlies the series, and
+[Paper I](../../papers/paper-01-geometry-first.qmd) for the
+continuous-amplitude implementation it reimplements.
