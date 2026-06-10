@@ -1,0 +1,133 @@
+---
+title: "A frozen design, in plain sight"
+subtitle: >-
+  The full specification of the A=1 lattice has been printed on every page
+  of this site since before the first paper — which is most of the answer
+  to the retrodiction charge.
+description: >-
+  Twice the program has been accused of retrodiction — of tuning the
+  lattice to reproduce known physics. But the design has no free
+  parameters, its complete specification is the figure on every post, and
+  that figure was committed weeks before the first paper and has never
+  changed. Here is the distinction that charge misses.
+author: "Jack D. Menendez"
+date: "2026-06-09"
+categories: [essay, methodology, retrodiction, falsifiability, audit]
+---
+
+Twice now the program has met the same objection: the wall of `PASS` rows
+— the Dirac equation, the hydrogen spectrum to four significant figures,
+gravitational time dilation — is **retrodiction**. The lattice, the charge
+goes, was shaped to reproduce physics we already knew. It is the right
+objection to raise, and it deserves a precise answer rather than a
+defensive one.
+
+The answer turns on a distinction the charge usually blurs.
+
+## Two things "retrodiction" can mean
+
+There is a **pejorative** sense and a **benign** sense, and they are not
+the same accusation.
+
+- *Pejorative:* you **tuned** the model to the answer. You had knobs, and
+  you turned them until the output matched the data. This is overfitting,
+  and it is fatal — a model with enough free parameters can fit anything
+  and predicts nothing.
+- *Benign:* you **reproduced** something already known. You derived the
+  hydrogen spectrum, which was measured a century ago. This is not fatal
+  at all; it is what every unification must do. General relativity had to
+  reproduce Newton; quantum mechanics had to reproduce the spectral lines.
+
+The charge that stings is the pejorative one. So answer it first — and
+this program can answer it completely, because of how the design is built
+and where it lives.
+
+## There is nothing to tune
+
+The A=1 lattice is a **minimal fixed object**: a bipartite octahedral
+graph with six basis vectors, a single conservation axiom $\mathcal{A}=1$,
+and one update rule (the bipartite tick). There are **no free parameters**
+— the sole calibration is the lattice spacing that pins the grid to
+physical units, and it is fixed by the Planck scale, not fitted to a
+result. You cannot curve-fit a model that has nothing to fit. Whatever the
+hydrogen Bohr radius comes out to ($k=0.0970$ against $0.0971$, with
+nothing adjusted), it came out that way on its own. That is the difference
+between a derivation and a fit, and it is structural, not rhetorical.
+
+## The design is the wallpaper
+
+Here is the part that makes the pejorative charge not just wrong but
+*checkable* that it is wrong.
+
+The complete specification of the lattice — all six basis vectors with
+their coordinates, the conservation law, the chirality assignment, the
+tick rule — is not buried in an appendix. **It is the figure on every page
+of this site.** The social-card image that previews every post, every
+essay, every paper landing page is the $T^3_\diamond$ legend: the nucleus
+at $(0,0,0)$; $V_1=(1,1,1)$ RED, $V_2=(1,-1,-1)$ GREEN, $V_3=(-1,1,-1)$
+BLUE on the RGB sublattice; their negatives as CMY; and
+$\mathcal{A}=1 \Rightarrow |\psi_R|^2+|\psi_L|^2=1$ printed underneath. You
+cannot read a single word of this program without seeing the entire
+architecture it rests on. There is no hidden layer to adjust, because the
+whole design is on the thumbnail.
+
+And that figure is **older than the papers, and it has never changed.** Its
+source — `figures/lattice.drawio` in the public Paper I repository — was
+committed in **March 2026**, within days of the repository's first commit
+and roughly seven weeks *before* Paper I's first Zenodo deposit. Its
+earliest committed version already carried all six vectors in their final
+form. You do not have to take my word for any of this: in the public repo,
+`git log -S'(1,1,1)' -- figures/lattice.drawio` returns a **single
+commit** — the value was written once and never touched. The same is true
+of all six. The design was frozen before the results it is accused of
+chasing, and the freeze is cryptographically dated in version control and
+in the immutable, DOI-stamped Zenodo deposits.
+
+So the pejorative retrodiction charge collapses on inspection. There were
+no knobs; the design is public, complete, and visible on every page; and
+it provably predates the physics it reproduces. "You retrofitted the
+lattice to the answer" is refuted by the wallpaper.
+
+## The honest other half
+
+That clears the fatal charge. It does **not** clear the benign one, and I
+will not pretend it does. Reproducing the hydrogen spectrum from a fixed
+minimal axiom with no tuning is a *unification* — a real and difficult
+achievement, the kind every foundational theory must earn — but it is not,
+by itself, a *novel* prediction. A frozen design that recovers known
+physics has shown it is **consistent** with the world, not yet that it
+**outruns** the standard description.
+
+The novelty lives elsewhere, and the program is explicit about where: in
+the predictions that are not yet known to be true. The kinematic and
+gauge-sector birefringence along the optical axis $(1,1,-1)$; the
+multi-channel concordance along that axis; the quantum Roche limit and its
+atomic-ISCO signatures. Those are the *bites* — and the
+[claim map](../../../papers/claim-map.qmd) labels them honestly as `STUB`:
+predicted with closed-form structure, not yet tested. That honesty is the
+point. A program that reproduced everything and predicted nothing would be
+the retrodiction the critics fear. This one reproduces a great deal from a
+frozen, parameter-free, publicly-dated design — *and* stakes out novel,
+falsifiable claims it could lose on.
+
+## Geometry first, and it shows
+
+In the spirit of the program's [Statement of Intent](../../../index.qmd):
+none of this asserts the lattice *is* the substrate of reality. It asserts
+something more modest and more checkable — that a single minimal geometric
+object, fixed in advance and altered for no result, induces a startling
+amount of known physics on its own. The `PASS` wall is what that object
+does without being touched.
+
+The design has been in plain sight the whole time. It is, quite literally,
+the wallpaper.
+
+## References
+
+- [Paper I — *Geometry First*](../../../papers/paper-01-geometry-first.qmd)
+  — the substrate, the six basis vectors, and the no-free-parameter
+  experiment suite; figure source `figures/lattice.drawio`.
+- [Claim map](../../../papers/claim-map.qmd) — the `PASS` wall, and the
+  `STUB` novel predictions where the program stakes its falsifiable claims.
+- [About the program](../../../about.qmd) — the audit system and what
+  "proven" means here.
