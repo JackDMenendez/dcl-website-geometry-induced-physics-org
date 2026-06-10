@@ -1,0 +1,50 @@
+---
+title: "New essay: answering the retrodiction charge"
+description: >-
+  A new essay takes the retrodiction objection head-on: the A=1 lattice
+  has no free parameters, its full specification is the figure on every
+  post, and that figure was committed weeks before the first paper and has
+  never changed — a frozen design you can audit in git.
+author: "Jack D. Menendez"
+date: "2026-06-09"
+categories: [essay, methodology, retrodiction, audit]
+---
+
+A new essay,
+[*A frozen design, in plain sight*](../../essays/posts/2026-06-09-frozen-design-in-plain-sight/index.qmd),
+answers an objection the program has now met twice: that the wall of
+`PASS` rows — the Dirac equation, the hydrogen spectrum to four
+significant figures, gravitational time dilation — is **retrodiction**,
+the lattice shaped after the fact to reproduce known physics.
+
+The essay separates two things that word conflates: the **pejorative**
+sense (you *tuned* the model to the answer — fatal) and the **benign**
+sense (you *reproduced* something already known — what every unification
+must do). It then answers the fatal one completely:
+
+- **No free parameters.** The lattice is a fixed minimal object — six
+  basis vectors, $\mathcal{A}=1$, one tick rule — with no knob to turn but
+  the Planck-scale lattice spacing. You cannot curve-fit a model with
+  nothing to fit.
+- **The design is the wallpaper.** Its complete specification — every
+  vector, the conservation law, the chirality, the tick rule — is the
+  figure that previews **every page of this site**. There is no hidden
+  layer to adjust, because the whole architecture is on the thumbnail.
+- **And it is older than the papers.** The figure's source
+  (`figures/lattice.drawio`) was committed weeks before Paper I's first
+  Zenodo deposit, and its six basis-vector values have never changed —
+  `git log -S'(1,1,1)'` on the public repo returns a single commit.
+  The freeze is dated in version control and in the immutable Zenodo DOIs.
+
+The essay is just as explicit about what this does *not* settle:
+reproducing known physics from a frozen design is a *unification*, not yet
+a *novel* prediction. The novelty lives in the
+[claim map](../../papers/claim-map.qmd)'s `STUB` rows — the optical-axis
+birefringence, the quantum Roche limit — the falsifiable bites the program
+could lose on.
+
+Pointers:
+
+- Read it: [A frozen design, in plain sight](../../essays/posts/2026-06-09-frozen-design-in-plain-sight/index.qmd)
+- The `PASS` wall and the `STUB` bites: [Claim map](../../papers/claim-map.qmd)
+- The substrate: [Paper I — Geometry First](../../papers/paper-01-geometry-first.qmd)
