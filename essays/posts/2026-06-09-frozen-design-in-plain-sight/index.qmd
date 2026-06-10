@@ -81,32 +81,49 @@ to give the design a better chance of producing physics.* That is
 design-time fitting, and version control cannot see it, because it
 happened before the first commit.
 
-The freeze is the wrong tool for this charge. The right one is
-**minimality** — and the two are complements, not alternatives. The freeze
-says *"I could not have cheated after."* Minimality says *"I could not have
-cheated much before."* A theory's capacity to fit by selection scales with
-the number of independent structural choices it contains; a genuinely
-minimal design is drawn from a **small** space, which bounds how much
-design-time fitting it could possibly encode.
+The freeze is the wrong tool for this charge. The nearest right one is
+**minimality** — though, as we will see, it *bounds* the charge rather than
+killing it. The freeze says *"I could not have cheated after."* Minimality
+says *"I could not have cheated much before."* A design's capacity to fit by
+selection scales with the number of independent structural choices it
+contains; a minimal design is drawn from a **small** space, which limits how
+much design-time fitting it can encode.
 
-And the A=1 design is minimal in a way that can be *counted*, not just
-asserted:
+But minimality has to be claimed honestly, because **forcing is always
+forcing-given-premises.** Paper I states that, *given* coordination six and a
+split into chirally-opposite triples, the bipartite octahedral structure is
+the unique $\mathbb{Z}^3$ solution. Grant it — it still does not end the
+regress; it moves it up one level, into the premises. *Why* coordination six?
+*Why* chirally-opposite triples? Those are **posited** in Paper I, not derived
+from anything deeper (the paper's own "forced by the bipartite octahedral
+geometry" is, read strictly, circular). And the second premise is the seam a
+referee should press, because "chirally-opposite" is the requirement that most
+looks chosen to deliver spinors. I will not pretend the uniqueness claim
+terminates the selection. It relocates it.
 
-- The lattice is not freely chosen. Paper I shows coordination **six is
-  the unique solution for $\mathbb{Z}^3$** once you require a bipartite
-  split into chirally-opposite triples — so "octahedral, six of eight" is
-  largely *forced*, not selected. A forced choice carries no fitting power.
-- The dynamics are **one** axiom ($\mathcal{A}=1$) and **one** tick rule —
-  not a tunable family.
-- The genuinely free choices — the colour/chirality encoding — are few,
-  named, and *principled* rather than dialled: three colours because space
-  is three-dimensional, the same three that become the spatial gamma
-  matrices. Not a large knob-space quietly turned toward outputs.
+What minimality *can* honestly claim is that the premises it relocates the
+choice into are **few and abstract**:
 
-That is the compression-ledger argument. List the design's structural bits;
-most are forced, the rest are few and stated; the selection space is small
-enough to audit by enumeration. Minimal *and* frozen is tight where either
-alone is loose.
+- a $\mathbb{Z}^3$ adjacency — because space is three-dimensional;
+- a single conservation axiom, $\mathcal{A}=1$;
+- a two-sublattice tick — a tick needs a place to go and a place to return;
+- six cube-diagonal directions, with the chirally-opposite split.
+
+The fewer and more abstract the premises, the less room target-knowledge has
+to hide in them — but "less" is not "none," and the colour/chirality encoding
+is where I most openly *chose*. I added three colours to give the design more
+room to produce physics; three because space is three-dimensional — the same
+three that become the spatial gamma matrices. Whether that identification,
+*colour-three is space-three*, is a principle or a coincidence wearing the
+word, depends entirely on what *follows* from it. If colour and space share
+an origin, that should imply relations standard physics does not expect — a
+checkable claim, a candidate bite. If nothing follows, "principled" is doing
+work the physics has not yet earned. I hold it as the former and concede it
+could be the latter.
+
+So minimality does not abolish design-time selection. It compresses it into a
+short, stated, increasingly abstract list of premises — real progress against
+a hostile read, but a **bound, not a refutation.**
 
 ## (3) Benign reproduction — and the only thing that clears selection
 
@@ -139,12 +156,17 @@ framework loses, as it should be able to.
 
 ## Three legs, not one
 
-That is the honest shape of the answer. The **freeze** closes the temporal
-hole: no tuning after the fact, and you can check the dates. **Minimality**
-closes most of the selection hole: a forced-or-tiny design space, countable
-by enumeration. And the **novel predictions** close what remains, because
-selection cannot reach an unmeasured target — which is also why the
-novelty has to live there and nowhere else.
+That is the honest shape of the answer, and the three legs are **not
+co-equal.** The **freeze** closes the temporal hole: no tuning after the
+fact, and the dates are public. **Minimality** *bounds* the selection hole
+without closing it — it compresses the design to a few abstract premises,
+but every "forced" result still bottoms out in a premise that was, at some
+level, posited. Only the **novel predictions** escape the regress entirely,
+because you cannot have chosen a premise to hit a number no one has measured.
+They are not merely the last leg of the argument; they are the only leg that
+rests on no chosen premise at all. Which is why the program's weight has to
+sit there — and why an essay about a frozen design has to end by pointing
+away from the `PASS` wall, toward the bites.
 
 In the spirit of the program's [Statement of Intent](../../../index.qmd):
 none of this asserts the lattice *is* the substrate of reality. It asserts
@@ -157,9 +179,9 @@ whether plain sight was enough.
 ## References
 
 - [Paper I — *Geometry First*](../../../papers/paper-01-geometry-first.qmd)
-  — the substrate, the six basis vectors, coordination-six **uniqueness**
-  for $\mathbb{Z}^3$, and the no-free-parameter experiment suite; figure
-  source `figures/lattice.drawio`.
+  — the substrate and the six basis vectors (posited as the
+  causal-adjacency directions), and the no-free-parameter experiment
+  suite; figure source `figures/lattice.drawio`.
 - [Claim map](../../../papers/claim-map.qmd) — the `PASS` wall, and the
   `STUB` novel predictions where the program stakes its falsifiable,
   selection-proof claims.

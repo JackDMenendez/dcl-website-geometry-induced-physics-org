@@ -29,10 +29,11 @@ quietly skip:
   DOIs.
 - **Design-time selection** (you *chose* the architecture, already knowing
   the target) — the charge a timestamp cannot touch, and the essay says so
-  plainly. It is bounded instead by **minimality**: coordination six is the
-  *unique* $\mathbb{Z}^3$ solution (forced, not selected), the dynamics are
-  one axiom and one tick rule, and the few free choices are principled —
-  a design space small enough to audit by enumeration.
+  plainly. It is *bounded* (not killed) by **minimality**: forcing is always
+  forcing-given-premises, so the choice retreats into the premises — and the
+  honest claim is that those premises are few and abstract (a 3D adjacency,
+  one axiom, a two-sublattice tick), not that any of them is uniquely
+  forced.
 - **Benign reproduction** (you recovered known physics) — conceded as the
   *unification* it is, and cleared, along with the residue of selection, by
   the one thing neither tuning nor selection can reach: **a prediction no
@@ -48,4 +49,4 @@ Pointers:
 
 - Read it: [A frozen design, in plain sight](../../essays/posts/2026-06-09-frozen-design-in-plain-sight/index.qmd)
 - The `PASS` wall and the `STUB` bites: [Claim map](../../papers/claim-map.qmd)
-- The substrate (and coordination-six uniqueness): [Paper I — Geometry First](../../papers/paper-01-geometry-first.qmd)
+- The substrate and the six basis vectors: [Paper I — Geometry First](../../papers/paper-01-geometry-first.qmd)
