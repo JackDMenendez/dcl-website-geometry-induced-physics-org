@@ -1,15 +1,14 @@
 ---
 title: "A frozen design, in plain sight"
 subtitle: >-
-  The full specification of the A=1 lattice has been printed on every page
-  of this site since before the first paper — which is most of the answer
-  to the retrodiction charge.
+  The A=1 lattice is public, parameter-free, and was frozen weeks before
+  the first paper. That refutes retrofitting — but the honest answer to
+  the retrodiction charge needs a second leg: minimality.
 description: >-
-  Twice the program has been accused of retrodiction — of tuning the
-  lattice to reproduce known physics. But the design has no free
-  parameters, its complete specification is the figure on every post, and
-  that figure was committed weeks before the first paper and has never
-  changed. Here is the distinction that charge misses.
+  Retrodiction has three senses, not two: post-hoc tuning, design-time
+  selection, and benign reproduction. The freeze refutes tuning;
+  minimality bounds selection; and only novel predictions clear the rest —
+  because you cannot select for an answer no one has measured yet.
 author: "Jack D. Menendez"
 date: "2026-06-09"
 categories: [essay, methodology, retrodiction, falsifiability, audit]
@@ -17,117 +16,152 @@ categories: [essay, methodology, retrodiction, falsifiability, audit]
 
 Twice now the program has met the same objection: the wall of `PASS` rows
 — the Dirac equation, the hydrogen spectrum to four significant figures,
-gravitational time dilation — is **retrodiction**. The lattice, the charge
-goes, was shaped to reproduce physics we already knew. It is the right
-objection to raise, and it deserves a precise answer rather than a
-defensive one.
+gravitational time dilation — is **retrodiction**, the lattice shaped to
+reproduce physics we already knew. It is the right objection to raise, and
+it deserves a precise answer rather than a defensive one.
 
-The answer turns on a distinction the charge usually blurs.
+The precision starts with noticing that "retrodiction" names **three**
+different accusations, not one — and they need three different answers.
 
-## Two things "retrodiction" can mean
+1. **Post-hoc tuning.** You had free parameters and turned them, after the
+   fact, until the output matched the data. Overfitting. *Fatal.*
+2. **Design-time selection.** You turned no knobs after the fact — but you
+   *chose the architecture*, from a space of alternatives, already knowing
+   the target physics. *The serious charge.*
+3. **Benign reproduction.** You derived something already known. *What
+   every unification must do.*
 
-There is a **pejorative** sense and a **benign** sense, and they are not
-the same accusation.
+Most defenses of a framework like this quietly answer only (1) and call it
+a day. (1) is the easiest to refute and the least interesting. The charge
+that actually bites is (2). So let me take all three, in order, and be
+honest about which leg of the argument carries which.
 
-- *Pejorative:* you **tuned** the model to the answer. You had knobs, and
-  you turned them until the output matched the data. This is overfitting,
-  and it is fatal — a model with enough free parameters can fit anything
-  and predicts nothing.
-- *Benign:* you **reproduced** something already known. You derived the
-  hydrogen spectrum, which was measured a century ago. This is not fatal
-  at all; it is what every unification must do. General relativity had to
-  reproduce Newton; quantum mechanics had to reproduce the spectral lines.
+## (1) Post-hoc tuning — refuted by the freeze
 
-The charge that stings is the pejorative one. So answer it first — and
-this program can answer it completely, because of how the design is built
-and where it lives.
+There is nothing to tune. The A=1 lattice is a fixed minimal object — six
+basis vectors, a single conservation axiom $\mathcal{A}=1$, one update
+rule — with **no free parameters** but the Planck-scale lattice spacing,
+which is fixed, not fitted. You cannot curve-fit a model that has no knobs.
 
-## There is nothing to tune
+And the design is not hidden where a knob could lurk. Its **complete
+specification** — every vector with its coordinates, the conservation law,
+the chirality assignment, the tick rule — is the figure that previews
+*every page of this site*. You cannot read a word of this program without
+seeing the whole architecture; there is no private layer to adjust,
+because the design is on the thumbnail.
 
-The A=1 lattice is a **minimal fixed object**: a bipartite octahedral
-graph with six basis vectors, a single conservation axiom $\mathcal{A}=1$,
-and one update rule (the bipartite tick). There are **no free parameters**
-— the sole calibration is the lattice spacing that pins the grid to
-physical units, and it is fixed by the Planck scale, not fitted to a
-result. You cannot curve-fit a model that has nothing to fit. Whatever the
-hydrogen Bohr radius comes out to ($k=0.0970$ against $0.0971$, with
-nothing adjusted), it came out that way on its own. That is the difference
-between a derivation and a fit, and it is structural, not rhetorical.
+That figure is also **older than the audited results, and frozen.** Its
+source, `figures/lattice.drawio` in the public Paper I repository, was
+committed in **late March 2026** — weeks before Paper I's first Zenodo
+deposit. Its earliest committed version already carries the *entire*
+design-bearing content: all six vectors, the RGB/CMY ↔ ψ_R/ψ_L roles, the
+even/odd tick rule, and $\mathcal{A}=1$. Not one coordinate — the whole
+spec. You need not take my word: pull the file's history in the public
+repo and watch it resolve to that frozen specification, unchanged since;
+the deposits themselves are immutable and DOI-stamped. The demonstration
+was dated *after* the design, in version control and at Zenodo.
 
-## The design is the wallpaper
+So post-hoc tuning is refuted, and refuted *checkably*. There were no
+knobs, the design is public and complete, and it provably predates the
+**audited demonstration** of these results. (Note the careful wording: the
+hydrogen spectrum predates the lattice by a century — that is *why* it was
+available as a target. What predates the freeze is not the physics, but
+the audit.)
 
-Here is the part that makes the pejorative charge not just wrong but
-*checkable* that it is wrong.
+## (2) Design-time selection — bounded by minimality
 
-The complete specification of the lattice — all six basis vectors with
-their coordinates, the conservation law, the chirality assignment, the
-tick rule — is not buried in an appendix. **It is the figure on every page
-of this site.** The social-card image that previews every post, every
-essay, every paper landing page is the $T^3_\diamond$ legend: the nucleus
-at $(0,0,0)$; $V_1=(1,1,1)$ RED, $V_2=(1,-1,-1)$ GREEN, $V_3=(-1,1,-1)$
-BLUE on the RGB sublattice; their negatives as CMY; and
-$\mathcal{A}=1 \Rightarrow |\psi_R|^2+|\psi_L|^2=1$ printed underneath. You
-cannot read a single word of this program without seeing the entire
-architecture it rests on. There is no hidden layer to adjust, because the
-whole design is on the thumbnail.
+Here is the charge the freeze does **not** touch, and I will not pretend
+it does. A timestamp proves I did not cheat *after* March 2026. It cannot
+prove I did not try twenty lattices on paper before I committed the one
+that worked. Choosing octahedral over cubic, six diagonals of the eight,
+three colours, the $\mathbb{C}^2 \to \mathbb{C}^{12}$ extension — that is
+selection, performed by a designer who already knew the target. I have
+said as much plainly: the colour structure was a deliberate choice, *added
+to give the design a better chance of producing physics.* That is
+design-time fitting, and version control cannot see it, because it
+happened before the first commit.
 
-And that figure is **older than the papers, and it has never changed.** Its
-source — `figures/lattice.drawio` in the public Paper I repository — was
-committed in **March 2026**, within days of the repository's first commit
-and roughly seven weeks *before* Paper I's first Zenodo deposit. Its
-earliest committed version already carried all six vectors in their final
-form. You do not have to take my word for any of this: in the public repo,
-`git log -S'(1,1,1)' -- figures/lattice.drawio` returns a **single
-commit** — the value was written once and never touched. The same is true
-of all six. The design was frozen before the results it is accused of
-chasing, and the freeze is cryptographically dated in version control and
-in the immutable, DOI-stamped Zenodo deposits.
+The freeze is the wrong tool for this charge. The right one is
+**minimality** — and the two are complements, not alternatives. The freeze
+says *"I could not have cheated after."* Minimality says *"I could not have
+cheated much before."* A theory's capacity to fit by selection scales with
+the number of independent structural choices it contains; a genuinely
+minimal design is drawn from a **small** space, which bounds how much
+design-time fitting it could possibly encode.
 
-So the pejorative retrodiction charge collapses on inspection. There were
-no knobs; the design is public, complete, and visible on every page; and
-it provably predates the physics it reproduces. "You retrofitted the
-lattice to the answer" is refuted by the wallpaper.
+And the A=1 design is minimal in a way that can be *counted*, not just
+asserted:
 
-## The honest other half
+- The lattice is not freely chosen. Paper I shows coordination **six is
+  the unique solution for $\mathbb{Z}^3$** once you require a bipartite
+  split into chirally-opposite triples — so "octahedral, six of eight" is
+  largely *forced*, not selected. A forced choice carries no fitting power.
+- The dynamics are **one** axiom ($\mathcal{A}=1$) and **one** tick rule —
+  not a tunable family.
+- The genuinely free choices — the colour/chirality encoding — are few,
+  named, and *principled* rather than dialled: three colours because space
+  is three-dimensional, the same three that become the spatial gamma
+  matrices. Not a large knob-space quietly turned toward outputs.
 
-That clears the fatal charge. It does **not** clear the benign one, and I
-will not pretend it does. Reproducing the hydrogen spectrum from a fixed
-minimal axiom with no tuning is a *unification* — a real and difficult
-achievement, the kind every foundational theory must earn — but it is not,
-by itself, a *novel* prediction. A frozen design that recovers known
-physics has shown it is **consistent** with the world, not yet that it
-**outruns** the standard description.
+That is the compression-ledger argument. List the design's structural bits;
+most are forced, the rest are few and stated; the selection space is small
+enough to audit by enumeration. Minimal *and* frozen is tight where either
+alone is loose.
 
-The novelty lives elsewhere, and the program is explicit about where: in
-the predictions that are not yet known to be true. The kinematic and
-gauge-sector birefringence along the optical axis $(1,1,-1)$; the
-multi-channel concordance along that axis; the quantum Roche limit and its
-atomic-ISCO signatures. Those are the *bites* — and the
-[claim map](../../../papers/claim-map.qmd) labels them honestly as `STUB`:
-predicted with closed-form structure, not yet tested. That honesty is the
-point. A program that reproduced everything and predicted nothing would be
-the retrodiction the critics fear. This one reproduces a great deal from a
-frozen, parameter-free, publicly-dated design — *and* stakes out novel,
-falsifiable claims it could lose on.
+## (3) Benign reproduction — and the only thing that clears selection
 
-## Geometry first, and it shows
+Even granting all that, minimality only *bounds* design-time selection; it
+does not abolish it, and it certainly does not turn reproduced physics into
+novel physics. Recovering the hydrogen spectrum from a frozen,
+parameter-free, minimal design is a **unification** — real and hard, the
+thing every foundational theory must earn — but it is not yet a *novel
+prediction*.
+
+What clears both the residue of selection and the benign charge at once is
+a single observation: **you cannot select for, or reproduce, an answer no
+one has measured.** A designer with the hydrogen spectrum in his head can,
+in principle, hunt for an architecture that reproduces it. That same
+designer cannot tune or select toward the value of the optical-axis
+birefringence, or the radius of the quantum Roche limit, because there is
+no measured target to aim at. Selection is powerful against the past and
+powerless against the future.
+
+So the program's weight does not, finally, rest on the `PASS` wall at all.
+It rests on the predictions that are not yet known to be true — the
+kinematic and gauge-sector birefringence along $(1,1,-1)$, the
+multi-channel concordance, the quantum Roche limit and its atomic-ISCO
+signatures. The [claim map](../../../papers/claim-map.qmd) labels those
+honestly as `STUB`: closed-form, untested. They are the bites — and they
+are *selection-proof*, because a frozen minimal design cannot have been
+fitted to a number that does not exist yet. If one of them lands, no story
+about a designer's foreknowledge can explain it away. If it fails, the
+framework loses, as it should be able to.
+
+## Three legs, not one
+
+That is the honest shape of the answer. The **freeze** closes the temporal
+hole: no tuning after the fact, and you can check the dates. **Minimality**
+closes most of the selection hole: a forced-or-tiny design space, countable
+by enumeration. And the **novel predictions** close what remains, because
+selection cannot reach an unmeasured target — which is also why the
+novelty has to live there and nowhere else.
 
 In the spirit of the program's [Statement of Intent](../../../index.qmd):
 none of this asserts the lattice *is* the substrate of reality. It asserts
-something more modest and more checkable — that a single minimal geometric
-object, fixed in advance and altered for no result, induces a startling
-amount of known physics on its own. The `PASS` wall is what that object
-does without being touched.
-
-The design has been in plain sight the whole time. It is, quite literally,
-the wallpaper.
+something checkable — that a single minimal geometric object, fixed in
+advance and altered for no result, induces a great deal of known physics on
+its own, and stakes out novel claims it could lose on. The design has been
+in plain sight the whole time. The question the bites will answer is
+whether plain sight was enough.
 
 ## References
 
 - [Paper I — *Geometry First*](../../../papers/paper-01-geometry-first.qmd)
-  — the substrate, the six basis vectors, and the no-free-parameter
-  experiment suite; figure source `figures/lattice.drawio`.
+  — the substrate, the six basis vectors, coordination-six **uniqueness**
+  for $\mathbb{Z}^3$, and the no-free-parameter experiment suite; figure
+  source `figures/lattice.drawio`.
 - [Claim map](../../../papers/claim-map.qmd) — the `PASS` wall, and the
-  `STUB` novel predictions where the program stakes its falsifiable claims.
+  `STUB` novel predictions where the program stakes its falsifiable,
+  selection-proof claims.
 - [About the program](../../../about.qmd) — the audit system and what
   "proven" means here.

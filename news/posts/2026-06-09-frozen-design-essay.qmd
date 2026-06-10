@@ -1,10 +1,10 @@
 ---
 title: "New essay: answering the retrodiction charge"
 description: >-
-  A new essay takes the retrodiction objection head-on: the A=1 lattice
-  has no free parameters, its full specification is the figure on every
-  post, and that figure was committed weeks before the first paper and has
-  never changed — a frozen design you can audit in git.
+  A new essay takes the retrodiction objection head-on — and answers the
+  strong form, not the easy one: the freeze refutes post-hoc tuning,
+  minimality bounds design-time selection, and only the novel predictions
+  clear the rest.
 author: "Jack D. Menendez"
 date: "2026-06-09"
 categories: [essay, methodology, retrodiction, audit]
@@ -14,37 +14,38 @@ A new essay,
 [*A frozen design, in plain sight*](../../essays/posts/2026-06-09-frozen-design-in-plain-sight/index.qmd),
 answers an objection the program has now met twice: that the wall of
 `PASS` rows — the Dirac equation, the hydrogen spectrum to four
-significant figures, gravitational time dilation — is **retrodiction**,
-the lattice shaped after the fact to reproduce known physics.
+significant figures, gravitational time dilation — is **retrodiction**.
 
-The essay separates two things that word conflates: the **pejorative**
-sense (you *tuned* the model to the answer — fatal) and the **benign**
-sense (you *reproduced* something already known — what every unification
-must do). It then answers the fatal one completely:
+The essay's move is to notice that "retrodiction" names **three** charges,
+not one, and to answer each — including the strong one that most defenses
+quietly skip:
 
-- **No free parameters.** The lattice is a fixed minimal object — six
-  basis vectors, $\mathcal{A}=1$, one tick rule — with no knob to turn but
-  the Planck-scale lattice spacing. You cannot curve-fit a model with
-  nothing to fit.
-- **The design is the wallpaper.** Its complete specification — every
-  vector, the conservation law, the chirality, the tick rule — is the
-  figure that previews **every page of this site**. There is no hidden
-  layer to adjust, because the whole architecture is on the thumbnail.
-- **And it is older than the papers.** The figure's source
-  (`figures/lattice.drawio`) was committed weeks before Paper I's first
-  Zenodo deposit, and its six basis-vector values have never changed —
-  `git log -S'(1,1,1)'` on the public repo returns a single commit.
-  The freeze is dated in version control and in the immutable Zenodo DOIs.
+- **Post-hoc tuning** (you turned knobs after the fact) — refuted by the
+  **freeze**. The lattice has no free parameters but the Planck-scale
+  spacing; its *complete* specification is the figure on every page of the
+  site; and that figure's source (`figures/lattice.drawio`) was committed
+  weeks before Paper I's first deposit, carrying the whole design unchanged
+  since — checkable in the public git history and the immutable Zenodo
+  DOIs.
+- **Design-time selection** (you *chose* the architecture, already knowing
+  the target) — the charge a timestamp cannot touch, and the essay says so
+  plainly. It is bounded instead by **minimality**: coordination six is the
+  *unique* $\mathbb{Z}^3$ solution (forced, not selected), the dynamics are
+  one axiom and one tick rule, and the few free choices are principled —
+  a design space small enough to audit by enumeration.
+- **Benign reproduction** (you recovered known physics) — conceded as the
+  *unification* it is, and cleared, along with the residue of selection, by
+  the one thing neither tuning nor selection can reach: **a prediction no
+  one has measured yet.** You cannot fit an architecture to a number that
+  does not exist.
 
-The essay is just as explicit about what this does *not* settle:
-reproducing known physics from a frozen design is a *unification*, not yet
-a *novel* prediction. The novelty lives in the
-[claim map](../../papers/claim-map.qmd)'s `STUB` rows — the optical-axis
-birefringence, the quantum Roche limit — the falsifiable bites the program
-could lose on.
+That last point is the through-line: the program's weight rests not on the
+`PASS` wall but on the [claim map](../../papers/claim-map.qmd)'s `STUB`
+rows — the optical-axis birefringence, the quantum Roche limit — which are
+*selection-proof* and falsifiable.
 
 Pointers:
 
 - Read it: [A frozen design, in plain sight](../../essays/posts/2026-06-09-frozen-design-in-plain-sight/index.qmd)
 - The `PASS` wall and the `STUB` bites: [Claim map](../../papers/claim-map.qmd)
-- The substrate: [Paper I — Geometry First](../../papers/paper-01-geometry-first.qmd)
+- The substrate (and coordination-six uniqueness): [Paper I — Geometry First](../../papers/paper-01-geometry-first.qmd)
