@@ -15,26 +15,26 @@ This tracks *operational* status of the subprojects. For the status of individua
 
 | Item | Milestone | Labels |
 |------|-----------|--------|
-| [005 Research Investigation Delta p min.md](https://github.com/JackDMenendez/discrete-causal-lattice-project/issues/7) | — | enhancement |
-| [006 Subproject Delta p Min](https://github.com/JackDMenendez/discrete-causal-lattice-project/issues/8) | — | enhancement |
+| [005 Research Investigation Delta p min.md](https://github.com/JackDMenendez/discrete-causal-lattice-project/issues/7) | — | research, investigation |
+| [006 Subproject Delta p Min](https://github.com/JackDMenendez/discrete-causal-lattice-project/issues/8) | — | subproject, planning |
 
 ## Todo (7)
 
 | Item | Milestone | Labels |
 |------|-----------|--------|
-| [001 Subproject Proving Hilbert's Sixth Problem](https://github.com/JackDMenendez/discrete-causal-lattice-project/issues/2) | Provision dcl-paper-03-tidal-ionization (due 2026-05-19) | enhancement |
-| [002 Subproject Paper III Tidal Ionization](https://github.com/JackDMenendez/discrete-causal-lattice-project/issues/3) | — | enhancement |
-| [004 Subproject dcl Mathematics](https://github.com/JackDMenendez/discrete-causal-lattice-project/issues/6) | — | enhancement |
-| [007 Subproject dcl Core 3D Upgrade](https://github.com/JackDMenendez/discrete-causal-lattice-project/issues/9) | — | enhancement |
-| [010 Make Paper I's substrate structure premise-explicit](https://github.com/JackDMenendez/discrete-causal-lattice-project/issues/10) | — | enhancement |
-| [008 Research Investigation Lattice Dimensional Family](https://github.com/JackDMenendez/discrete-causal-lattice-project/issues/11) | — | enhancement |
-| [009 Research Artifact DIY Lattice Cookbook](https://github.com/JackDMenendez/discrete-causal-lattice-project/issues/12) | — | enhancement |
+| [001 Subproject Proving Hilbert's Sixth Problem](https://github.com/JackDMenendez/discrete-causal-lattice-project/issues/2) | Provision dcl-paper-03-tidal-ionization (due 2026-05-19) | subproject, planning |
+| [002 Subproject Paper III Tidal Ionization](https://github.com/JackDMenendez/discrete-causal-lattice-project/issues/3) | — | subproject, planning |
+| [004 Subproject dcl Mathematics](https://github.com/JackDMenendez/discrete-causal-lattice-project/issues/6) | — | subproject, planning |
+| [007 Subproject dcl Core 3D Upgrade](https://github.com/JackDMenendez/discrete-causal-lattice-project/issues/9) | — | subproject, planning |
+| [010 Make Paper I's substrate structure premise-explicit](https://github.com/JackDMenendez/discrete-causal-lattice-project/issues/10) | — | enhancement, paper |
+| [008 Research Investigation Lattice Dimensional Family](https://github.com/JackDMenendez/discrete-causal-lattice-project/issues/11) | — | research, investigation |
+| [009 Research Artifact DIY Lattice Cookbook](https://github.com/JackDMenendez/discrete-causal-lattice-project/issues/12) | — | enhancement, research-artifact |
 
 ## Done (1)
 
 | Item | Milestone | Labels |
 |------|-----------|--------|
-| [003 Subproject Geometry Induced Physics Website](https://github.com/JackDMenendez/discrete-causal-lattice-project/issues/4) | — | enhancement |
+| [003 Subproject Geometry Induced Physics Website](https://github.com/JackDMenendez/discrete-causal-lattice-project/issues/4) | — | subproject, planning |
 
 ---
 
