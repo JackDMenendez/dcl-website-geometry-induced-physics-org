@@ -1,5 +1,7 @@
 ---
 title: "Bipartite octahedral lattice — unit cell"
+aliases:
+  - /artefacts/lattice-unit-cell.html
 description: >-
   Interactive 3D viewer for the unit cell of the A=1 substrate: the
   bipartite octahedral lattice on which the entire series is built.

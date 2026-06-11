@@ -1,5 +1,8 @@
 ---
 title: "Research artifacts"
+aliases:
+  - /artefacts/
+  - /artefacts/index.html
 description: >-
   Interactive 3D models, animations, and visualizations of the A=1
   Discrete Causal Lattice substrate — the bipartite octahedral lattice
