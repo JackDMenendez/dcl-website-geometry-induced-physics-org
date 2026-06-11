@@ -25,6 +25,8 @@ website:
         text: Home
       - href: news/index.qmd
         text: News
+      - href: roadmap.qmd
+        text: Roadmap
       - text: Papers
         menu:
           - href: papers/index.qmd
