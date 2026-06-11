@@ -1,0 +1,43 @@
+---
+title: "New: a public roadmap for the A=1 program"
+description: >-
+  A single page tracking the operational status of every subproject,
+  paper, and research investigation in the A=1 Discrete Causal Lattice
+  series — grouped In Progress / Todo / Done, generated from the public
+  project board.
+author: "Jack D. Menendez"
+date: "2026-06-10"
+categories: [site, roadmap, project]
+---
+
+There is now a [**Roadmap**](../../roadmap.qmd) on the site: a single page
+that shows, item by item, **what the series is working on, what is queued,
+and what is done.**
+
+The A=1 program spans several repositories — the papers, the `dcl-core`
+engine, the formalism and mathematics support repos, and a growing set of
+forward-looking research investigations. The roadmap collapses that
+cross-repo work into one view: each subproject and investigation grouped
+by status (**In Progress** / **Todo** / **Done**), linked to its tracking
+issue, with its milestone and labels.
+
+It is a complement to, not a replacement for, the
+[claim map](../../papers/claim-map.qmd). The two answer different
+questions: the claim map tracks the status of individual *scientific
+claims* (**Proven** / **Conjectured** / **Disconfirmed**, tied to the
+`PASS` / `PART` / `STUB` / `FAIL` audit tags); the roadmap tracks the
+*operational* status of the work that produces them. A result can be
+proven on the page while the subproject that hardens it is still in
+progress, and vice versa.
+
+The page is a curated snapshot, generated from the
+[public project board](https://github.com/users/JackDMenendez/projects/6)
+and refreshed deliberately rather than live — in keeping with the rest of
+the site, where what is published is what is meant, not whatever the
+working tree happens to hold at the moment.
+
+Pointers:
+
+- The roadmap: [Roadmap](../../roadmap.qmd)
+- Claim status: [Claim map](../../papers/claim-map.qmd)
+- The board itself: [GitHub project](https://github.com/users/JackDMenendez/projects/6)
