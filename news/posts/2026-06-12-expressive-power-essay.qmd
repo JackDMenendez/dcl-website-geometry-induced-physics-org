@@ -1,0 +1,42 @@
+---
+title: "New essay: Expressive power, not ontology"
+description: >-
+  Is the A=1 lattice "real"? That's the wrong question. A new essay on why the
+  realism question isn't well-posed, why that doesn't make the lattice
+  unfalsifiable theology, and why conceding "not the truth" costs the program
+  nothing while "no better than any alternative" would cost everything.
+author: "Jack D. Menendez"
+date: "2026-06-12"
+categories: [essay, philosophy of science, falsifiability, framing]
+---
+
+There is a new essay on the site —
+[**Expressive power, not ontology**](../../essays/posts/2026-06-12-expressive-power-not-ontology/index.qmd) —
+that takes on the first question almost everyone asks about the A=1 lattice:
+*is this what the universe is actually made of?*
+
+The essay argues that question is not well-posed — there is no view from
+nowhere against which to score the lattice against reality-in-itself — and that
+nothing is lost by declining to ask it. What can be asked instead is whether the
+lattice is **empirically adequate** and internally consistent: whether it saves
+the phenomena and coheres. That's the standing position of a respectable
+tradition (van Fraassen, Kant), and it's the one the program already adopts in
+its [Statement of Intent](../../index.qmd).
+
+Two traps get named. The first is mistaking the lattice for theology: unlike
+"does God exist," the lattice keeps **falsifiable predictions** — it can be
+caught out by an experiment, which a metaphysical question cannot. The second,
+opposite trap is more interesting — conceding "one paradigm, not the truth" and
+then sliding to "so any alternative is just as good." Underdetermination lets
+rivals *exist*; it does not make them *equal*. Above the threshold of adequacy,
+theories are ranked by economy, unification, scope, and fertility — and that is
+exactly where the lattice stakes its claim: look how much falls out of a
+**single** axiom.
+
+The piece is deliberate about its own honesty: every generativity example it
+cites is a `Proven` row in the [claim map](../../papers/claim-map.qmd), and the
+predictions it leans on are flagged as still untested. Conceding "not the truth"
+costs the program nothing. The slogan *geometry forces physics* is a claim about
+what the geometry **entails** — not about what the universe **is**.
+
+Read it: [Expressive power, not ontology](../../essays/posts/2026-06-12-expressive-power-not-ontology/index.qmd).
