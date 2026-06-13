@@ -1,0 +1,68 @@
+---
+title: "Expressive power, not ontology"
+subtitle: >-
+  "Is the lattice real?" is not a question physics can adjudicate — and the
+  program loses nothing by declining to ask it. What it claims instead is
+  empirical adequacy, economy, and generativity.
+description: >-
+  Why the realism question is not well-posed (van Fraassen, Kant), why that
+  does not make the lattice unfalsifiable theology, and why conceding "not the
+  truth" costs the program nothing while "no better than any alternative" would
+  cost everything.
+author: "Jack D. Menendez"
+date: "2026-06-12"
+categories: [essay, philosophy of science, realism, falsifiability, methodology]
+---
+
+## The question that cannot be answered
+
+A natural first reaction to the A=1 discrete causal lattice is to ask: *is this what the universe is actually made of?* Is reality, underneath everything, a bipartite octahedral lattice running a single conservation law tick by tick?
+
+The honest answer is that the question is not well-posed — not, at least, as a question physics can adjudicate. To check whether the model corresponds to a mind-independent substrate, you would have to step outside of all representation and compare the lattice against reality-in-itself. But every access we have to "reality" is already given through a representation — through measurement, through theory, through perception. There is no view from nowhere against which to score the match. Asking whether the lattice *is* reality is asking for a comparison one of whose terms is permanently unavailable.
+
+This is not a defect peculiar to the lattice. It is the same wall every physical theory meets when it is pushed from "this accounts for what we observe" to "this is what there is." The wall has been mapped before, and it is worth naming the map.
+
+## The reframing: from truth to adequacy
+
+The productive move is to stop asking whether the lattice is *true* and start asking whether it is *adequate*: does the A=1 lattice provide a coherent, internally consistent account of what we observe, one that reproduces the phenomena and generates the structure we already trust?
+
+This is not a retreat invented for the occasion. It is the standing position of a respectable tradition in the philosophy of science. Bas van Fraassen's constructive empiricism holds that the aim of science is *empirical adequacy* — saving the phenomena — not truth about the unobservable. Further back, and by a different route, Kant's distinction between *phenomena* (the world as it appears to us, structured by the forms of our cognition) and the *noumenon* (the thing-in-itself, which we never reach) arrives at the same wall from the other side: where van Fraassen brackets the unobservable as epistemically idle, Kant builds the limit into the structure of cognition itself. Two roads, one boundary. The lattice, on either reading, is a candidate *phenomenal* framework: a way of organizing appearances. Whether it also captures the noumenon is exactly the question that cannot be put.
+
+It is worth saying plainly that this is a *stance*, and a contested one. A scientific realist will object that inference to the best explanation gives us defeasible but genuine purchase on the unobservable — that a theory's sustained success is itself evidence of its approximate truth. I take the empiricist line here deliberately: not because realism is incoherent, but because a program making a *capability* claim has no need of the stronger commitment and is more honest without it. Nothing below depends on realism being false. It depends only on our being willing not to insist that the lattice is real.
+
+So the right characterization of the program — the one already adopted in the Scope-and-Claims statement of Paper I and on the project's [landing-page Statement of Intent](../../../index.qmd) — is that the lattice is a mathematically defined object whose *expressive power* is the subject of study. Not "the universe is a lattice," but "see how much of the structure of known physics a single conservation law on this object can induce."
+
+## Why this is not the God question
+
+There is a tempting analogy: if "is the lattice real?" is unanswerable, isn't it like asking "does God exist?" — a question with no observational purchase, to be set aside as meaningless?
+
+The analogy is wrong, and getting it wrong gives away too much. "Does God exist," in its usual form, is taken to be unfalsifiable *in principle*: no measurement bears on it. The lattice is not in that position. It still has empirical teeth at the margins. It predicts directional birefringence aligned with the optical axis $\mathbf{V}_1+\mathbf{V}_2+\mathbf{V}_3 = (1,1,-1)$, with closed-form coefficients. It predicts discrete corrections to the inverse-square law at short range. Both are still *untested* — [`Conjectured` in the claim map](../../../papers/claim-map.qmd), structured precisely so that an experiment could confirm or kill them. These predictions do not settle whether the lattice is "real" — nothing could — but they do let the lattice paradigm be *distinguished from rivals on observable grounds*. A framework that can be caught out by an experiment is not in the company of theology.
+
+The better analogy is internal to physics. Ask whether the wavefunction is "real," or whether the Lagrangian formulation of mechanics is "more real" than the Hamiltonian one, or whether fields are more real than particles. These are cases where the physics is shared and successful, yet the question of which representation is *the true one* is genuinely not well-posed — and the representations still earn their keep entirely by what they let you compute, unify, and predict. That is the neighborhood the lattice lives in. It is a live physics-of-physics question, not a metaphysical dead end.
+
+## The trap on the other side: equivalence
+
+Granting all this, there is a second mistake, opposite to the first. Having conceded that the lattice is "one perception paradigm, not the truth," one is tempted to add: *and so other paradigms, just as meaningful, could exist.* The first half is right. The second half needs care.
+
+Underdetermination guarantees that rival empirically adequate frameworks *can* exist. It does not make them *equal*. Empirical adequacy is a threshold, not a total ordering — and above that threshold, theories are ranked by other virtues: economy of assumptions, unification, breadth of scope, and fertility (whether the framework generates new questions and new predictions rather than merely re-describing old answers). These are not idiosyncratic criteria invented to flatter the lattice; they are close to the theoretical virtues Kuhn named as the standing grounds of theory choice — accuracy, consistency, scope, simplicity, fruitfulness. Newtonian, Lagrangian, and Hamiltonian mechanics are all adequate; they are not all equally illuminating for every problem, and the differences are not matters of taste alone.
+
+This matters because it is exactly where the lattice stakes its claim. The program's value was never going to be "this is the one true picture." It is *parsimony and generativity*: look how much falls out of a **single** axiom — quantization as an Arnold-tongue attractor, the Born rule as a consequence of A=1, the Dirac structure as lattice geometry, the continuity equation as the conserved current of that same law. Each of these is a `Proven` / `PASS` row in the [claim map](../../../papers/claim-map.qmd), not a promissory note. That is a comparative-virtue claim, and it survives the anti-realist concession completely intact. Conceding "not the truth" costs the program nothing. Conceding "no better than any alternative" would cost it everything — and the concession is not forced, because the contest between paradigms is decided by economy and fruitfulness, not by which one is secretly real.
+
+## The position, stated plainly
+
+Three sentences:
+
+1. Whether the A=1 lattice *is* reality is not a question physics can adjudicate, and nothing is lost by declining to ask it.
+2. What can be asked — and answered — is whether the lattice is empirically adequate and internally consistent: whether it saves the phenomena and coheres.
+3. Among adequate frameworks the lattice does not claim to be uniquely true; it claims to be unusually *economical and generative*, and it keeps falsifiable predictions precisely so that this claim can be tested against rivals rather than asserted.
+
+Geometry first, then. But the slogan "geometry forces physics" is a claim about what the geometry *entails*, not about what the universe *is*. The force is logical, internal to the object. Whether the object is the world is a question we leave, deliberately and without embarrassment, unasked.
+
+---
+
+**Related**
+
+- [Statement of Intent](../../../index.qmd) — the one-paragraph framing this essay unpacks.
+- [Claim map](../../../papers/claim-map.qmd) — the `Proven` / `Conjectured` status of every result cited here.
+- [*Plato's Cave and the DCL projector*](../2026-05-23-platos-cave-and-the-projector/index.qmd) — the companion piece on representation and appearance.
+- [*Lattice birefringence from the Dirac structure*](../2026-05-20-birefringence-from-dirac/index.qmd) — the falsifiable signature this essay leans on.
