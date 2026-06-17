@@ -36,6 +36,52 @@ $raw | Out-File -FilePath $jsonPath -Encoding utf8
 $board = $raw | ConvertFrom-Json
 $items = @($board.items)
 
+# --- Exclude sub-issues -------------------------------------------------
+# The board lists sub-issues as flat items, but this roadmap is
+# subproject-level: drop any board item that is a sub-issue of another
+# issue (the work-item breakdown stays on the GitHub board). The project
+# item JSON does not carry the parent relation, so query it per repo via
+# GraphQL. A detection failure aborts (fail-closed) rather than silently
+# publishing sub-items.
+$subQuery = @'
+query($owner:String!, $repo:String!, $cursor:String) {
+  repository(owner:$owner, name:$repo) {
+    issues(first:100, after:$cursor, states:[OPEN, CLOSED]) {
+      pageInfo { hasNextPage endCursor }
+      nodes { number parent { number } }
+    }
+  }
+}
+'@
+$subIssueKeys = [System.Collections.Generic.HashSet[string]]::new()
+$repos = $items |
+  Where-Object { $_.content -and $_.content.repository } |
+  ForEach-Object { $_.content.repository } | Select-Object -Unique
+foreach ($r in $repos) {
+  $parts = $r -split '/', 2
+  if ($parts.Count -ne 2) { continue }
+  $owner2, $name2 = $parts
+  $cursor = $null
+  do {
+    $ghArgs = @('api', 'graphql', '-f', "query=$subQuery", '-f', "owner=$owner2", '-f', "repo=$name2")
+    if ($cursor) { $ghArgs += @('-f', "cursor=$cursor") }
+    $resp = (& gh @ghArgs | ConvertFrom-Json)
+    if ($LASTEXITCODE -ne 0) { throw "gh GraphQL sub-issue query failed for $r (exit $LASTEXITCODE)." }
+    $conn = $resp.data.repository.issues
+    foreach ($n in $conn.nodes) { if ($n.parent) { [void]$subIssueKeys.Add("$r#$($n.number)") } }
+    $cursor = if ($conn.pageInfo.hasNextPage) { $conn.pageInfo.endCursor } else { $null }
+  } while ($cursor)
+}
+$before = $items.Count
+$items = @($items | Where-Object {
+  -not ($_.content -and $_.content.type -eq 'Issue' -and
+        $subIssueKeys.Contains("$($_.content.repository)#$($_.content.number)"))
+})
+$hidden = $before - $items.Count
+if ($hidden -gt 0) {
+  Write-Host "Filtered $hidden sub-issue(s) from the roadmap (still tracked on the board)." -ForegroundColor Yellow
+}
+
 $generated = (Get-Date).ToString('yyyy-MM-dd')
 
 function Format-Cell([string]$s) {
