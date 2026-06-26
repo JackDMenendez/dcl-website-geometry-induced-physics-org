@@ -41,7 +41,7 @@ modification of the tick rule admits Branch B SU(3)
 identify which features of the Standard Model are geometric consequences
 of $\mathcal{A}=1$ on $\mathcal{T}_\diamond^3$ (the Lie algebra
 structure; the bipartite-plaquette gauge invariance; the non-abelian
-colour algebra dynamically generated) and which are not (chirality,
+color algebra dynamically generated) and which are not (chirality,
 $CP$, the Higgs mechanism's separation of kinetic and mass terms). All
 claims are symbolically verified by sympy scripts in `src/utilities/`
 and tagged in the audit table.
@@ -54,8 +54,8 @@ and tagged in the audit table.
   it is the **factor-product projection** of the centralizer of the
   bipartite tick rule on the extended per-site amplitude
   $\mathbb{C}^{12} = \mathbb{C}^2 \otimes \mathbb{C}^2 \otimes
-  \mathbb{C}^3$. The non-abelian colour algebra is *dynamically
-  generated* — the $S_3$ orbit of colour-memory tick operators closes
+  \mathbb{C}^3$. The non-abelian color algebra is *dynamically
+  generated* — the $S_3$ orbit of color-memory tick operators closes
   under Lie brackets to the full $\mathfrak{su}(3)$ — and
   bipartite-plaquette Wilson loops are gauge-invariant by construction.
   The honest result is a **characterisation, not an identity**:
@@ -73,7 +73,7 @@ and tagged in the audit table.
   plus a chirality-shadow SM piece — the same structural pattern as
   left–right-symmetric grand unification (Pati–Salam, $SO(10)$),
   emerging from the lattice geometry alone. This 71-dim algebra is the
-  object catalogued by the companion
+  object catalogd by the companion
   [`dcl-generator-zoo`](index.qmd) artifact and consumed by the planned
   proton-internals paper.
 
@@ -134,7 +134,7 @@ Every row is backed by a sympy verification script in `src/utilities/`.
   ($\mathbf{3} \oplus \mathbf{3}$) commutes with the tick rule
   (`su3_branch_consistency.py`).
 - Non-abelian $SU(3)$ dynamically generated from the $\mathbb{C}^3$
-  colour memory (`su3_generation_from_colour_memory.py`).
+  color memory (`su3_generation_from_colour_memory.py`).
 
 **PART** (3 rows — mechanism shown, full quantitative closure pending):
 
@@ -152,7 +152,7 @@ Every row is backed by a sympy verification script in `src/utilities/`.
 **FAIL** (1 row — tested and disconfirmed):
 
 - Modified (antilinear) tick rule for Branch B SU(3) /$CP$
-  compatibility — no non-zero colour matrix anticommutes with every
+  compatibility — no non-zero color matrix anticommutes with every
   Gell-Mann generator; the lattice cannot incorporate SM-style $CP$ as
   a discrete symmetry of any natural tick modification
   (`tick_rule_cp_modified.py`).
@@ -181,7 +181,7 @@ parallels Paper I's own v1.01 metadata release.
   the explicit $-\mathrm{Tr}\ln D_\text{lat}[U]$ calculation is the
   centerpiece of the planned discrete-probability paper.
 - **The 59-generator coset / proton internals.** The $(\mathbf{8},
-  \mathbf{3})$ leptoquark-flavoured extras catalogued in
+  \mathbf{3})$ leptoquark-flavoured extras catalogd in
   [`dcl-generator-zoo`](index.qmd) are consumed by a future
   proton-internals paper built on Paper II's SU(3) machinery.
 - **Chirality and $CP$.** Shown *not* derivable from the discrete

@@ -25,11 +25,11 @@ engine. The tool reads the `.npy` / `.npz` token-and-phase fields that
 - a self-contained **interactive three.js `.html`** — orbit, zoom, pan, and,
   for a time series, scrub through ticks.
 
-The model now on the site uses **parity** colouring, so the bipartite
+The model now on the site uses **parity** coloring, so the bipartite
 structure is visible directly: the RGB (even) sublattice is warm, the CMY
 (odd) sublattice is cool, and the interleaved cubes *are* the two
 interpenetrating sublattices the whole framework rests on. (The tool also
-offers a full phase colour-wheel and a token-count ramp.)
+offers a full phase color-wheel and a token-count ramp.)
 
 You can run it yourself with no engine run required:
 

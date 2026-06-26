@@ -33,7 +33,7 @@ assert.
 ```{=html}
 <model-viewer
   src="lattice-unit-cell.glb"
-  alt="A central pale node with six bonds radiating to six coloured nodes at the corners of a cube: three warm (red, green, blue) marking the RGB sublattice and three cool (cyan, magenta, yellow) marking the CMY sublattice."
+  alt="A central pale node with six bonds radiating to six colored nodes at the corners of a cube: three warm (red, green, blue) marking the RGB sublattice and three cool (cyan, magenta, yellow) marking the CMY sublattice."
   shadow-intensity="0"
   camera-controls
   auto-rotate
@@ -57,7 +57,7 @@ throughout the framework's falsifiable predictions.
 ## Provenance
 
 - **Paper of record:** [Paper I — *Geometry First*](../papers/index.qmd#paper-i---geometry-first).
-- **Source code:** node positions and colours are the
+- **Source code:** node positions and colors are the
   `RGB_VECTORS` / `CMY_VECTORS` constants from
   [`dcl-core`](../papers/index.qmd#dcl-core---python-engine)'s
   `core/OctahedralLattice.py`; the mesh (nodes + bonds) is built with

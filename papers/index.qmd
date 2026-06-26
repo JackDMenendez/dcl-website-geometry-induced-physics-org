@@ -88,7 +88,7 @@ established.
 - **Version:** v0.1 (draft)
 - **Repository:** [`dcl-paper-03-tidal-ionization`](https://github.com/JackDMenendez/dcl-paper-03-tidal-ionization)
 
-### `dcl-generator-zoo` — Catalogue of the 71-dim per-site automorphism algebra
+### `dcl-generator-zoo` — Catalog of the 71-dim per-site automorphism algebra
 
 A standalone catalog paper / artifact for the lattice's automorphism
 algebra; consumed by Paper II's gauge derivation and the planned

@@ -2,7 +2,7 @@
 title: "Explorable lattice — interactive 3D viewer"
 description: >-
   A live, rotatable 3D model of an A=1 lattice state, produced by the
-  dcl-lattice-viewer tool. Parity colouring shows the bipartite RGB/CMY
+  dcl-lattice-viewer tool. Parity coloring shows the bipartite RGB/CMY
   sublattice split that defines the substrate.
 categories: [3D model, visualization, dcl-lattice-viewer]
 resources:
@@ -22,7 +22,7 @@ lattice field data by [`dcl-lattice-viewer`](https://github.com/JackDMenendez/dc
 ```{=html}
 <model-viewer
   src="explorable-lattice.glb"
-  alt="A roughly spherical cloud of small cubes on a cubic lattice, warm-coloured cubes on one sublattice interleaved with cool-coloured cubes on the other, densest at the centre and fading toward the edges."
+  alt="A roughly spherical cloud of small cubes on a cubic lattice, warm-colored cubes on one sublattice interleaved with cool-colored cubes on the other, densest at the center and fading toward the edges."
   shadow-intensity="0"
   camera-controls
   auto-rotate
@@ -45,15 +45,15 @@ wavepacket synthesised by the viewer's `demo` command, not an experiment
 run. Even so, it is drawn by exactly the rules the tool applies to real
 `dcl-core` dumps:
 
-- **Position** — each cube sits at its lattice coordinate, recentred on
+- **Position** — each cube sits at its lattice coordinate, recenterd on
   the lattice ($15 \times 15 \times 15$ here).
 - **Size** — $\sqrt{}$-scaled by the total token count at the site, so the
   dense core of the wavepacket reads larger than the tail.
-- **Colour** — this model uses **parity** mode: the RGB (even) sublattice
+- **Color** — this model uses **parity** mode: the RGB (even) sublattice
   is warm, the CMY (odd) sublattice is cool. The interleaved warm/cool
   cubes *are* the bipartite structure on which the whole framework rests —
   two interpenetrating sublattices related by the tick rule. (The tool also
-  offers `phase`, a full colour wheel keyed to the token-weighted phase,
+  offers `phase`, a full color wheel keyed to the token-weighted phase,
   and `count`, a dark-to-amber ramp.)
 
 ## Make your own

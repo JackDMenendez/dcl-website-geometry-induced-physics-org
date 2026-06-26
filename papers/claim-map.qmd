@@ -72,7 +72,7 @@ special relativity, and Newtonian gravity are derived as consequences.
 
 | Claim | Status | Audit | Backed by |
 |---|---|---|---|
-| Black-hole horizon + Hawking temp. & Bekenstein–Hawking entropy (analytic, stated modelling assumptions) | Conjectured | `PART` | analytic |
+| Black-hole horizon + Hawking temp. & Bekenstein–Hawking entropy (analytic, stated modeling assumptions) | Conjectured | `PART` | analytic |
 | Photon emission as an $\mathcal{A}=1$ necessity & joint-$\mathcal{A}=1$ beam-splitter emission operator | Conjectured | `PART` | `exp_19c`, `exp_20` |
 | Induced gauge action in Sakharov form | Conjectured | `PART` | analytic |
 | Two-body long-horizon stability & escape mechanism | Conjectured | `PART` | `exp_12b`, `exp_12c` |
@@ -109,7 +109,7 @@ Every row is backed by a sympy verification script in `src/utilities/`.
 | Tick-rule consistency on $\mathbb{C}^{12}$ | Proven | `PASS` | `tick_rule_extended_consistency.py` |
 | Wilson-plaquette gauge invariance | Proven | `PASS` | `tick_rule_gauge_invariance.py` |
 | SU(3) branch consistency — only Branch A commutes with tick rule | Proven | `PASS` | `su3_branch_consistency.py` |
-| Non-abelian $SU(3)$ dynamically generated from $\mathbb{C}^3$ colour memory | Proven | `PASS` | `su3_generation_from_colour_memory.py` |
+| Non-abelian $SU(3)$ dynamically generated from $\mathbb{C}^3$ color memory | Proven | `PASS` | `su3_generation_from_colour_memory.py` |
 
 ### Conjectured — mechanism shown (`PART`)
 
@@ -123,7 +123,7 @@ Every row is backed by a sympy verification script in `src/utilities/`.
 
 | Claim | Status | Audit | Backed by |
 |---|---|---|---|
-| Modified (antilinear) tick rule for Branch B $SU(3)$ / $CP$ — no colour matrix anticommutes with every Gell-Mann generator | Disconfirmed | `FAIL` | `tick_rule_cp_modified.py` |
+| Modified (antilinear) tick rule for Branch B $SU(3)$ / $CP$ — no color matrix anticommutes with every Gell-Mann generator | Disconfirmed | `FAIL` | `tick_rule_cp_modified.py` |
 
 **Central claim — Eq. (137):** *Conjectured* (`PART`). Containment
 $\supseteq$ of $SO(3,1)\times SU(3)\times SU(2)\times U(1)$ is

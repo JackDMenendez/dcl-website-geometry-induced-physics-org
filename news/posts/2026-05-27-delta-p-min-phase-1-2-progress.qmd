@@ -107,7 +107,7 @@ explicit probability floor — requires a `prob_floor: float | None`
 parameter on the continuous-amplitude engine's amplitude-update
 primitives. That parameter is the principal upstream coordination
 output of this investigation. It is additive (default `None`
-preserves current behaviour) and is the planned content of
+preserves current behavior) and is the planned content of
 **`dcl_core` v0.2.0**.
 
 Once v0.2.0 is released:

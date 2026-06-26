@@ -3,7 +3,7 @@ title: "New essay: The same-but-different motif"
 description: >-
   When you cannot see a generator directly, how do you gain confidence you have
   guessed the right one? A new essay on the "same but different" motif as a
-  subjective, prior-shifting cue for the modeller — with a guard against
+  subjective, prior-shifting cue for the modeler — with a guard against
   apophenia, and three illustrations held to it.
 author: "Jack D. Menendez"
 date: "2026-06-22"
@@ -16,10 +16,10 @@ on a question that comes up while building any model of something fractal:
 *have I found the right generating rule, or merely a rule that fits here?*
 
 The essay's answer is a heuristic, not a proof. A true generator leaves the same
-motif in domains you were not modelling, and leaves it **differently each time** —
+motif in domains you were not modeling, and leaves it **differently each time** —
 the core relationship invariant, the surface expression bent by local conditions.
 Spotting that "same but different" signature is *subjective evidence* that you are
-on the right track: a confidence update for the modeller, the kind that tells you
+on the right track: a confidence update for the modeler, the kind that tells you
 which thread to pull next. It is emphatically **not** a footprint of a discrete
 universe or a validation of an ontology — that is the error that gives cross-scale
 pattern-matching its bad name, and the piece is built to avoid it.

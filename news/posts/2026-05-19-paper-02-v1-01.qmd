@@ -26,8 +26,8 @@ The result is a precise characterisation rather than a clean identity —
 **containment holds, exact equality does not.** The SM gauge algebra
 $\mathfrak{su}(3) \oplus \mathfrak{su}(2) \oplus \mathfrak{u}(1)$ is
 recovered as the *factor-product projection* of the lattice's
-71-dimensional discrete-Hermitian centralizer, the non-abelian colour
-algebra is dynamically generated from the $\mathbb{C}^3$ colour memory,
+71-dimensional discrete-Hermitian centralizer, the non-abelian color
+algebra is dynamically generated from the $\mathbb{C}^3$ color memory,
 and the framework yields a sharp, falsifiable coupling-ratio prediction
 $g_3^2 / g_2^2 = 3/2$ at the lattice scale. Chirality and $CP$ violation
 are shown explicitly *not* derivable from the discrete substrate. Every

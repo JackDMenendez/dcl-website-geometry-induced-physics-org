@@ -74,13 +74,13 @@ a suite of more than fifteen experiments with no free parameters beyond
 the Planck-scale calibration of the lattice spacing (the system audit
 table records the status of each claim); the framework's remaining
 derivations — black-hole thermodynamics among them — are established
-analytically under explicitly stated modelling assumptions and flagged
+analytically under explicitly stated modeling assumptions and flagged
 as such where they appear.
 
 The framework suggests a structural reinterpretation of the Standard
 Model's gauge degrees of freedom as the minimal accounting required to
 maintain $\mathcal{A}=1$ on the bipartite lattice geometry: the particle
-content is reframed as the catalogue of probability imbalances the
+content is reframed as the catalog of probability imbalances the
 lattice generates and the session types required to resolve them.
 Whether the full Standard Model gauge group
 $\mathrm{SU}(3) \times \mathrm{SU}(2) \times \mathrm{U}(1)$ is the
@@ -160,7 +160,7 @@ a no-free-parameter experiment or an analytic derivation):
 Rows that are **PART** (mechanism established, full numerical or
 long-horizon confirmation open): black-hole event horizon + Hawking
 temperature and Bekenstein–Hawking entropy (analytic, under stated
-modelling assumptions); photon emission as an $\mathcal{A}=1$ necessity
+modeling assumptions); photon emission as an $\mathcal{A}=1$ necessity
 and the emission-operator joint-$\mathcal{A}=1$ beam splitter (`exp_19c`,
 `exp_20`); the induced gauge action in Sakharov form; two-body
 long-horizon stability and its escape mechanism (`exp_12b`, `exp_12c`);

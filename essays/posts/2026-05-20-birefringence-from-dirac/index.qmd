@@ -55,7 +55,7 @@ print(M.equals(3 * sp.eye(3))) # False
 The off-diagonal entries are not zero. Preparing a referee-proof appendix
 for exactly this step is what surfaced the problem, and chasing it through
 the eigenvalues of the spinor propagator is what turned a bug into a
-prediction. The anisotropy is not an artefact we introduced to make the
+prediction. The anisotropy is not an artifact we introduced to make the
 Dirac limit work — it is a side-condition the geometry *imposes*, and the
 honest continuum limit keeps it.
 
@@ -143,7 +143,7 @@ renormalisation step washes the anisotropy out of the observable amplitude
 in the continuum limit. If it does, birefringence is a property of the
 bare operator but not of anything you can measure, and the prediction has
 to be qualified. If it does not, the prediction stands as written. That is
-the difference between "discreteness artefact" and "real, falsifiable
+the difference between "discreteness artifact" and "real, falsifiable
 signature," and it is exactly the test that has not been run yet.
 
 **It replaces a weaker, false claim with a stronger, true one.** The paper

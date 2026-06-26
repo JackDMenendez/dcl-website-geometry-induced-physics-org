@@ -74,9 +74,9 @@ Here is the charge the freeze does **not** touch, and I will not pretend
 it does. A timestamp proves I did not cheat *after* March 2026. It cannot
 prove I did not try twenty lattices on paper before I committed the one
 that worked. Choosing octahedral over cubic, six diagonals of the eight,
-three colours, the $\mathbb{C}^2 \to \mathbb{C}^{12}$ extension — that is
+three colors, the $\mathbb{C}^2 \to \mathbb{C}^{12}$ extension — that is
 selection, performed by a designer who already knew the target. I have
-said as much plainly: the colour structure was a deliberate choice, *added
+said as much plainly: the color structure was a deliberate choice, *added
 to give the design a better chance of producing physics.* That is
 design-time fitting, and version control cannot see it, because it
 happened before the first commit.
@@ -110,12 +110,12 @@ choice into are **few and abstract**:
 - six cube-diagonal directions, with the chirally-opposite split.
 
 The fewer and more abstract the premises, the less room target-knowledge has
-to hide in them — but "less" is not "none," and the colour/chirality encoding
-is where I most openly *chose*. I added three colours to give the design more
+to hide in them — but "less" is not "none," and the color/chirality encoding
+is where I most openly *chose*. I added three colors to give the design more
 room to produce physics; three because space is three-dimensional — the same
 three that become the spatial gamma matrices. Whether that identification,
-*colour-three is space-three*, is a principle or a coincidence wearing the
-word, depends entirely on what *follows* from it. If colour and space share
+*color-three is space-three*, is a principle or a coincidence wearing the
+word, depends entirely on what *follows* from it. If color and space share
 an origin, that should imply relations standard physics does not expect — a
 checkable claim, a candidate bite. If nothing follows, "principled" is doing
 work the physics has not yet earned. I hold it as the former and concede it
